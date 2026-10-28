@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-10-28T08:31:01.996Z",
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 8,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 8,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 8,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 8,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        },
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "checks": [
+    "Teaser und Case-Verweis",
+    "Galerie vor/zurück",
+    "drei Vorher-Nachher-Vergleiche",
+    "Untertiteldateien",
+    "drei Videos starten",
+    "keine Autoplay-Videos"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-27T21:32:36.575Z",
+  "authorization": "Marc erlaubte die Überarbeitung der drei gelieferten Diagramme im Chat.",
+  "originalsPreserved": true,
+  "changes": [
+    "Case 1: Supabase und getrennte Datenquellen statt nicht nachgewiesener Next-Best-Action-Engine/HubSpot-Synchronisierung.",
+    "Case 2: Normalisierung im Gateway; Kontakt und Aufgabe statt Firma/Deal/Slack-Versand.",
+    "Case 3: lokale Regeln, fester Score, lokale KI und gespeicherter Bericht statt KI-Punktvergabe/Personalisierung/CRM-Export.",
+    "Native SVG-Texte ohne externe Schriftimporte; besser lesbare Flächen und Beschriftungen."
+  ],
+  "results": [
+    {
+      "slug": "leadpilot",
+      "source": "../Diagramm zu Case Study 1/Diagramm zu Case Study 1- LeadPilot CRM Architektur1.svg",
+      "sourceSha256": "04276132affe2aea2f88a75f925b2112008a33ee4340924c00bcb6e39f380730",
+      "portfolioFile": "public/media/diagrams/leadpilot.svg",
+      "sha256": "3677347403c2ecc52e58a2bcb36399b2cb5c2216f4499b1bd19273f9fe588b8d",
+      "width": 1120,
+      "height": 740,
+      "nativeSvg": true,
+      "externalResources": 0,
+      "textOverflow": [],
+      "screenshot": "evidence/diagrams/leadpilot.png"
+    },
+    {
+      "slug": "lead-routing",
+      "source": "../Diagramm zu Case Study 2/Case Study 2- Inbound Lead-Routing (n8n + HubSpot).svg",
+      "sourceSha256": "a752a6b60e28abe126b3676fa4b371b40f1cd2be5949a51178513a20591a80db",
+      "portfolioFile": "public/media/diagrams/lead-routing.svg",
+      "sha256": "5ba9765a0653b10dd1d9143e7657b39717eca76368690e178c52a891567a56ee",
+      "width": 900,
+      "height": 1320,
+      "nativeSvg": true,
+      "externalResources": 0,
+      "textOverflow": [],
+      "screenshot": "evidence/diagrams/lead-routing.png"
+    },
+    {
+      "slug": "ki-prospecting",
+      "source": "../Diagramm zu Case Study 3/Case Study 3- Mehrstufiges KI-Prospecting & Scoring.svg",
+      "sourceSha256": "64d4fb8c0cec35ef1bb34d3a3a18f722410ccff68c62eda42dbe28d5b5f11c41",
+      "portfolioFile": "public/media/diagrams/ki-prospecting.svg",
+      "sha256": "928857212d323cade9cc56001b8deb642e586621ef3753ffa20572aa2904b393",
+      "width": 900,
+      "height": 1430,
+      "nativeSvg": true,
+      "externalResources": 0,
+      "textOverflow": [],
+      "screenshot": "evidence/diagrams/ki-prospecting.png"
+    }
+  ]
+}

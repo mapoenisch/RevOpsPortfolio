@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-10-27T14:59:21.634Z",
+  "mode": "local",
+  "externalCalls": 0,
+  "cases": [
+    {
+      "name": "unauthorized",
+      "status": 401,
+      "result": {
+        "error": "UNAUTHORIZED"
+      }
+    },
+    {
+      "name": "accepted",
+      "status": 201,
+      "result": {
+        "mode": "local",
+        "status": "accepted",
+        "contactId": "local-contact-2",
+        "taskId": "local-task-2",
+        "owner": "inside-sales",
+        "steps": [
+          "Eingang prüfen",
+          "E-Mail normalisieren",
+          "Zuständigkeit zuordnen",
+          "Kontakt abgleichen",
+          "Folgeaufgabe angelegt"
+        ]
+      }
+    },
+    {
+      "name": "duplicate",
+      "status": 200,
+      "result": {
+        "mode": "local",
+        "status": "duplicate",
+        "contactId": "local-contact-2",
+        "taskId": "local-task-2",
+        "owner": "inside-sales",
+        "reason": "Anfrage bereits bearbeitet. Keine weitere Aufgabe angelegt.",
+        "steps": [
+          "Eingang prüfen",
+          "E-Mail normalisieren",
+          "Dublette erkannt"
+        ]
+      }
+    },
+    {
+      "name": "missing",
+      "status": 422,
+      "result": {
+        "mode": "local",
+        "status": "review",
+        "reason": "Pflichtangaben fehlen oder haben ein ungültiges Format.",
+        "steps": [
+          "Eingang prüfen",
+          "Manuelle Prüfung"
+        ]
+      }
+    },
+    {
+      "name": "real-domain-blocked",
+      "status": 422,
+      "result": {
+        "error": "SYNTHETIC_DATA_ONLY"
+      }
+    },
+    {
+      "name": "large-body",
+      "status": 413,
+      "result": {
+        "error": "PAYLOAD_TOO_LARGE"
+      }
+    }
+  ]
+}

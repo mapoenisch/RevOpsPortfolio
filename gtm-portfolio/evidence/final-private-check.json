@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-27T19:16:57.685Z",
+  "checkedFiles": 45,
+  "configuredSecretCount": 1,
+  "leaks": 0,
+  "ports": [
+    {
+      "port": 5678,
+      "stopped": true
+    },
+    {
+      "port": 5680,
+      "stopped": true
+    }
+  ],
+  "envPermissions": "0600"
+}

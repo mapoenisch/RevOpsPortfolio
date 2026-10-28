@@ -1,0 +1,2570 @@
+{
+  "generatedAt": "2026-10-27T14:44:40.746Z",
+  "dataset": "50 synthetische Testprofile, Version 1",
+  "status": "local-ai-verified",
+  "model": "qwen3:1.7b",
+  "cloudModel": null,
+  "durationMs": 41044,
+  "stats": {
+    "total": 50,
+    "prefiltered": 14,
+    "eligible": 36,
+    "prioritized": 25,
+    "aiReviewed": 36,
+    "aiValid": 36,
+    "drafts": 25,
+    "aiErrors": 0,
+    "promptTokens": 15205,
+    "outputTokens": 1932,
+    "localCalls": 61,
+    "cloudCalls": 0
+  },
+  "results": [
+    {
+      "profile": {
+        "id": "LP-P001",
+        "company": "Testunternehmen 01",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Vertriebsleitung in Großhandel mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P002",
+        "company": "Testunternehmen 02",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung in IT-Dienstleistung mit Problemen in der Übergabe zwischen Marketing und Vertrieb ist für B2B-CRM-Lösungen relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P003",
+        "company": "Testunternehmen 03",
+        "country": "CH",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Manuelle Übergaben zwischen Marketing und Vertrieb' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P004",
+        "company": "Testunternehmen 04",
+        "country": "DE",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Role 'Revenue Operations' und Prozessbedarf 'Kein Bedarf benannt' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P005",
+        "company": "Testunternehmen 05",
+        "country": "AT",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf mit B2B-CRM und Prozessbedarf für manuelle Übergaben zwischen Marketing und Vertrieb"
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P006",
+        "company": "Testunternehmen 06",
+        "country": "CH",
+        "b2b": false,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P007",
+        "company": "Testunternehmen 07",
+        "country": "US",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P008",
+        "company": "Testunternehmen 08",
+        "country": "AT",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 65,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Tabellen und manuelle Pflege' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P009",
+        "company": "Testunternehmen 09",
+        "country": "CH",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Revenue Operations in Maschinenbau mit CRM vorhanden und Problemen in der Manuelle Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P010",
+        "company": "Testunternehmen 10",
+        "country": "DE",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf im Großhandel mit manueller Übergabe zwischen Marketing und Vertrieb ist relevant für B2B-CRM-Lösungen."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P011",
+        "company": "Testunternehmen 11",
+        "country": "AT",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Vertriebsleitung in IT-Dienstleistung mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P012",
+        "company": "Testunternehmen 12",
+        "country": "CH",
+        "b2b": false,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P013",
+        "company": "Testunternehmen 13",
+        "country": "DE",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Manuelle Übergaben zwischen Marketing und Vertrieb' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P014",
+        "company": "Testunternehmen 14",
+        "country": "US",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P015",
+        "company": "Testunternehmen 15",
+        "country": "CH",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 55,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf mit Maschinenbau und CRM vorhanden, aber Probleme mit manuellen Übergaben."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P016",
+        "company": "Testunternehmen 16",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Vertriebsleitung' und Prozessbedarf 'Kein Bedarf benannt' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P017",
+        "company": "Testunternehmen 17",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung in IT-Dienstleistung mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P018",
+        "company": "Testunternehmen 18",
+        "country": "CH",
+        "b2b": false,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P019",
+        "company": "Testunternehmen 19",
+        "country": "DE",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Revenue Operations in Großhandel mit manueller Pflege und Übergaben ist relevant für B2B-CRM-Lösungen."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P020",
+        "company": "Testunternehmen 20",
+        "country": "AT",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 50,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf mit B2B-Attributen und kein Bedarf benannt"
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P021",
+        "company": "Testunternehmen 21",
+        "country": "US",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P022",
+        "company": "Testunternehmen 22",
+        "country": "DE",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung in Großhandel mit B2B-CRM-Problem im Bereich manuelle Übergaben zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P023",
+        "company": "Testunternehmen 23",
+        "country": "AT",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Manuelle Übergaben zwischen Marketing und Vertrieb' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P024",
+        "company": "Testunternehmen 24",
+        "country": "CH",
+        "b2b": false,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P025",
+        "company": "Testunternehmen 25",
+        "country": "DE",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf im Großhandel mit manueller Übergabe zwischen Marketing und Vertrieb ist relevant für B2B-CRM-Lösungen."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P026",
+        "company": "Testunternehmen 26",
+        "country": "AT",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Vertriebsleitung in IT-Dienstleistung mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P027",
+        "company": "Testunternehmen 27",
+        "country": "CH",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung im Maschinenbau mit CRM vorhanden und Problemen in der Manuelle Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P028",
+        "company": "Testunternehmen 28",
+        "country": "US",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P029",
+        "company": "Testunternehmen 29",
+        "country": "AT",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Revenue Operations mit manueller Übergabe zwischen Marketing und Vertrieb ist für B2B-CRM-Lösungen relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P030",
+        "company": "Testunternehmen 30",
+        "country": "CH",
+        "b2b": false,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P031",
+        "company": "Testunternehmen 31",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Vertriebsleitung in Großhandel mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P032",
+        "company": "Testunternehmen 32",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung in IT-Dienstleistung mit B2B-CRM-Lösung und kein Bedarf benannt"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P033",
+        "company": "Testunternehmen 33",
+        "country": "CH",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Manuelle Übergaben zwischen Marketing und Vertrieb' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P034",
+        "company": "Testunternehmen 34",
+        "country": "DE",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Revenue Operations in Großhandel mit manueller Pflege und Übergaben ist relevant für B2B-CRM-Lösungen."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P035",
+        "company": "Testunternehmen 35",
+        "country": "US",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P036",
+        "company": "Testunternehmen 36",
+        "country": "CH",
+        "b2b": false,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P037",
+        "company": "Testunternehmen 37",
+        "country": "DE",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung in einem Großhandelsunternehmen mit B2B-CRM-Need und Prozessbedarf zur Automatisierung von Manuellen Übergaben"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P038",
+        "company": "Testunternehmen 38",
+        "country": "AT",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Manuelle Übergaben zwischen Marketing und Vertrieb' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P039",
+        "company": "Testunternehmen 39",
+        "country": "CH",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Revenue Operations in Maschinenbau mit CRM vorhanden und Problemen in der Manuelle Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P040",
+        "company": "Testunternehmen 40",
+        "country": "DE",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 50,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf im Großhandel mit B2B-CRM-Need und Synthetisierung"
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P041",
+        "company": "Testunternehmen 41",
+        "country": "AT",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Vertriebsleitung in IT-Dienstleistung mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P042",
+        "company": "Testunternehmen 42",
+        "country": "US",
+        "b2b": false,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P043",
+        "company": "Testunternehmen 43",
+        "country": "DE",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Rolle 'Assistenz' und Prozessbedarf 'Manuelle Übergaben zwischen Marketing und Vertrieb' sind für eine B2B-CRM-Lösung relevant."
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P044",
+        "company": "Testunternehmen 44",
+        "country": "AT",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Role: Revenue Operations, Process Bedarf: Kein Bedarf benannt"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P045",
+        "company": "Testunternehmen 45",
+        "country": "CH",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 55,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf mit Maschinenbau und CRM vorhanden, aber manuelle Übergaben sind ein Prozessbedarf."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P046",
+        "company": "Testunternehmen 46",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Vertriebsleitung in Großhandel mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P047",
+        "company": "Testunternehmen 47",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Geschäftsführung in IT-Dienstleistung mit Problemen in der Übergabe zwischen Marketing und Vertrieb"
+      },
+      "opener": "Wie übergeben Sie neue Anfragen vom Marketing an den Vertrieb?"
+    },
+    {
+      "profile": {
+        "id": "LP-P048",
+        "company": "Testunternehmen 48",
+        "country": "CH",
+        "b2b": false,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P049",
+        "company": "Testunternehmen 49",
+        "country": "US",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P050",
+        "company": "Testunternehmen 50",
+        "country": "AT",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Einkauf in IT-Dienstleistung mit manueller Pflege und Übergaben zwischen Marketing und Vertrieb ist relevant für B2B-CRM-Lösungen."
+      },
+      "opener": null
+    }
+  ],
+  "limitations": [
+    "Regelbasierte Priorisierung, keine Erfolgsprognose.",
+    "Alle Profile sind erfunden. Keine LinkedIn-Abfrage.",
+    "KI-Antworten sind strukturell geprüft; fachliche Qualität muss geprüft werden.",
+    "Es wird keine Nachricht versandt."
+  ]
+}

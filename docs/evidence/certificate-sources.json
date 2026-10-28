@@ -1,0 +1,322 @@
+[
+  {
+    "id": "hubspot-sales",
+    "source": "HubSpot Academy/HubSpot Sales-Software_fd7f815653214e1098ac22466afe8de9 Kopie.png",
+    "title": "HubSpot Sales-Software",
+    "date": "26.08.2026",
+    "validUntil": "25.09.2027",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-reporting",
+    "source": "HubSpot Academy/HubSpot-Berichterstattung_eec9134c2d3544a9bcbd9c3fcd4dbb66 Kopie.png",
+    "title": "HubSpot-Berichterstattung",
+    "date": "07.10.2026",
+    "validUntil": "06.11.2027",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-marketing",
+    "source": "HubSpot Academy/HubSpot Marketing-Software_b2fe0cd55df944a3a435eb8f5df3f175 Kopie.png",
+    "title": "HubSpot Marketing-Software",
+    "date": "07.09.2026",
+    "validUntil": "07.10.2027",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-inbound-sales",
+    "source": "HubSpot Academy/HubSpot Inbound-Sales_e4e0b4c1905a44fba6e7dae69f761fdf Kopie.png",
+    "title": "Inbound-Sales",
+    "date": "30.08.2026",
+    "validUntil": "28.09.2028",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-frictionless",
+    "source": "HubSpot Academy/HubSpot Reibungsloser Vertrieb_3a11cbcab2b04566b6dae5738af0ba14 Kopie.png",
+    "title": "Reibungsloser Vertrieb",
+    "date": "02.09.2026",
+    "validUntil": "01.10.2028",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-service",
+    "source": "HubSpot Academy/HubSpot Service-Software_1bca1decdc0f4c839100d21bc61f4c7b Kopie.png",
+    "title": "HubSpot Service-Software",
+    "date": "08.09.2026",
+    "validUntil": "08.10.2027",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-inbound",
+    "source": "HubSpot Academy/HubSpot Inbound_c550b7a43cb3466f80ee18d87e963602 Kopie.png",
+    "title": "Inbound",
+    "date": "05.09.2026",
+    "validUntil": "04.10.2028",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-inbound-marketing",
+    "source": "HubSpot Academy/HubSpot Inbound-Marketing_45f1e84e0b494dff8a1c7aba29174b25 Kopie.png",
+    "title": "Inbound-Marketing",
+    "date": "08.09.2026",
+    "validUntil": "07.10.2028",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-optimization",
+    "source": "HubSpot Academy/HubSpot Inbound-Marketing-Optimierung_2318b84fedd3446392dda441ec039798 Kopie.png",
+    "title": "Inbound-Marketing-Optimierung",
+    "date": "12.09.2026",
+    "validUntil": "12.10.2027",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-email",
+    "source": "HubSpot Academy/HubSpot E-Mail-Marketing_50b880f2a3a34dd9b3346d01f2a51053 Kopie.png",
+    "title": "E-Mail-Marketing",
+    "date": "07.10.2026",
+    "validUntil": "05.11.2028",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-cms",
+    "source": "HubSpot Academy/HubSpot CMS Hub für Marketer_0648e8bca1714fdf861a83b6ce90e736 Kopie.png",
+    "title": "CMS Hub für Marketer",
+    "date": "13.09.2026",
+    "validUntil": "13.10.2027",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "hubspot-aeo",
+    "source": "HubSpot Academy/HubSpot AEO Fundamentals_7085029258154cc08e255649541036c6 Kopie.png",
+    "title": "AEO Fundamentals",
+    "date": "14.09.2026",
+    "validUntil": "13.10.2028",
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "anthropic-mcp",
+    "source": "Anthropic Academy/Introduction to MCP Certificate_z4u4bpddrcr3-1791752486 Kopie.pdf",
+    "title": "Introduction to Model Context Protocol",
+    "date": "Abschluss ohne Datumsangabe",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "anthropic-mcp-advanced",
+    "source": "Anthropic Academy/Model Context Protocol Advanced Topics Certificate_w3e5yruwqng5-1791756416 Kopie.pdf",
+    "title": "Model Context Protocol: Advanced Topics",
+    "date": "Abschluss ohne Datumsangabe",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "anthropic-code-action",
+    "source": "Anthropic Academy/Claude Code in Action Certificate_wwcyei5y7tk8-1788239173 Kopie.pdf",
+    "title": "Claude Code in Action",
+    "date": "Abschluss ohne Datumsangabe",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "anthropic-claude",
+    "source": "Anthropic Academy/Claude 101 Certificate_ribsrofhki6a-1785593559 Kopie.pdf",
+    "title": "Claude 101",
+    "date": "Abschluss ohne Datumsangabe",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "anthropic-code",
+    "source": "Anthropic Academy/Claude Code 101 Certificate_q8mnzf7a5iw8-1785626465 Kopie.pdf",
+    "title": "Claude Code 101",
+    "date": "Abschluss ohne Datumsangabe",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "anthropic-platform",
+    "source": "Anthropic Academy/Claude Platform 101 Certificate_ysoghnwiub-1786049205 Kopie.pdf",
+    "title": "Claude Platform 101",
+    "date": "Abschluss ohne Datumsangabe",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "demandbase-operations",
+    "source": "Demandbase Academy Kopie/MarketingOperations_ITAdministrator_Badge20261010-22-i0zejw.pdf",
+    "title": "Marketing Operations / IT Administrator",
+    "date": "10.10.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "demandbase-ai",
+    "source": "Demandbase Academy Kopie/DemandbaseAIPractitioner_Badge20261010-20-eyyylj.pdf",
+    "title": "Demandbase AI Practitioner",
+    "date": "10.10.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "demandbase-sdr",
+    "source": "Demandbase Academy Kopie/SalesDevelopmentRepresentative_Badge20261010-20-o3n7gv.pdf",
+    "title": "Sales Development Representative",
+    "date": "10.10.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "business-analysis",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Grundwissen Business-Analyse Kopie.pdf",
+    "title": "Grundwissen Business-Analyse",
+    "date": "07.07.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "project-management",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Grundwissen Projektmanagement Kopie.pdf",
+    "title": "Grundwissen Projektmanagement",
+    "date": "06.07.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "copilot-excel",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Copilot in Excel KI-unterstuetzte Datenanalyse Kopie.pdf",
+    "title": "Copilot in Excel: KI-unterstützte Datenanalyse",
+    "date": "29.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "azure-ai",
+    "source": "LinkedIn Learning/Fachzertifikat_Microsoft Azure KI Grundwissen Kopie.pdf",
+    "title": "Microsoft Azure KI Grundwissen mit Fachzertifikat",
+    "date": "30.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "azure-workloads",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Microsoft Azure KI Grundwissen Workloads und Machine Learning Kopie.pdf",
+    "title": "Microsoft Azure KI Grundwissen: Workloads und Machine Learning auf Azure",
+    "date": "30.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "copilot-productivity",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Copilot für Produktivitaet Kopie.pdf",
+    "title": "Microsoft Copilot für Produktivität",
+    "date": "04.08.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "copilot-365",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Microsoft 365 Copilot kennenlernen Kopie.pdf",
+    "title": "Microsoft 365 Copilot kennenlernen",
+    "date": "27.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "copilot-work",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Ihre Arbeit optimieren mit Microsoft Copilot Kopie.pdf",
+    "title": "Ihre Arbeit optimieren mit Microsoft Copilot",
+    "date": "27.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "generative-productivity",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Erhoehen Sie Ihre Produktivitat mit generativer KI  Kopie.pdf",
+    "title": "Erhöhen Sie Ihre Produktivität mit generativer KI",
+    "date": "29.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "generative-basics",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Grundwissen Generative KI Kopie.pdf",
+    "title": "Grundwissen Generative KI",
+    "date": "27.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "claude-course",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Claude AI Grundkurs Kopie.pdf",
+    "title": "Claude AI Grundkurs",
+    "date": "02.07.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "ai-basics",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Kuenstliche Intelligenz KI Grundlagen Kopie.pdf",
+    "title": "Künstliche Intelligenz (KI) – Grundlagen",
+    "date": "27.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "generative-definition",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Was ist generative KI? Kopie.pdf",
+    "title": "Was ist generative KI?",
+    "date": "26.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "ai-ethics",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Ethik im Zeitalter generativer KI Kopie.pdf",
+    "title": "Ethik im Zeitalter generativer KI",
+    "date": "27.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "generative-search",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Generative KI Die Entwicklung einer durchdachten Online-Suche Kopie.pdf",
+    "title": "Generative KI: Die Entwicklung einer durchdachten Online-Suche",
+    "date": "26.06.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "team-management",
+    "source": "LinkedIn Learning/Abschlusszertifikat_Projektmanagement Team Führung Zusammenarbeit Kopie.pdf",
+    "title": "Projektmanagement: Team, Führung, Zusammenarbeit",
+    "date": "01.07.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "b2b-workshop",
+    "source": "Kundenbedürfnisse Verstehen und Nutzen(Rainer Mayer) Kopie.pdf",
+    "title": "Kundenbedürfnisse verstehen und nutzen",
+    "date": "28.09.2026",
+    "validUntil": null,
+    "method": "PDF-Textextraktion; bildbasierte Nachweise visuell geprüft"
+  },
+  {
+    "id": "google-generative",
+    "source": "Google Skills Kopie/Introduction to Generative AI_z2y6RtTCM6P9ABcrBEk4oGL9iQtcxrMRQfn3vH_CWMo=.png",
+    "title": "Introduction to Generative AI",
+    "date": "Badge ohne Datumsangabe",
+    "validUntil": null,
+    "method": "macOS Vision OCR; hervorgehobene Nachweise zusätzlich visuell geprüft"
+  },
+  {
+    "id": "google-gemini",
+    "source": "Google Developer Programm Kopie/Gemini Enterprise Agent Ready.svg",
+    "title": "Gemini Enterprise Agent Ready",
+    "date": "Badge ohne Datumsangabe",
+    "validUntil": null,
+    "method": "Vorhandenes Badge; keine Personalisierung und kein Datum ausgewiesen"
+  }
+]

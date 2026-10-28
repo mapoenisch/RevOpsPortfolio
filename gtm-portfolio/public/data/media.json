@@ -1,0 +1,106 @@
+{
+  "leadpilot": {
+    "diagram": {
+      "src": "/media/diagrams/leadpilot.svg",
+      "alt": "LeadPilot-Architektur: React-Oberfläche, Datenadapter und Supabase mit getrennten historischen Daten, Simulation und Live-Kennzahlen.",
+      "caption": "LeadPilot-Architektur · nach Marcs Vorlage, mit KI fachlich überarbeitet",
+      "width": 1120,
+      "height": 740,
+      "description": [
+        "Die Web-App verwendet React, TypeScript und Vite für Dashboard und CRM-Ansichten.",
+        "Datenadapter und eine regulär angemeldete Supabase-Sitzung ermöglichen den Datenzugriff. Rollen und Mandanten werden per Row Level Security getrennt.",
+        "Historische Ausgangswerte und der eingefrorene HubSpot-Import werden von Simulation und Live-Kennzahlen getrennt behandelt.",
+        "Die Simulation hat einen eigenen reproduzierbaren Zustand. Ein separater n8n-Ingest für Live-Kennzahlen ist im Quellprojekt vorhanden; dies belegt keinen aktuellen externen Lauf.",
+        "Eine automatische Next-Best-Action-Engine und eine laufende HubSpot-Synchronisierung sind nicht nachgewiesen. Die neuen Portfolio-Demos sind eigenständige Projekte."
+      ]
+    },
+    "screenshots": [
+      {
+        "src": "/media/leadpilot-dashboard.webp",
+        "alt": "Executive Dashboard · historische Stammdaten des fiktiven Unternehmens · reguläre Testsitzung",
+        "caption": "Executive Dashboard · historische Stammdaten des fiktiven Unternehmens · reguläre Testsitzung"
+      },
+      {
+        "src": "/media/leadpilot-contacts.webp",
+        "alt": "CRM-Kontaktansicht · reguläre Supabase-Abfrage mit synthetischen Seed-Daten",
+        "caption": "CRM-Kontaktansicht · reguläre Supabase-Abfrage mit synthetischen Seed-Daten"
+      },
+      {
+        "src": "/media/leadpilot-deals-filtered.webp",
+        "alt": "Deal-Pipeline · Suchfilter „Enterprise“ · synthetischer Testdatensatz",
+        "caption": "Deal-Pipeline · Suchfilter „Enterprise“ · synthetischer Testdatensatz"
+      },
+      {
+        "src": "/media/leadpilot-arr-details.webp",
+        "alt": "ARR im Detail · Definition, Zeitraum und historische Datenquelle",
+        "caption": "ARR im Detail · Definition, Zeitraum und historische Datenquelle"
+      }
+    ],
+    "video": {
+      "src": "/media/videos/leadpilot.mp4",
+      "poster": "/media/leadpilot-dashboard.webp",
+      "subtitles": "/media/videos/leadpilot.vtt",
+      "duration": 90
+    }
+  },
+  "lead-routing": {
+    "diagram": {
+      "src": "/media/diagrams/lead-routing.svg",
+      "alt": "Inbound-Routing: geschützter n8n-Webhook, Validierung und Dublettenprüfung im Gateway, HubSpot-Kontakt und verknüpfte Aufgabe mit gespeicherten Zwischenständen.",
+      "caption": "Inbound Lead-Routing · nach Marcs Vorlage, an den geprüften Demo-Ablauf angepasst",
+      "width": 900,
+      "height": 1320,
+      "description": [
+        "Eine synthetische Anfrage gelangt über einen geschützten n8n-Webhook an das ebenfalls geschützte lokale Gateway.",
+        "Das Gateway prüft Pflichtangaben, normalisiert die E-Mail und prüft Event-ID sowie bereits bearbeitete E-Mail-Adressen. Ungültige Eingänge gehen in die manuelle Prüfung.",
+        "Ein bereits bearbeiteter Eingang verwendet vorhandene Kontakt- und Aufgaben-IDs. Es wird keine weitere Aufgabe angelegt.",
+        "Unter 50 Beschäftigten gilt Inside Sales, ab 50 Account Management. Beide Testwege sind dem tatsächlichen HubSpot-Owner Marc Pönisch zugeordnet.",
+        "Der HubSpot-Adapter gleicht den Kontakt über die E-Mail ab und stellt eine verknüpfte Folgeaufgabe sicher. Zwischenstände werden vor und nach den CRM-Schritten gespeichert.",
+        "Eindeutig fehlgeschlagene Schritte können fortgesetzt werden. Ein unklarer Schreibstatus erfordert manuelle Prüfung. Der dokumentierte Test bestätigt je einen Kontakt und eine Aufgabe auch nach Wiederholungen."
+      ]
+    },
+    "screenshots": [
+      {
+        "src": "/media/lead-routing.webp",
+        "alt": "Lokale Routing-Demo nach erfolgreicher Prüfung einer synthetischen Anfrage",
+        "caption": "Lokale Demo · ein Kontakt und eine Folgeaufgabe · synthetische Daten"
+      }
+    ],
+    "video": {
+      "src": "/media/videos/lead-routing.mp4",
+      "poster": "/media/lead-routing.webp",
+      "subtitles": "/media/videos/lead-routing.vtt",
+      "duration": 90
+    }
+  },
+  "ki-prospecting": {
+    "diagram": {
+      "src": "/media/diagrams/ki-prospecting.svg",
+      "alt": "KI-Prospecting: 50 synthetische Profile, lokale Vorfilterung ohne KI, regelbasierter Score, lokales Modell und validierter Kontaktentwurf ab 75 Punkten bei positiver KI-Relevanz.",
+      "caption": "KI-Prospecting & Scoring · nach Marcs Vorlage, an den dokumentierten lokalen Modelllauf angepasst",
+      "width": 900,
+      "height": 1430,
+      "description": [
+        "50 synthetische Profile werden anhand von Pflichtangaben, B2B-Geschäftsmodell und DACH-Region vorgefiltert. Dieser Schritt verwendet keine KI; 14 Profile werden ausgesondert.",
+        "Sechs feste Kriterien bewerten die verbleibenden 36 Profile mit 0 bis 100 Punkten. Die Punktzahl wird regelbasiert berechnet, nicht vom Sprachmodell vergeben.",
+        "Das lokale Ollama-Modell qwen3:1.7b ergänzt für diese 36 Profile eine Relevanzeinschätzung mit Begründung. JSON-Struktur, Datentypen und Textlängen werden geprüft.",
+        "Ein gültiges, relevantes Profil mit mindestens 75 Punkten erhält einen allgemeinen Gesprächsentwurf aus einem zweiten KI-Schritt. Ungültige Ausgaben werden als Fehler gekennzeichnet.",
+        "Der dokumentierte Lauf enthält 25 Kontaktentwürfe. Score, Begründung und optionaler Entwurf werden als lokaler JSON-Bericht im Portfolio angezeigt.",
+        "Es gibt keine individuelle Recherche, keinen CRM-Export und keinen Nachrichtenversand. Cloud-Aufrufe fanden im dokumentierten Lauf nicht statt; fachliche Prüfung bleibt nötig."
+      ]
+    },
+    "screenshots": [
+      {
+        "src": "/media/ki-prospecting.webp",
+        "alt": "Lokale Scoring-Demo mit synthetischen Profilen und einzeln aufgeschlüsselten Kriterien",
+        "caption": "Lokale Demo · regelbasierte Bewertung und separat gekennzeichneter KI-Kontext"
+      }
+    ],
+    "video": {
+      "src": "/media/videos/ki-prospecting.mp4",
+      "poster": "/media/ki-prospecting.webp",
+      "subtitles": "/media/videos/ki-prospecting.vtt",
+      "duration": 90
+    }
+  }
+}

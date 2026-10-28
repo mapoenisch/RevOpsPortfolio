@@ -1,0 +1,288 @@
+{
+  "assets": [
+    {
+      "id": "logo",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Logo Final/Logo(final-big).png",
+      "source_sha256": "ee6bdd58575288ce333d09e809823fb757a87610ce4ed245b3bc4d562c30d467",
+      "output": "public/leadpilot/assets/logo.webp",
+      "output_sha256": "9d5bf4ed4b52e9d993d4e81f70c9ba1bcb8b59eafd83c161948535267e8e9cbe",
+      "kind": "image",
+      "processing": "WebP, max 900px, transparent margins trimmed"
+    },
+    {
+      "id": "brand-board",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/assets/brand/mockup-board-1.png",
+      "source_sha256": "6ea1257d27e0196620c577f0c0354c6bdb53b0abe9f29789e78b36c90446778c",
+      "output": "public/leadpilot/assets/brand-board.webp",
+      "output_sha256": "d75dde06ca9581f6205ba5ab16f348d5cd5cf127732af74c1619d9ccc86214d6",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "dashboard-early",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/uploads/2026-08-11_10-58-42.png",
+      "source_sha256": "7651fa999c766a60d46a86df247fd8cd2a1528b847915e63f55bd57423d11176",
+      "output": "public/leadpilot/assets/dashboard-early.webp",
+      "output_sha256": "d17b309e452beccbd017fcd9f2d4912532980849f375cd4243c8f68a25d99b41",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "leadqualifizierung",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leadqualifizierung.png",
+      "source_sha256": "bdf03586618abeba50dcf6adf2980efbf313df3b360d9b32b3299a4d0f5e9db0",
+      "output": "public/leadpilot/assets/leadqualifizierung.webp",
+      "output_sha256": "8ef234047e6f89c439b94f8f8c313364480eb87630026df11d6fe13358b28067",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-nachbereitung",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-Nachbereitung-dunkel.png",
+      "source_sha256": "c7281e59eecdc6af1f64fe668ee6b105c722576fd066fa0d5f290f706b6dc850",
+      "output": "public/leadpilot/assets/expo-nachbereitung.webp",
+      "output_sha256": "06ad2a2f350071d9e27ebc89c9cd08383c9f2c316f004c95901dab9b5c942a51",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "problem-demo",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP - Vom Problem zur Demo.png",
+      "source_sha256": "75d670112137e63efc30951b9f3ff49986ff8512ab166ad5dc6c21c99b69bdda",
+      "output": "public/leadpilot/assets/problem-demo.webp",
+      "output_sha256": "1d7b18fafc882c5b55693b5d0608d20d9f8145aa3f7e1797f451b9dfb7aa2fda",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-anzeige",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-Anzeige-dunkel-bearbeitet.png",
+      "source_sha256": "b263960f53f2f52cb7014bfd3431d5f5d153bd403ae07c631db5987104fe9ff2",
+      "output": "public/leadpilot/assets/expo-anzeige.webp",
+      "output_sha256": "4fc7e2de6560ae24986479798f33695f045c1d15eb4c00259679e516a9c75b02",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "linkedin-frueh",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/2.1.13 Kundenbetreuung nach Verkaufsabschluss-Unternehmensprojekt-Content Strategie/2.1.13 LeadPilot - LinkedIn-Post.png",
+      "source_sha256": "590eecc4e5067a08ff51c843bf582a74249fdfe0a60bf5ca93cd92967f8f5b95",
+      "output": "public/leadpilot/assets/linkedin-frueh.webp",
+      "output_sha256": "3524741e34fd1916e7cba66b351aecca4a77db640a31f713f35d2132b4f01e66",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "messe-01",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP - Messe vorbei-Bildfolge1.png",
+      "source_sha256": "342800aa339cd3eadac90b9ec8acc52c8c3e15b40404dd58050392b8d27d3bda",
+      "output": "public/leadpilot/assets/messe-01.webp",
+      "output_sha256": "dbcb8e8d36597cd3222595c0ef1415252426be8ce4704fc4e1e3e47de290dd9d",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "messe-02",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP - Messe vorbei-Bildfolge2.png",
+      "source_sha256": "92c642d099c318d82ca9d36f04dae5359e405e791472257f7875668fbb77428c",
+      "output": "public/leadpilot/assets/messe-02.webp",
+      "output_sha256": "0fcb535ee103ec86579693ec5b7c444a65fe019f147e4e4c69d00cd5d7c4e4a9",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "messe-03",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP - Messe vorbei-Bildfolge3.png",
+      "source_sha256": "70719976d6fba9789a7d62e4a234ee1a3a20238c81d236ffd2308f6a9ad05f4d",
+      "output": "public/leadpilot/assets/messe-03.webp",
+      "output_sha256": "64dd3cc5da1f2961a76faea877140af6b4bd5e0451ae10a9910a2fc931358f65",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-ablauf",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP-Messe-Workflow in 4 Schritten.png",
+      "source_sha256": "d0d25caf8792827b68f94d329162ef6ffc787ee5f81e87f5f8fc4d35d50088e5",
+      "output": "public/leadpilot/assets/expo-ablauf.webp",
+      "output_sha256": "dfda4e83bc12df89755a24f182e4e673c45cd68ddecaf559766769dd93e5ebdc",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-features",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-Features-hell.png",
+      "source_sha256": "642f831bf51493d6fc4b2c6543ec7c72b6448b9b0348ece4c8a94945dd899e93",
+      "output": "public/leadpilot/assets/expo-features.webp",
+      "output_sha256": "6892a1de849aa0a50ba7d154188a253622fd37207b690d8104aed8f86cf8a9c5",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-import",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-01-Messe-Listen-importieren.png",
+      "source_sha256": "1156c99bee5283e7bb2eb215bd544dbbe3db4b545d707bbaa0d8ee904a401ff2",
+      "output": "public/leadpilot/assets/expo-import.webp",
+      "output_sha256": "1a9d2d5209c8fb08d89a42a95cd4fb8abc1e97aba24a6f52c5a34bad48ea7d51",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-person",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-02-Person-zuweisen.png",
+      "source_sha256": "c502d633483ca4306d9e11530c5a75eb72d02ea17eaf0d906ba94a2e473bb99d",
+      "output": "public/leadpilot/assets/expo-person.webp",
+      "output_sha256": "52a32804d72ca18be360f615896611aaa06e6d63eb6cec22f92581d6cde21a50",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-schritt",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-03-Naechsten-Schritt-zuweisen.png",
+      "source_sha256": "005ff061f34928ad27f913558663363be0a87cd7219fd2ce9a3c76d437d7d725",
+      "output": "public/leadpilot/assets/expo-schritt.webp",
+      "output_sha256": "fee5f94b0401cb62b2db5b240b7223cd98fa12fc1cc17315d500a27acbf58599",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "outreach",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/6. Outreach- Sequenz - Folie 8.png",
+      "source_sha256": "f3f69880ca5f6c3492870a8b394bc1c98943a22789280741d5139f3a84bb4743",
+      "output": "public/leadpilot/assets/outreach.webp",
+      "output_sha256": "2868415105370fa020d359d8b085349f05d17e565d3ddbfaf88ad01bdf3183c2",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "jens",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP - Jens braucht nächsten Schritt.png",
+      "source_sha256": "aaf4673efeeea31caee22ae24c1902fbf7f7868e925dada406fd79617c72a7ab",
+      "output": "public/leadpilot/assets/jens.webp",
+      "output_sha256": "d68e6786205da00b44af1f6ca047e73c40711e13a4d14f10e22ce8d0cbe94195",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "leitfaden-1",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leitfaden Lead-Nachverfolgung1.png",
+      "source_sha256": "fdd65cdfa90bc19841043b43d5eae0e4bbfa0b3491c1b9e10b2e132b4e8abd34",
+      "output": "public/leadpilot/assets/leitfaden-1.webp",
+      "output_sha256": "54a4e0f59747394b132ba684fdf75557df7b539a2a72f37465cf85afb2bf72ce",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "leitfaden-2",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leitfaden Lead-Nachverfolgung2.png",
+      "source_sha256": "ead1830a8d30caa5f470cfa393aece5f3ddf62d13bf185627efa2449ca420271",
+      "output": "public/leadpilot/assets/leitfaden-2.webp",
+      "output_sha256": "a33966f0eb413115ba248cf57898b4f103fbbf8e4842a4be316a5855f7f71c4e",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "leitfaden-3",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leitfaden Lead-Nachverfolgung3.png",
+      "source_sha256": "6f10f4bd3973c1192a92a4894975af89f9b00b55eadfa5b69c102279825fdf3a",
+      "output": "public/leadpilot/assets/leitfaden-3.webp",
+      "output_sha256": "17ec03e84a873d914c1d1ef43b4e85cb3aad53888b61df68c18563a1c012089d",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "leitfaden-4",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leitfaden Lead-Nachverfolgung4.png",
+      "source_sha256": "c14c92e00a53b1abb30b4c7dc93b3802c481ce9fa50a345278272996ea7e94fa",
+      "output": "public/leadpilot/assets/leitfaden-4.webp",
+      "output_sha256": "0ac60dc7fd025d07fdfac53279f3468e5f5d204154fdf60b2ee82b740d9120fd",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "geschaeftsbericht",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot - Unternehmensdaten-Projekt Kontext/LeadPilot - Geschaeftsbericht2025.pdf",
+      "source_sha256": "76150d101aae163bb5d80e2de1ee0614bbb252c74b0cb1baad8277ea29f477c8",
+      "output": "public/leadpilot/assets/geschaeftsbericht.webp",
+      "output_sha256": "d1dafa0070e641b1e5c3cc7bafe0da0c93bd008104ac05a2b377a783763819d7",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "Poppler PDF page to WebP"
+    },
+    {
+      "id": "kundenpitch",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/Power-Friday/Kunden-Pitch(2.8)/LeadPilot Final Pitch-Deck Weidner.pdf",
+      "source_sha256": "ad90627fb41bd9426e257deb6108f9b99a716c56da628e49b39749afd1f6c5f6",
+      "output": "public/leadpilot/assets/kundenpitch.webp",
+      "output_sha256": "62e6e215a37780ee81f666a2598eac944bc2882e53b1ce789f332b7a09db3359",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "Poppler PDF page to WebP"
+    },
+    {
+      "id": "teampitch",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/Power-Friday/Team-Pitch(2.9)/Teampitch-Deck final mit Schlussfolie.pptx",
+      "source_sha256": "4eb9a90e774a96d5348d21959de8738f1b5be8dda6cf85e86bcb6631cc1535c0",
+      "output": "public/leadpilot/assets/teampitch.webp",
+      "output_sha256": "7b475f0ef548335de847d410604efa4f5ba6aa59cacd1b75d1afc112e48046c2",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "LibreOffice PDF preview to WebP; layout may differ"
+    },
+    {
+      "id": "teamdossier",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/Power-Friday/Team-Pitch(2.9)/Team-Pitch Dossier LeadPilot.docx",
+      "source_sha256": "529fe2f7cff292cbec39e4b482d249416748a169530b39cce76864e240a50458",
+      "output": "public/leadpilot/assets/teamdossier.webp",
+      "output_sha256": "18c901ffe98a271de2fb90746999d14941614b45a70ab63103c4feb063633ee2",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "LibreOffice PDF preview to WebP; layout may differ"
+    },
+    {
+      "id": "expo-spot",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo - Werbespot.mp4",
+      "source_sha256": "3cebc49d685ded35bfcf4cce6334e41be4f46a2b717633c72aa7ae55790aae22",
+      "output": "public/leadpilot/assets/expo-spot.mp4",
+      "output_sha256": "64633b467b7eae0f6da3f91ecd5776aa8a5107c0377fad8fd1cec2be038e6e29",
+      "poster": "public/leadpilot/assets/expo-spot-poster.webp",
+      "kind": "video",
+      "processing": "H.264 MP4, max 1280px, original audio retained"
+    },
+    {
+      "id": "expo-feature",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP-Werbespot2.mp4",
+      "source_sha256": "a63ab1f273d59b00f0eae1632e9d7b0dd1ca9f9f08561a2447fb77107bda29ef",
+      "output": "public/leadpilot/assets/expo-feature.mp4",
+      "output_sha256": "6f3c81fb1c2c376c1e3859e6a45bca24f9d179a0100e3d77bbdde8be6c9d5fde",
+      "poster": "public/leadpilot/assets/expo-feature-poster.webp",
+      "kind": "video",
+      "processing": "H.264 MP4, max 1280px, original audio retained"
+    },
+    {
+      "id": "erster-werbespot",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Werbespot.webm",
+      "source_sha256": "146fd5ffb0f5a996bbf4b0b5ac4fdc8aefc9cb21b497e5214b3e246589662141",
+      "output": "public/leadpilot/assets/erster-werbespot.mp4",
+      "output_sha256": "bef86b4b7295c9271d089452a27ef3594474ab7c668c455ca75f114d76839245",
+      "poster": "public/leadpilot/assets/erster-werbespot-poster.webp",
+      "kind": "video",
+      "processing": "H.264 MP4, max 1280px, original audio retained"
+    },
+    {
+      "id": "LeadPilotGrotesk-Regular.woff2",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/fonts/LeadPilotGrotesk-Regular.woff2",
+      "source_sha256": "b8e27fef3bb0e32fadfb1707f0cca5d195601e35df6309fdfc7cec5e7318d66b",
+      "output": "public/leadpilot/assets/LeadPilotGrotesk-Regular.woff2",
+      "output_sha256": "b8e27fef3bb0e32fadfb1707f0cca5d195601e35df6309fdfc7cec5e7318d66b",
+      "kind": "font"
+    },
+    {
+      "id": "LeadPilotGrotesk-OFL.txt",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/fonts/OFL.txt",
+      "source_sha256": "2ee3c193368816c5f1e6941e7ae77e0bbaa874fd1a6196a0dfe3d418d87fe8a3",
+      "output": "public/leadpilot/assets/LeadPilotGrotesk-OFL.txt",
+      "output_sha256": "2ee3c193368816c5f1e6941e7ae77e0bbaa874fd1a6196a0dfe3d418d87fe8a3",
+      "kind": "font"
+    }
+  ]
+}

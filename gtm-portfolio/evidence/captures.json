@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "lead-routing",
+    "source": "Neue lokale Portfolio-Demo, keine HubSpot-Oberfläche",
+    "url": "http://127.0.0.1:4317/cases/lead-routing",
+    "capturedAt": "2026-10-27T14:46:01.930Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/lead-routing.png",
+    "sha256": "4709e469b703d81db63547d6275bff13834f692435533d4ddfd7d6ef2111882f",
+    "synthetic": true
+  },
+  {
+    "slug": "ki-prospecting",
+    "source": "Neue lokale Portfolio-Demo, keine HubSpot-Oberfläche",
+    "url": "http://127.0.0.1:4317/cases/ki-prospecting",
+    "capturedAt": "2026-10-27T14:46:02.136Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/ki-prospecting.png",
+    "sha256": "c631b3693bcba5e89386cf5d6c8f883a17d09f74b6d3eca508b0e8f5fa64a2c3",
+    "synthetic": true
+  },
+  {
+    "slug": "leadpilot",
+    "view": "dashboard",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/dashboard",
+    "capturedAt": "2026-10-27T17:32:02.711Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-dashboard.jpg",
+    "sha256": "52027bf4d4c58d23d60a08b2acc8c18cf6fa0887e05d3169bc0f1c78db39abf2",
+    "synthetic": true,
+    "dataNote": "Historische Daten des fiktiven Unternehmens und synthetische Supabase-Seed-Datensätze"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "contacts",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/crm/leads",
+    "capturedAt": "2026-10-27T17:32:25.005Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-contacts.jpg",
+    "sha256": "fa6c2281ab2cad0fdc62e041746e217c0e49bb1f2523874854f57cd995b3a61b",
+    "synthetic": true,
+    "dataNote": "Historische Daten des fiktiven Unternehmens und synthetische Supabase-Seed-Datensätze"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "deals-filtered",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/crm/deals?suche=Enterprise",
+    "capturedAt": "2026-10-27T17:39:52.637Z",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "original": "evidence/captures/leadpilot-deals-filtered.jpg",
+    "sha256": "2d6cd422c33d93add694e8ffc64086f5831a70b17b062c12411e0ea68eeb7ede",
+    "synthetic": true,
+    "dataNote": "Historische Daten des fiktiven Unternehmens und synthetische Supabase-Seed-Datensätze"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "arr-details",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/dashboard/tiles/std_baseline_arr",
+    "capturedAt": "2026-10-27T17:40:32.193Z",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "original": "evidence/captures/leadpilot-arr-details.jpg",
+    "sha256": "d21409e7047765bdb61d043769c491c8d063398f614d6c4dc61b8ff2a39e99da",
+    "synthetic": true,
+    "dataNote": "Historische Daten des fiktiven Unternehmens und synthetische Supabase-Seed-Datensätze"
+  }
+]

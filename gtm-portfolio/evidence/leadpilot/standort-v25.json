@@ -1,0 +1,18 @@
+{
+  "kind": "location",
+  "time": "2026-10-28T09:18:20+01:00",
+  "original_sha256": "c637fb2492ba1aca9b54e63f6ededfd65600a970813c44da0437742449ae465d",
+  "output_sha256": "46ef6b65be5ebeab68d55b3ce08b7cfc9f7a80e90fe94c2fd65f4e2fceb8e1be",
+  "viewport": [
+    1498,
+    649
+  ],
+  "crop": [
+    259,
+    107,
+    1498,
+    649
+  ],
+  "source": "LeadPilot Dashboard-CRM v2.5.0; reguläre Viewer-Sitzung",
+  "output": "public/leadpilot/assets/standort-v25.webp"
+}
