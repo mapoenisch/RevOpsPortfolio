@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+dist/
+.cache/
+.playwright-mcp/
+*.tsbuildinfo
+tmp/
+.DS_Store
+.env*
+!.env.example
+**/evidence/private/
+docs/Cap_0.6.1_aarch64.dmg

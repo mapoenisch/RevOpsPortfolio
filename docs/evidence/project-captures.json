@@ -1,0 +1,35 @@
+{
+  "captures": [
+    {
+      "file": "docs/evidence/project-captures/jobscout-dashboard.png",
+      "sha256": "86f000c5c638fd3a326d9ab523cd428e5e49c2fdc3ffba9f41109d232f43a172",
+      "capturedAt": "2026-10-26T05:32:38.105Z",
+      "application": "JobScout, unveränderte lokale Anwendungskopie",
+      "data": "Explizit synthetische Demodaten; keine echten Bewerbungen",
+      "method": "Chrome, 1440 x 1000, echte gerenderte Oberfläche; keine API-Interception und keine Bildretusche"
+    },
+    {
+      "file": "docs/evidence/project-captures/jobscout-pipeline.png",
+      "sha256": "cc164952790e7625426b194efd6febd8cacb3a1a6d16c258a0ab56a3f0cdabb3",
+      "capturedAt": "2026-10-26T05:32:38.183Z",
+      "application": "JobScout, unveränderte lokale Anwendungskopie",
+      "data": "Explizit synthetische Demodaten; keine echten Bewerbungen",
+      "method": "Chrome, 1440 x 1000, echte gerenderte Oberfläche; keine API-Interception und keine Bildretusche"
+    }
+  ],
+  "codeEvidence": [
+    {
+      "file": "jobscout_app.py",
+      "sha256": "2a7ad0bc9394860873a8668f60580b243998486b0b084fce40750b5bb5f51ade",
+      "copyMatchesOriginal": true
+    },
+    {
+      "file": "job_scout.py",
+      "sha256": "c533f7e0c61b2c5f0e007ae2be9a89064be5c46aade69a083cff511ce063db0c",
+      "copyMatchesOriginal": true
+    }
+  ],
+  "pending": [
+    "LeadPilot: aktuelle Dashboard-Aufnahmen nach echter Anmeldung"
+  ]
+}

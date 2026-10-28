@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "lead-routing",
+    "duration": 90,
+    "bytes": 571789,
+    "source": "Bildschirmaufnahme der eigenständigen Portfolio-Demo; keine Aufnahme eines externen Systems.",
+    "recordedAt": "2026-10-27T19:16:05.270Z"
+  },
+  {
+    "slug": "ki-prospecting",
+    "duration": 90,
+    "bytes": 618843,
+    "source": "Bildschirmaufnahme der eigenständigen Portfolio-Demo; keine Aufnahme eines externen Systems.",
+    "recordedAt": "2026-10-27T14:52:01.719Z"
+  },
+  {
+    "slug": "leadpilot",
+    "duration": 90,
+    "bytes": 1189639,
+    "source": "Zeitlich geschnittener Bildschirm-Walkthrough aus tatsächlichen Browserframes der regulär angemeldeten Originalanwendung.",
+    "recordedAt": "2026-10-27T17:38:22.672Z",
+    "originalFrameCount": 114,
+    "recordingViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "outputViewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "editing": "Wartepausen zwischen Aufnahmeblöcken gekürzt; Zeitablauf auf 90 Sekunden angepasst; keine Daten oder Ansichten nachgebaut.",
+    "sections": [
+      {
+        "startSeconds": 0,
+        "view": "Dashboard: historische Stammdaten; Simulation pausiert"
+      },
+      {
+        "startSeconds": 24.779034076672513,
+        "view": "Kontakte: synthetischer Testdatensatz aus regulärer Supabase-Abfrage"
+      },
+      {
+        "startSeconds": 47.308631921824094,
+        "view": "Deal-Pipeline: Suchfilter Enterprise in synthetischem Datenbestand"
+      },
+      {
+        "startSeconds": 69.58735279378598,
+        "view": "ARR-Detail: Definition, Zeitraum und historische Quelle"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-27T19:02:27.395Z",
+  "mode": "read-only-preflight",
+  "configured": true,
+  "portalMatches": true,
+  "status": "portal-verified",
+  "checks": [
+    {
+      "label": "account",
+      "httpStatus": 200
+    },
+    {
+      "label": "small-owner",
+      "httpStatus": 200,
+      "matches": true
+    },
+    {
+      "label": "large-owner",
+      "httpStatus": 200,
+      "matches": true
+    }
+  ]
+}

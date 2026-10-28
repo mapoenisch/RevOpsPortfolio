@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:24.779
+LeadPilot: regulär angemeldete lokale Anwendung. Die Zahlen sind Stammdaten eines fiktiven Unternehmens.
+
+00:24.779 --> 00:47.309
+Kontakte werden mandantengebunden aus Supabase abgefragt. Zu sehen ist ein synthetischer Seed-Datensatz.
+
+00:47.309 --> 01:09.587
+Die Suche filtert die Deal-Pipeline auf „Enterprise“. Keine produktiven Kundendaten.
+
+01:09.587 --> 01:30.000
+Die Detailansicht erklärt Definition, Zeitraum und Quelle der Kennzahl. Die Simulation bleibt pausiert.

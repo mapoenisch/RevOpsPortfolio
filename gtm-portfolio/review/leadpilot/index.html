@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>LeadPilot · Materialauswahl</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/gallery.css">
+  <script defer src="/gallery.js"></script>
+</head>
+<body>
+  <a class="skip" href="#material">Zum Material springen</a>
+  <header class="topbar">
+    <a class="brand" href="#start"><span class="brand-mark"></span><span>Marc Pönisch <i>/</i> LeadPilot</span></a>
+    <span class="top-meta"><span class="status-dot"></span> LOKALE AUSWAHLGALERIE</span>
+  </header>
+  <main id="start">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> PROJEKTCHRONIK / VORAUSWAHL</p>
+        <h1>Die Geschichte<br>hinter <em>LeadPilot.</em></h1>
+        <p class="hero-text">Von der ersten Geschäftsidee bis zum eigenen Designsystem: Hier wählst du die Materialien aus, die später deine Projektchronik erzählen.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#material">Material entdecken <span aria-hidden="true">↘</span></a>
+          <a class="button subtle" href="#ablauf">So funktioniert die Auswahl <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-label">EIN PROJEKT <span>·</span> VIELE SCHRITTE</div>
+        <div class="art-orbit"><div class="art-orbit-inner"><img src="/file/LP-08-01" alt=""></div></div>
+        <div class="art-footer"><span>VON DER IDEE</span><span>2026</span><span>ZUR ANWENDUNG</span></div>
+      </div>
+    </section>
+    <section id="ablauf" class="intro">
+      <div><p class="eyebrow"><span></span> DEINE ENTSCHEIDUNG</p><h2>Eine gute Chronik<br>beginnt mit einer Auswahl.</h2></div>
+      <div class="intro-copy"><p>Du siehst hier Originalmaterial und dokumentierte Vorschläge. Öffne die Vorschauen, markiere deine Favoriten und kopiere die IDs anschließend in den Chat.</p>
+      <p>Die Markierung ist eine Merkliste. Erst deine Rückmeldung im Chat legt die endgültige Auswahl fest.</p></div>
+    </section>
+    <div id="material" class="workspace">
+      <aside class="sidebar" aria-label="Navigation und Merkliste">
+        <p class="aside-label">DIE MEILENSTEINE</p>
+        <nav id="section-nav" class="section-nav" aria-label="Meilensteine"></nav>
+        <div class="selection">
+          <div class="selection-header"><span>DEINE MERKLISTE</span><span id="count">0</span></div>
+          <p id="selection-description">Noch nichts vorgemerkt. Du kannst beliebig viele Kandidaten markieren.</p>
+          <div id="selected-list" class="selected-list"></div>
+          <button id="copy-selection" class="button dark" type="button" disabled>Auswahl für den Chat kopieren <span aria-hidden="true">↗</span></button>
+          <button id="clear-selection" class="clear" type="button" disabled>Merkliste leeren</button>
+          <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+          <label id="fallback-label" class="fallback-label" hidden>Auswahl zum manuellen Kopieren<textarea id="copy-fallback" rows="5" readonly></textarea></label>
+        </div>
+      </aside>
+      <div class="main-content">
+        <div class="list-intro"><div><p class="eyebrow"><span></span> DIE VORAUSWAHL</p><h2>Acht Kapitel.<br>Deine Geschichte.</h2></div><p id="materials-count">Material wird geladen …</p></div>
+        <div class="context-note"><strong>Zur Einordnung</strong><span>LeadPilot ist ein fiktives Unternehmensprojekt. Marketingmotive und Clips können illustrativ sein; historische Geschäftszahlen sind Szenariodaten.</span></div>
+        <div id="sections"></div>
+        <noscript><p>Für die lokale Auswahlgalerie wird JavaScript benötigt.</p></noscript>
+      </div>
+    </div>
+  </main>
+  <footer><span>LeadPilot · Materialauswahl</span><span>Nur lokal auf diesem Gerät</span></footer>
+</body>
+</html>
