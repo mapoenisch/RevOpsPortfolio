@@ -70,18 +70,15 @@ const videos = [
 ] as const;
 
 const marketing = [
-  { src: 'linkedin-frueh.webp', alt: 'Frühes LeadPilot-LinkedIn-Motiv zur Kontaktaufnahme mit Leads.', title: 'Ein früher LinkedIn-Post', note: 'Aus dem Contentprojekt, Juli 2026. Die genannte Quote ist ein illustrativer Marketingwert.' },
-  { src: 'problem-demo.webp', alt: 'Drei Contentmotive entlang des Wegs vom Messeproblem zur Demo.', title: 'Vom Problem zur Demo', note: 'Eine Contentreise für die fiktive Persona Jens Hartwig.' },
-  { src: 'expo-anzeige.webp', alt: 'Dunkle LeadPilot-Expo-Anzeige mit der Überschrift Messekontakt rein, nächster Schritt klar.', title: 'Eine Anzeige für LeadPilot Expo', note: 'Kampagnenmotiv und illustrative Produktansicht.' },
-  { src: 'messe-01.webp', alt: 'Messekontakt-Motiv mit der Frage Wer ruft jetzt an?', title: 'Nach der Messe', note: 'Erstes Motiv einer zusammengehörigen Bildfolge.' },
-  { src: 'messe-02.webp', alt: 'Illustration der Schritte vom Messekontakt zum nächsten Schritt.', title: 'Vom Kontakt zum nächsten Schritt', note: 'Zweites Motiv der Messe-Bildfolge.' },
-  { src: 'messe-03.webp', alt: 'Illustration einer aufgeräumten Messekontaktliste.', title: 'Die Messeliste ordnen', note: 'Drittes Motiv der Messe-Bildfolge.' },
-  { src: 'expo-features.webp', alt: 'Helle Übersicht mit illustrierten LeadPilot-Expo-Funktionen.', title: 'Die Expo-Features', note: 'Ein visueller Überblick über das fiktive Feature-Konzept.' },
-  { src: 'expo-import.webp', alt: 'Illustration: Eine Messeliste wird in ein CRM importiert.', title: 'Liste importieren', note: 'Erster Schritt einer illustrierten Messe-Nachbereitung.' },
-  { src: 'expo-person.webp', alt: 'Illustration: Ein Kontakt erhält eine verantwortliche Person.', title: 'Verantwortung zuweisen', note: 'Zweiter Schritt der illustrierten Messe-Nachbereitung.' },
-  { src: 'expo-schritt.webp', alt: 'Illustration: Für einen Kontakt wird ein nächster Schritt festgelegt.', title: 'Den nächsten Schritt festhalten', note: 'Dritter Schritt der illustrierten Messe-Nachbereitung.' },
-  { src: 'outreach.webp', alt: 'Übersicht einer Outreach-Sequenz mit E-Mail, LinkedIn und Telefon.', title: 'Vom Content zum Gespräch', note: 'Eine geplante Outreach-Sequenz ergänzt die Contentmotive.' },
-  { src: 'leitfaden-1.webp', alt: 'Erste Seite eines LeadPilot-Leitfadens zur Lead-Nachverfolgung.', title: 'Leitfaden zur Nachverfolgung', note: 'Ein weiteres Asset aus der Marketingarbeit.' },
+  { src: 'marketing/follow-up-problem.webp', phase: 'Früh', alt: 'Social-Media-Grafik: 120 Leads im Quartal, nur 33 werden wirklich bearbeitet.', title: 'Kein Lead-Problem, ein Follow-up-Problem', note: 'Ein frühes Motiv, das das Kernproblem der Geschäftsidee in einer Zahl zeigt. Die Werte sind illustrativ.' },
+  { src: 'marketing/landingpage.webp', phase: 'Früh', alt: 'Entwurf einer LeadPilot-Landingpage mit der Überschrift Kein Lead wird mehr vergessen.', title: 'Die erste Landingpage', note: 'Entwurf der Startseite mit Nutzenversprechen und Testangebot. Die genannte Steigerung ist ein Platzhalterwert.' },
+  { src: 'marketing/connect-mail.webp', phase: 'Früh', alt: 'Kunden-E-Mail zur Einführung der Integration LeadPilot Connect.', title: 'Launch-Mail für LeadPilot Connect', note: 'Kunden-E-Mail aus dem Launch-Sprint zur Zapier- und Make-Integration im August 2026.' },
+  { src: 'marketing/ki-scoring-mail.webp', phase: 'Früh', alt: 'Produkt-E-Mail: KI-Scoring zeigt, welcher Lead zuerst dran ist.', title: 'Feature-Mail zum KI-Scoring', note: 'Onboarding-Mail, die ein neues Feature in drei Schritten erklärt.' },
+  { src: 'marketing/mql-handoff.webp', phase: 'Früh', alt: 'Internes Dokument zum MQL-Handoff in drei Schritten zwischen Marketing und Sales.', title: 'MQL-Handoff an Sales', note: 'Interne Übergaberegel vom August 2026: Wann ein Lead an Sales geht und was danach dokumentiert wird.' },
+  { src: 'marketing/expo-features.webp', phase: 'Aktuell', alt: 'Anzeige: Alle Messe-Features von LeadPilot Expo im Überblick.', title: 'LeadPilot Expo · Feature-Übersicht', note: 'Kampagnenmotiv vom Oktober 2026 mit zehn Funktionen rund um Messekontakte.' },
+  { src: 'marketing/expo-anzeige.webp', phase: 'Aktuell', alt: 'Anzeige: Messekontakt rein, nächster Schritt klar. Ein Smartphone scannt eine Visitenkarte.', title: 'LeadPilot Expo · Anzeige', note: 'Hauptmotiv der Expo-Kampagne, Oktober 2026.' },
+  { src: 'marketing/messe-workflow.webp', phase: 'Aktuell', alt: 'Vier Schritte vom Import der Messeliste bis zum Anruf beim Kontakt.', title: 'Messe-Workflow in vier Schritten', note: 'Erklärgrafik vom Oktober 2026. Die Oberflächen sind Konzeptmotive.' },
+  { src: 'marketing/messe-demo.webp', phase: 'Aktuell', alt: 'Anzeige für die Decision-Phase: Ihre Messe-Liste, 30 Minuten Klarheit.', title: 'Demo-Angebot für die Entscheidungsphase', note: 'Contentpiece entlang der Customer Journey, Oktober 2026.' },
 ] as const;
 
 function SourceNote({ children }: { children: ReactNode }) {
@@ -98,7 +95,7 @@ function MarketingGallery() {
   const move = (delta: number) => setIndex((index + delta + marketing.length) % marketing.length);
   return <div className="lp-gallery" aria-label="Marketinggalerie">
     <figure className="lp-gallery-image"><Thumb src={asset + current.src} alt={current.alt} caption={current.title} /></figure>
-    <div className="lp-gallery-footer"><div aria-live="polite"><span className="lp-gallery-count">{String(index + 1).padStart(2, '0')} / {marketing.length}</span><h3>{current.title}</h3><p>{current.note}</p></div><div className="lp-gallery-controls"><button type="button" onClick={() => move(-1)} aria-label="Vorheriges Marketingmotiv"><ChevronLeft size={20} /></button><button type="button" onClick={() => move(1)} aria-label="Nächstes Marketingmotiv"><ChevronRight size={20} /></button></div></div>
+    <div className="lp-gallery-footer"><div aria-live="polite"><span className="lp-gallery-count">{String(index + 1).padStart(2, '0')} / {marketing.length}</span><h3><span className="lp-phase">{current.phase}</span> {current.title}</h3><p>{current.note}</p></div><div className="lp-gallery-controls"><button type="button" onClick={() => move(-1)} aria-label="Vorheriges Marketingmotiv"><ChevronLeft size={20} /></button><button type="button" onClick={() => move(1)} aria-label="Nächstes Marketingmotiv"><ChevronRight size={20} /></button></div></div>
     <div className="lp-gallery-thumbs" aria-label="Marketingmotiv auswählen">{marketing.map((item, i) => <button type="button" key={item.src} className={i === index ? 'active' : ''} aria-label={`Motiv ${i + 1}: ${item.title}`} aria-pressed={i === index} onClick={() => setIndex(i)}><img src={asset + item.src} alt="" width="90" height="60" loading="lazy" /></button>)}</div>
   </div>;
 }
@@ -145,7 +142,7 @@ export default function LeadPilotChronik() {
         <SourceNote><p>Projektordner „LeadPilot – Unternehmensdaten-Projekt Kontext“ und Marketingplanung H2 2026. Die Geschäftsjahre gehören zur fiktiven Unternehmensgeschichte und sind nicht mit dem Entstehungsdatum des Projekts gleichzusetzen. Rechtsdokumente sind Übungsentwürfe, keine geprüften Verträge.</p></SourceNote>
       </section>
       <section className="lp-chapter"><ChapterTitle number="03" kicker="Juli bis Oktober 2026 · Sichtbar werden" title="Eine Idee braucht eine Stimme." id="marketing" />
-        <p>Aus der Zielgruppe und ihrem Problem entwickelte ich Contentideen: erste LinkedIn-Motive, eine Contentstrategie und später eine Kampagne rund um Messekontakte.</p>
+        <p>Aus der Zielgruppe und ihrem Problem entwickelte ich Content: zuerst Social-Posts, Landingpage und E-Mails, später eine Kampagne rund um Messekontakte. Die Galerie zeigt frühe und aktuelle Arbeiten.</p>
         <MarketingGallery />
         <p className="lp-caption">Marketingentwürfe für das fiktive Projekt; gezeigte Oberflächen sind Konzeptmotive.</p>
         <h3 className="lp-subhead">LeadPilot in Bewegung</h3>
@@ -153,7 +150,7 @@ export default function LeadPilotChronik() {
         <h3 className="lp-subhead">Prozesse visualisieren</h3>
         <p>Diagramme halfen dabei, abstrakte Vertriebsabläufe verständlich zu machen: von der Einordnung eines Leads bis zum nächsten Schritt nach einer Messe.</p>
         <div className="lp-thumb-row"><ThumbFigure src={asset + 'leadqualifizierung.webp'} alt="Grafik zur Einordnung kalter, warmer und heißer Leads nach Kaufabsicht und Zielkundenpassung" caption="Lead-Qualifizierung · kalt, warm, heiß" /><ThumbFigure src={asset + 'expo-nachbereitung.webp'} alt="Drei illustrierte Schritte: Messeliste importieren, Person zuweisen und nächsten Schritt festhalten" caption="Expo-Nachbereitung · drei Schritte" /></div>
-        <SourceNote><p>Meine Lösung zur Contentstrategie, ausgewählte Materialien aus den LeadPilot-Marketing- und Expo-Ordnern sowie die Originalclips „LP-Werbespot2“ und „LP Expo – Werbespot“. Die im frühen LinkedIn-Motiv genannte Prozentzahl wurde nicht als Tatsache übernommen. Gezeigte Produktoberflächen und Prozessgrafiken sind Konzepte, kein Nachweis implementierter Funktionen.</p></SourceNote>
+        <SourceNote><p>Meine Auswahl aus den LeadPilot-Marketing- und Expo-Materialien, Juli bis Oktober 2026 sowie die Originalclips „LP-Werbespot2“ und „LP Expo – Werbespot“. Zahlen in den Motiven sind Marketingbeispiele, keine Ergebnisse. Gezeigte Produktoberflächen und Prozessgrafiken sind Konzepte, kein Nachweis implementierter Funktionen.</p></SourceNote>
       </section>
       <section className="lp-chapter"><ChapterTitle number="04" kicker="2026 · Gestaltung" title="Ein System für die Marke." id="design" />
         <p>Mit dem Designsystem erhielt LeadPilot eine gemeinsame visuelle Sprache: Logo, Farben, Typografie und Komponenten. Es wurde zur Grundlage des späteren Frontends im Dashboard-CRM.</p>
