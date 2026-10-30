@@ -16,7 +16,7 @@ const chapters = [
 ] as const;
 
 const marketing = [
-  { src: 'linkedin-frueh.webp', alt: 'Frühes LeadPilot-LinkedIn-Motiv zur Kontaktaufnahme mit Leads.', title: 'Ein früher LinkedIn-Post', note: 'Aus dem Contentprojekt, Juli 2026. Die im Motiv genannte Quote ist nicht unabhängig belegt.' },
+  { src: 'linkedin-frueh.webp', alt: 'Frühes LeadPilot-LinkedIn-Motiv zur Kontaktaufnahme mit Leads.', title: 'Ein früher LinkedIn-Post', note: 'Aus dem Contentprojekt, Juli 2026. Die genannte Quote ist ein illustrativer Marketingwert.' },
   { src: 'problem-demo.webp', alt: 'Drei Contentmotive entlang des Wegs vom Messeproblem zur Demo.', title: 'Vom Problem zur Demo', note: 'Eine Contentreise für die fiktive Persona Jens Hartwig.' },
   { src: 'expo-anzeige.webp', alt: 'Dunkle LeadPilot-Expo-Anzeige mit der Überschrift Messekontakt rein, nächster Schritt klar.', title: 'Eine Anzeige für LeadPilot Expo', note: 'Kampagnenmotiv und illustrative Produktansicht.' },
   { src: 'messe-01.webp', alt: 'Messekontakt-Motiv mit der Frage Wer ruft jetzt an?', title: 'Nach der Messe', note: 'Erstes Motiv einer zusammengehörigen Bildfolge.' },
@@ -64,20 +64,20 @@ export function LeadPilotTeaser() {
 export default function LeadPilotChronik() {
   return <article className="lp-chronicle">
     <div className="lp-hero section-pad"><Link className="back-link" to="/"><ArrowLeft size={16} /> Zur Startseite</Link><div className="lp-hero-grid"><div><span className="eyebrow">Projektchronik · seit Juli 2026</span><h1 tabIndex={-1}>Aus einer Idee<br />wird <span>LeadPilot.</span></h1><p>Ein fiktives B2B-Unternehmen als praktisches Lernprojekt: von den ersten Gedanken über Marketing und Pitch bis zur eigenen Anwendung.</p><a className="button blue" href="#idee">Die Geschichte entdecken <ArrowRight size={17} /></a></div><div className="lp-hero-art"><span>VON DER IDEE ZUR ANWENDUNG</span><img src={asset + 'logo.webp'} alt="LeadPilot-Logo" width="900" height="450" /><small>Konzeption & Umsetzung mit KI</small></div></div></div>
-    <div className="lp-boundary section-pad"><strong>Zur Einordnung</strong><p>LeadPilot ist ein fiktives Unternehmen aus meiner Weiterbildung. Unternehmenshistorie, Kennzahlen und Kundenbeispiele sind Szenariodaten. Marketingbilder zeigen zum Teil Produktkonzepte; sie belegen keine realen Kundenergebnisse.</p></div>
+    <div className="lp-boundary section-pad"><strong>Zur Einordnung</strong><p>LeadPilot ist ein fiktives Unternehmen aus meiner Weiterbildung. Historie, Kennzahlen, Kundenbeispiele und Marketingmotive sind Teil des Szenarios.</p></div>
     <div className="lp-layout section-pad"><aside className="lp-toc"><span>Auf dieser Seite</span><nav aria-label="Meilensteine der LeadPilot-Chronik">{chapters.map(([id,label],i) => <a key={id} href={`#${id}`}><small>{String(i+1).padStart(2,'0')}</small>{label}</a>)}</nav></aside>
     <div className="lp-content">
       <section className="lp-chapter"><ChapterTitle number="01" kicker="Juli 2026 · Der Anfang" title="Eine Idee für den Vertriebsalltag." id="idee" />
         <p className="lp-lead">Wie lässt sich verhindern, dass ein vielversprechender Kontakt nach dem ersten Gespräch liegen bleibt?</p>
         <p>Aus einer Aufgabe der Digital Business Akademie, ein fiktives B2B-Unternehmen zu entwickeln, entstand meine Idee für LeadPilot: ein einfach zugängliches Sales-CRM, das Vertriebsleitern hilft, Leads und nächste Schritte im Blick zu behalten.</p>
         <div className="lp-quote"><span>Die Ausgangsidee</span><p>Kein Lead soll verloren gehen, weil unklar ist, wer sich als Nächstes darum kümmert.</p></div>
-        <p>Der ursprüngliche Entwurf beschreibt eine automatische Zuweisung nächster Schritte als Produktidee. Die heutige CRM-Anwendung ist ein eigenständiger Entwicklungsstand; eine solche Engine wird hier nicht als umgesetzt behauptet.</p>
+        <p>Aus dieser Produktidee wurde Schritt für Schritt eine eigene CRM- und Reporting-Anwendung.</p>
         <SourceNote><p>DBA Kick-off-Intro zum Unternehmensprojekt, Task Sheet 2.1.11 und meine Lösung zur Geschäftsidee. Die Aufgabenstellung wird sinngemäß eingeordnet; ihr Originaldesign wird nicht übernommen.</p></SourceNote>
       </section>
       <section className="lp-chapter"><ChapterTitle number="02" kicker="Juli bis Oktober 2026 · Sichtbar werden" title="Eine Idee braucht eine Stimme." id="marketing" />
         <p>Aus der Zielgruppe und ihrem Problem entwickelte ich Contentideen: erste LinkedIn-Motive, eine Contentstrategie und später eine Kampagne rund um Messekontakte. Die Beispiele zeigen, wie aus einem fachlichen Problem unterschiedliche Formate entstehen.</p>
         <MarketingGallery />
-        <p className="lp-caption">Die Motive sind Marketingentwürfe für das fiktive Projekt. Dargestellte Oberflächen und Leistungsversprechen sind keine Funktionsnachweise.</p>
+        <p className="lp-caption">Marketingentwürfe für das fiktive Projekt; gezeigte Oberflächen sind Konzeptmotive.</p>
         <SourceNote><p>Meine Lösung zur Contentstrategie, früher LinkedIn-Post und ausgewählte Materialien aus den LeadPilot-Marketing- und Expo-Ordnern. Die im frühen Motiv genannte Prozentzahl wurde nicht als Tatsache übernommen.</p></SourceNote>
       </section>
       <section className="lp-chapter"><ChapterTitle number="03" kicker="2026 · Unternehmenskontext" title="Eine Welt, in der die Idee arbeiten kann." id="unternehmen" />
