@@ -1,4 +1,4 @@
-import type { RevenueAnalysis } from './content';
+import type { CaseAnalysis, RevenueAnalysis } from './content';
 import './revenue.css';
 
 const euro = (value: number) => `${value.toLocaleString('de-DE')} €`;
@@ -28,6 +28,23 @@ export function RevenueBlock({ data }: { data: RevenueAnalysis }) {
       <p className="rv-note">Die beiden größten Hebel liegen nach dem ersten Kontakt: bei der Testphase und bei der Kundenbindung.</p>
       {data.bridge.simulation && <p className="rv-sim-note">{data.bridge.simulation}</p>}
     </div>
+    <p className="rv-source">{data.source}</p>
+  </div>;
+}
+
+export function AnalysisBlock({ data }: { data: CaseAnalysis }) {
+  const top = Math.max(...data.panel.rows.map(r => r.value));
+  return <div className="revenue">
+    <p>{data.intro}</p>
+
+    <div className="rv-panel"><div className="rv-panel-head"><h3>{data.panel.title}</h3><span>{data.panel.caption}</span></div>
+      <ol className="rv-funnel">{data.panel.rows.map(row => <li key={row.label}><span className="rv-stage">{row.label}</span><span className="rv-bar"><span style={{ width: `${Math.max(3, row.value / top * 100)}%` }} /></span><strong>{row.value.toLocaleString('de-DE')}</strong><small>{row.note ?? '–'}</small></li>)}</ol>
+    </div>
+
+    <div className="rv-kpis">{data.kpis.map(k => <div key={k.label}><span>{k.label}</span><strong>{k.value}</strong><small>{k.note}</small></div>)}</div>
+
+    <h3 className="rv-heading">Meine Analyse</h3>
+    <div className="rv-findings">{data.findings.map((f, i) => <article key={f.title}><span>{String(i + 1).padStart(2, '0')}</span><h4>{f.title}</h4><p>{f.text}</p></article>)}</div>
     <p className="rv-source">{data.source}</p>
   </div>;
 }
