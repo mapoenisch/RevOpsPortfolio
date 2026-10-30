@@ -1,6 +1,4 @@
 node_modules/
-.next/
-out/
 dist/
 .cache/
 .playwright-mcp/
@@ -10,4 +8,5 @@ tmp/
 .env*
 !.env.example
 **/evidence/private/
-docs/Cap_0.6.1_aarch64.dmg
+gtm-portfolio/evidence/browser/
+gtm-portfolio/work/
