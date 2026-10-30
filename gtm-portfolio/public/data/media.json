@@ -10,8 +10,7 @@
         "Die Web-App verwendet React, TypeScript und Vite für Dashboard und CRM-Ansichten.",
         "Datenadapter und eine regulär angemeldete Supabase-Sitzung ermöglichen den Datenzugriff. Rollen und Mandanten werden per Row Level Security getrennt.",
         "Historische Ausgangswerte und der eingefrorene HubSpot-Import werden von Simulation und Live-Kennzahlen getrennt behandelt.",
-        "Die Simulation hat einen eigenen reproduzierbaren Zustand. Ein separater n8n-Ingest für Live-Kennzahlen ist im Quellprojekt vorhanden; dies belegt keinen aktuellen externen Lauf.",
-        "Eine automatische Next-Best-Action-Engine und eine laufende HubSpot-Synchronisierung sind nicht nachgewiesen. Die neuen Portfolio-Demos sind eigenständige Projekte."
+        "Die Simulation hat einen eigenen reproduzierbaren Zustand. Ein separater n8n-Ingest liefert Live-Kennzahlen."
       ]
     },
     "screenshots": [
