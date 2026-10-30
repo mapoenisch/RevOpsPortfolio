@@ -1,23 +1,13 @@
 {
-  "generatedAt": "2026-10-28T08:31:01.996Z",
+  "generatedAt": "2026-10-30T14:53:14.341Z",
   "results": [
     {
       "width": 1440,
       "overflow": false,
       "brokenImages": [],
       "h1": 1,
-      "chapters": 8,
+      "chapters": 6,
       "videos": [
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
         {
           "autoplay": false,
           "preload": "none",
@@ -31,18 +21,8 @@
       "overflow": false,
       "brokenImages": [],
       "h1": 1,
-      "chapters": 8,
+      "chapters": 6,
       "videos": [
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
         {
           "autoplay": false,
           "preload": "none",
@@ -56,18 +36,8 @@
       "overflow": false,
       "brokenImages": [],
       "h1": 1,
-      "chapters": 8,
+      "chapters": 6,
       "videos": [
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
         {
           "autoplay": false,
           "preload": "none",
@@ -81,18 +51,8 @@
       "overflow": false,
       "brokenImages": [],
       "h1": 1,
-      "chapters": 8,
+      "chapters": 6,
       "videos": [
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
-        {
-          "autoplay": false,
-          "preload": "none",
-          "tracks": 1
-        },
         {
           "autoplay": false,
           "preload": "none",
@@ -107,9 +67,9 @@
   "checks": [
     "Teaser und Case-Verweis",
     "Galerie vor/zurück",
-    "drei Vorher-Nachher-Vergleiche",
+    "vier Vorher-Nachher-Vergleiche mit Lightbox",
     "Untertiteldateien",
-    "drei Videos starten",
+    "alle Clips starten",
     "keine Autoplay-Videos"
   ]
 }

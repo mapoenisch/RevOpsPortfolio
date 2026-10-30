@@ -25,3 +25,4 @@
 @media (max-width:760px){.lp-compare-pair>div{grid-template-columns:1fr}}
 .lp-gallery{min-width:0;max-width:100%}.lp-gallery-thumbs{overflow-x:auto;max-width:100%}
 @media (max-width:760px){.lp-design-row{grid-template-columns:minmax(0,1fr)}}
+.lp-doc-group li>div{min-width:0}.lp-doc-group strong{overflow-wrap:anywhere;hyphens:auto}
