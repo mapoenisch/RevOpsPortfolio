@@ -18,7 +18,7 @@
 .rv-heading{font-size:18px;margin-top:6px}
 .rv-findings{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .rv-findings article{border-top:2px solid var(--blue);padding-top:16px}
-.rv-findings article>span{font:10px ui-monospace,monospace;color:#667a9f}
+.rv-findings article>span{font:10px ui-monospace,monospace;color:#4f6185}
 .rv-findings h4{font-family:'Manrope',sans-serif;font-size:15px;font-weight:600;letter-spacing:-.02em;margin:8px 0 8px}
 .rv-findings p{font-size:13px;line-height:1.8}
 .rv-bridge li{display:grid;grid-template-columns:200px 1fr 110px;align-items:center;gap:14px;font-size:13px}
