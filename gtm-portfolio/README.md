@@ -38,7 +38,7 @@ Auf der Startseite steht unter den Arbeitsproben der Button „LeadPilot-Entsteh
 - Inhalt und Komponenten: `src/LeadPilotChronik.tsx`; Gestaltung: `src/leadpilot-chronik.css`.
 - Ausgewählte Bilder, drei Werbeclips, Untertitel und Schriftdateien: `public/leadpilot/assets/`. Die Marketinggalerie enthält zwölf durchblätterbare Motive.
 - Die Dashboard-Vergleiche zeigen historische Ansichten neben regulär angemeldeten Viewer-Aufnahmen aus v2.5.0. Die neuen Standort- und Steckbriefaufnahmen stammen vom 28. Oktober 2026; ihre Herkunft und Hashes sind unter `evidence/leadpilot/` dokumentiert.
-- Auswahl, Quelldokumentation und Medienherkunft: `evidence/leadpilot/selection.json`, `evidence/leadpilot/QUELLEN.md` und `evidence/leadpilot/media-sources.json`. Die separate Materialauswahl unter `review/leadpilot/` gehört nicht zum Produktions-Build.
+- Auswahl, Quelldokumentation und Medienherkunft: `evidence/leadpilot/selection.json`, `evidence/leadpilot/QUELLEN.md` und `evidence/leadpilot/media-sources.json`.
 - Die DBA-Kick-off-Aufgabe wird sinngemäß beschrieben, ohne ihr Originaldesign zu übernehmen. LeadPilot Grotesk ist eine modifizierte Space Grotesk; die beiliegende SIL Open Font License liegt neben der Schriftdatei.
 - Das von Marc angegebene Claude-Artefakt ist als externer Link eingebunden; sein Inhalt konnte nicht unabhängig abgerufen werden. Die Zeitmarken der englischen Untertitel des ersten Werbespots sind geschätzt und müssen beim Abspielen noch auf Synchronität geprüft werden.
 

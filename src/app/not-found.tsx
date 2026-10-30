@@ -1,2 +1,0 @@
-import Link from "next/link";
-export default function NotFound() { return <main id="inhalt" className="container not-found"><p className="eyebrow">404 / Seite nicht gefunden</p><h1>Hier geht es<br />noch nicht weiter.</h1><p>Die gesuchte Seite ist nicht vorhanden. Auf der Startseite finden Sie die Projekte und Kontaktmöglichkeiten.</p><Link className="button button-primary" href="/">Zur Startseite <span aria-hidden="true">→</span></Link></main>; }
