@@ -144,5 +144,19 @@
     },
     "original": "evidence/captures/leadpilot-unit-economics.jpg",
     "sha256": "0c0e5e486b029ebb4da741691fc4d0037d3182fb7e3f917b63aacac0fe2b5c1f"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "scenario-compare",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Manager-Testzugang aus den Seed-Daten, keine Authentifizierung umgangen. Zwei Szenario-Versionen (v2: dritter Sales Rep, v3: Churn 2,2 %) in der App angelegt und je einmal simuliert.",
+    "url": "http://127.0.0.1:4175/crm/live-simulation",
+    "capturedAt": "2026-10-30T01:31:24.526Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-scenario-compare.jpg",
+    "sha256": "51ddd5d6b554151dee19259c9c498be8cd94310553be3cebc69054b563f0009a"
   }
 ]
