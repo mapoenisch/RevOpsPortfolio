@@ -2,7 +2,14 @@ export type CaseStudy = {
   slug: string; number: string; name: string; category: string; title: string; short: string; status: string;
   stack: string[]; problem: string; goal: string; decisions: { title: string; text: string }[];
   contribution: string[]; results: string[]; limits: string; learnings: string[]; sources: string[];
-  revenue?: RevenueAnalysis;
+  revenue?: RevenueAnalysis; analysis?: CaseAnalysis;
+};
+
+export type CaseAnalysis = {
+  heading: string; intro: string; source: string;
+  panel: { title: string; caption: string; rows: { label: string; value: number; note?: string }[] };
+  kpis: { label: string; value: string; note: string }[];
+  findings: { title: string; text: string }[];
 };
 
 export type RevenueAnalysis = {
@@ -90,6 +97,29 @@ export const cases: CaseStudy[] = [
     results: ['Ende-zu-Ende-Test über n8n-Webhook, Gateway und HubSpot bestanden: sieben Prüffälle, beide Zuständigkeitsregeln im CRM zurückgelesen.', 'Auch bei wiederholten und parallelen Eingängen entsteht genau ein Kontakt mit genau einer Folgeaufgabe.', 'Unvollständige Anfragen landen in der manuellen Prüfung; Anfragen ohne Zugangsschlüssel weist der Webhook ab.'],
     limits: 'Die interaktive Demo nutzt ein simuliertes CRM; der HubSpot-Lauf mit synthetischen Testdaten ist im Testbericht dokumentiert.',
     learnings: ['Datenqualität beginnt vor dem ersten CRM-Schreibzugriff. HubSpot lehnt die Endung .example ab; der externe Test verwendet reservierte example.com-Adressen.', 'Ein erneuter Versuch darf keine zweite Aufgabe auslösen.', 'Bei unklarem Schreibstatus ist eine manuelle Prüfung sinnvoller als ein blinder Wiederholungsversuch.'],
+    analysis: {
+      heading: 'Was der Testlauf zeigt.',
+      intro: 'Bevor der Ablauf als fertig galt, habe ich ihn gegen ein echtes CRM laufen lassen: sieben synthetische Eingänge über n8n-Webhook und Gateway nach HubSpot, danach jeden Datensatz zurückgelesen.',
+      source: 'Testbericht n8n/HubSpot vom 27.10.2026 · synthetische Testdaten',
+      panel: { title: 'Sieben Eingänge, drei Ergebnisse', caption: 'Anzahl Prüffälle je Ausgang', rows: [
+        { label: 'Neu angelegt', value: 2, note: 'HTTP 201' },
+        { label: 'Als Dublette erkannt', value: 4, note: 'HTTP 200' },
+        { label: 'Manuelle Prüfung', value: 1, note: 'HTTP 422' },
+      ] },
+      kpis: [
+        { label: 'Prüffälle bestanden', value: '7 / 7', note: 'inkl. Wiederholungen' },
+        { label: 'Kontakte in HubSpot', value: '2', note: 'trotz 6 gültiger Eingänge' },
+        { label: 'Folgeaufgaben', value: '2', note: 'je Kontakt genau eine' },
+        { label: 'Zuständigkeit korrekt', value: '2 / 2', note: 'im CRM zurückgelesen' },
+        { label: 'Ohne Zugangsschlüssel', value: 'HTTP 403', note: 'Webhook abgewiesen' },
+        { label: 'Testumgebung', value: 'isoliert', note: 'n8n danach gestoppt' },
+      ],
+      findings: [
+        { title: 'Dubletten sind der Normalfall', text: 'Vier von sieben Eingängen waren Wiederholungen, zwei davon nur anders geschrieben. Ohne vereinheitlichte E-Mail-Adresse wären allein daraus zwei zusätzliche Kontakte entstanden.' },
+        { title: 'Zurücklesen statt vertrauen', text: 'Eine erfolgreiche Antwort der API heißt noch nicht, dass Zuständigkeit und Aufgabe stimmen. Erst das Zurücklesen aus HubSpot hat beides für beide Regeln bestätigt.' },
+        { title: 'Lücken gehen an Menschen', text: 'Der Eingang mit fehlender Pflichtangabe wurde nicht geraten oder ergänzt, sondern in die manuelle Prüfung gegeben. Das schützt die Datenqualität im CRM.' },
+      ],
+    },
     sources: ['Eigenständige Demo: demos/routing/core.mjs', 'Prüffälle: tests/routing.test.mjs', 'HubSpot-Adapter: demos/routing/adapters.mjs', 'n8n-Export: demos/routing/workflow.n8n.json', 'Externer Webhook-Test: scripts/test-n8n.mjs und evidence/hubspot-n8n-results.json'],
   },
   {
@@ -108,6 +138,31 @@ export const cases: CaseStudy[] = [
     results: ['50 Profile in einem reproduzierbaren Lauf bewertet – jederzeit erneut ausführbar.', 'Jede Punktzahl lässt sich auf sechs Einzelkriterien zurückführen.', 'Ein lokales Sprachmodell liefert Kontext und Kontaktentwürfe; der Laufbericht dokumentiert jede Antwort.'],
     limits: 'Die Profile sind synthetisch, es werden keine Nachrichten versandt. Der Score priorisiert, er prognostiziert keine Kaufwahrscheinlichkeit.',
     learnings: ['Ein Score hilft nur, wenn die Kriterien zur Entscheidung passen.', 'Ein Schema sichert das Format, nicht automatisch die fachliche Qualität.', 'Der Nutzen von KI lässt sich besser prüfen, wenn Regeln, Modellantwort und menschliche Prüfung getrennt bleiben.'],
+    analysis: {
+      heading: 'Was der Bewertungslauf zeigt.',
+      intro: 'Nach dem Lauf habe ich nicht nur auf die Top-Profile geschaut, sondern geprüft, wie sich die Punktzahlen verteilen und ob Regeln und Sprachmodell zum selben Ergebnis kommen.',
+      source: 'Laufbericht · 50 synthetische Profile · lokales Modell qwen3:1.7b · 0 Cloud-Aufrufe',
+      panel: { title: 'Von 50 Profilen zu 25 Entwürfen', caption: 'Profile je Stufe', rows: [
+        { label: 'Profile gesamt', value: 50 },
+        { label: 'Im Zielmarkt DACH', value: 36, note: '72 %' },
+        { label: '75 bis 89 Punkte', value: 11 },
+        { label: '90 bis 100 Punkte', value: 14 },
+        { label: 'Kontaktentwürfe', value: 25, note: 'ab 75 Punkten' },
+      ] },
+      kpis: [
+        { label: 'Vorab ausgesondert', value: '14', note: 'außerhalb DACH, kein Modellaufruf' },
+        { label: 'Gültige KI-Antworten', value: '36 / 36', note: 'Schema eingehalten' },
+        { label: 'Laufzeit', value: '41 s', note: 'lokal, 61 Modellaufrufe' },
+        { label: 'Schwächstes Kriterium', value: '69 %', note: 'Entscheidungsnahe Rolle' },
+        { label: 'Unter 75 Punkten', value: '11', note: 'kein Entwurf' },
+        { label: 'Cloud-Aufrufe', value: '0', note: 'Daten bleiben lokal' },
+      ],
+      findings: [
+        { title: 'Das Modell trennt nicht', text: 'Das Sprachmodell hat alle 36 Profile als relevant eingeschätzt, auch die elf unter 75 Punkten. Die eigentliche Auswahl leisten die Regeln. Die KI ergänzt Kontext, sie entscheidet nicht.' },
+        { title: 'Die Rolle entscheidet am häufigsten', text: 'Beim Kriterium Entscheidungsnahe Rolle erreichen die Profile im Schnitt nur 69 % der Punkte. Hier lohnt sich die Recherche vor dem Erstkontakt am meisten.' },
+        { title: 'Früh filtern spart Aufwand', text: '14 von 50 Profilen lagen außerhalb des Zielmarkts und wurden vor dem Modellaufruf aussortiert. So bleibt der KI-Schritt klein und nachvollziehbar.' },
+      ],
+    },
     sources: ['Bewertungsregeln: demos/prospecting/core.mjs', '50 Testprofile: demos/prospecting/fixtures.mjs', 'Lokaler Runner: demos/prospecting/run.mjs', 'Ausgabevalidierung: tests/prospecting.test.mjs'],
   },
 ];
