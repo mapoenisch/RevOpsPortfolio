@@ -10,24 +10,6 @@
       "processing": "WebP, max 900px, transparent margins trimmed"
     },
     {
-      "id": "brand-board",
-      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/assets/brand/mockup-board-1.png",
-      "source_sha256": "6ea1257d27e0196620c577f0c0354c6bdb53b0abe9f29789e78b36c90446778c",
-      "output": "public/leadpilot/assets/brand-board.webp",
-      "output_sha256": "d75dde06ca9581f6205ba5ab16f348d5cd5cf127732af74c1619d9ccc86214d6",
-      "kind": "image",
-      "processing": "WebP, max 1600px"
-    },
-    {
-      "id": "dashboard-early",
-      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/uploads/2026-08-11_10-58-42.png",
-      "source_sha256": "7651fa999c766a60d46a86df247fd8cd2a1528b847915e63f55bd57423d11176",
-      "output": "public/leadpilot/assets/dashboard-early.webp",
-      "output_sha256": "d17b309e452beccbd017fcd9f2d4912532980849f375cd4243c8f68a25d99b41",
-      "kind": "image",
-      "processing": "WebP, max 1600px"
-    },
-    {
       "id": "leadqualifizierung",
       "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leadqualifizierung.png",
       "source_sha256": "bdf03586618abeba50dcf6adf2980efbf313df3b360d9b32b3299a4d0f5e9db0",
