@@ -88,5 +88,75 @@
     "sha256": "d21409e7047765bdb61d043769c491c8d063398f614d6c4dc61b8ff2a39e99da",
     "synthetic": true,
     "dataNote": "Historische Daten des fiktiven Unternehmens und synthetische Supabase-Seed-Datensätze"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "funnel",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/sales/funnel",
+    "capturedAt": "2026-10-30T00:30:18.265Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-funnel.jpg",
+    "sha256": "90871e3f05c4963230d622b6facaa2d71065267417aa1c79933c1b314ffb587a"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "sla",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/sales/sla",
+    "capturedAt": "2026-10-30T00:30:18.265Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-sla.jpg",
+    "sha256": "b1eaa0f16ab3296705d8831c43287174c2431e49b34bf39d20c2f3b49b735946"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "channels",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/sales/channels",
+    "capturedAt": "2026-10-30T00:30:18.265Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-channels.jpg",
+    "sha256": "df94d5d16df7931bb8517b0ef5ac214a1cdee70129003885bf5c2b42e798c51f"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "unit-economics",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+    "url": "http://127.0.0.1:4175/finance/unit-economics",
+    "capturedAt": "2026-10-30T00:30:18.265Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-unit-economics.jpg",
+    "sha256": "0c0e5e486b029ebb4da741691fc4d0037d3182fb7e3f917b63aacac0fe2b5c1f"
+  },
+  {
+    "slug": "leadpilot",
+    "view": "scenario-compare",
+    "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+    "session": "Regulär angemeldeter Manager-Testzugang aus den Seed-Daten, keine Authentifizierung umgangen. Zwei Szenario-Versionen in der App angelegt, je nur ein Parameter gegenüber v1 geändert (v4: Churn 1,8 %, v5: Trial-to-Paid 26 %), je einmal über 30 Tage simuliert. Ältere Versionen v2/v3 im Vergleich abgewählt.",
+    "url": "http://127.0.0.1:4175/crm/live-simulation",
+    "capturedAt": "2026-10-30T09:50:05.744Z",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "original": "evidence/captures/leadpilot-scenario-compare.jpg",
+    "sha256": "1857c7b872dec9119e6ed5c588ac1f026c08067aec2153e181d2ff331ee5b317"
   }
 ]

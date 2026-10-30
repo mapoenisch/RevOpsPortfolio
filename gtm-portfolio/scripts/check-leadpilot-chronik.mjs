@@ -43,15 +43,19 @@ try {
   await page.getByRole('link',{name:'Die Projektchronik ansehen'}).click();
   assert.equal(new URL(page.url()).pathname,'/leadpilot');
   await page.locator('.lp-chapter').first().waitFor();
-  assert.equal(await page.locator('.lp-chapter').count(),8);
-  assert.equal(await page.locator('.lp-gallery-count').textContent(),'01 / 12');
+  assert.equal(await page.locator('.lp-chapter').count(),6);
+  assert.equal(await page.locator('.lp-gallery-count').textContent(),'01 / 9');
   await page.getByRole('button',{name:'Nächstes Marketingmotiv'}).click();
-  assert.equal(await page.locator('.lp-gallery-count').textContent(),'02 / 12');
+  assert.equal(await page.locator('.lp-gallery-count').textContent(),'02 / 9');
   await page.getByRole('button',{name:'Vorheriges Marketingmotiv'}).click();
-  assert.equal(await page.locator('.lp-gallery-count').textContent(),'01 / 12');
-  assert.equal(await page.locator('.lp-compare').count(),3);
-  assert.equal(await page.locator('.lp-compare a[aria-label]').count(),6);
-  for (const video of await page.locator('.lp-video video').all()) {
+  assert.equal(await page.locator('.lp-gallery-count').textContent(),'01 / 9');
+  assert.equal(await page.locator('.lp-compare-pair').count(),4);
+  assert.equal(await page.locator('.lp-compare-pair button[aria-label$="vergrößern"]').count(),10);
+  await page.locator('.lp-compare-pair button[aria-label$="vergrößern"]').first().click();
+  await page.getByRole('button',{name:'Dialog schließen'}).click();
+  const clipCount=Number((await page.locator('.lp-video .eyebrow').textContent()).split('/')[1]);
+  for (let clip=0; clip<clipCount; clip++) {
+    const video=page.locator('.lp-video video');
     await video.scrollIntoViewIfNeeded();
     const state = await video.evaluate(async element => {
       element.muted = true;
@@ -65,6 +69,7 @@ try {
     });
     assert.ok(state.time>0 && state.duration>0);
     assert.equal(state.error,null);
+    if (clip<clipCount-1) await page.getByRole('button',{name:'Nächster Clip'}).click();
   }
   await page.locator('#dashboard').scrollIntoViewIfNeeded();
   await page.screenshot({path:root+'evidence/leadpilot/qa-vergleich.png'});
@@ -77,8 +82,8 @@ try {
     assert.ok((await response.text()).startsWith('WEBVTT'),path);
   }
   const failed=results.filter(item => item.overflow || item.brokenImages.length || item.h1!==1 ||
-    item.chapters!==8 || item.violations.length || item.videos.some(v=>v.autoplay || v.preload!=='none' || v.tracks!==1));
-  const report={generatedAt:new Date().toISOString(),results,errors,external,checks:['Teaser und Case-Verweis','Galerie vor/zurück','drei Vorher-Nachher-Vergleiche','Untertiteldateien','drei Videos starten','keine Autoplay-Videos']};
+    item.chapters!==6 || item.violations.length || item.videos.some(v=>v.autoplay || v.preload!=='none' || v.tracks!==1));
+  const report={generatedAt:new Date().toISOString(),results,errors,external,checks:['Teaser und Case-Verweis','Galerie vor/zurück','vier Vorher-Nachher-Vergleiche mit Lightbox','Untertiteldateien','alle Clips starten','keine Autoplay-Videos']};
   await writeFile(root+'evidence/leadpilot/qa-browser.json',JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify({results,errors,external,failed:failed.length},null,2));
   assert.deepEqual(errors,[]);

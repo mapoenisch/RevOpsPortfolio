@@ -5,3 +5,8 @@ dist/
 !.env.example
 evidence/private/
 .DS_Store
+
+# Lokale Rohdaten, nicht versioniert
+/Dashboard  alt - Anwendung jetzt/
+/demos/hubspot/
+/Assets/

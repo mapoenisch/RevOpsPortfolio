@@ -10,25 +10,39 @@
         "Die Web-App verwendet React, TypeScript und Vite für Dashboard und CRM-Ansichten.",
         "Datenadapter und eine regulär angemeldete Supabase-Sitzung ermöglichen den Datenzugriff. Rollen und Mandanten werden per Row Level Security getrennt.",
         "Historische Ausgangswerte und der eingefrorene HubSpot-Import werden von Simulation und Live-Kennzahlen getrennt behandelt.",
-        "Die Simulation hat einen eigenen reproduzierbaren Zustand. Ein separater n8n-Ingest für Live-Kennzahlen ist im Quellprojekt vorhanden; dies belegt keinen aktuellen externen Lauf.",
-        "Eine automatische Next-Best-Action-Engine und eine laufende HubSpot-Synchronisierung sind nicht nachgewiesen. Die neuen Portfolio-Demos sind eigenständige Projekte."
+        "Die Simulation hat einen eigenen reproduzierbaren Zustand. Ein separater n8n-Ingest liefert Live-Kennzahlen."
       ]
     },
     "screenshots": [
       {
+        "src": "/media/leadpilot-funnel.webp",
+        "alt": "Sales Funnel 2025 · Stufen-Conversion von 1.776 Leads bis 47 Neukunden",
+        "caption": "Sales Funnel 2025 · Stufen-Conversion von 1.776 Leads bis 47 Neukunden"
+      },
+      {
+        "src": "/media/leadpilot-sla.webp",
+        "alt": "SLA Marketing & Sales · Übergabepunkt und Pflichten beider Teams",
+        "caption": "SLA Marketing & Sales · Übergabepunkt und Pflichten beider Teams"
+      },
+      {
+        "src": "/media/leadpilot-channels.webp",
+        "alt": "Kanalperformance · Neukunden und Marketing-CAC je Akquisitionskanal",
+        "caption": "Kanalperformance · Neukunden und Marketing-CAC je Akquisitionskanal"
+      },
+      {
+        "src": "/media/leadpilot-unit-economics.webp",
+        "alt": "Unit Economics · CAC, Deckungsbeitrag, LTV, Payback, NRR und GRR",
+        "caption": "Unit Economics · CAC, Deckungsbeitrag, LTV, Payback, NRR und GRR"
+      },
+      {
+        "src": "/media/leadpilot-scenario-compare.webp",
+        "alt": "Szenariovergleich über 30 Tage · Churn 1,8 % (v4) +20.250 € ARR, Trial-to-Paid 26 % (v5) +27.990 € ARR gegenüber Basis (v1)",
+        "caption": "Szenariovergleich über 30 Tage · Churn 1,8 % (v4) +20.250 € ARR, Trial-to-Paid 26 % (v5) +27.990 € ARR gegenüber Basis (v1)"
+      },
+      {
         "src": "/media/leadpilot-dashboard.webp",
         "alt": "Executive Dashboard · historische Stammdaten des fiktiven Unternehmens · reguläre Testsitzung",
         "caption": "Executive Dashboard · historische Stammdaten des fiktiven Unternehmens · reguläre Testsitzung"
-      },
-      {
-        "src": "/media/leadpilot-contacts.webp",
-        "alt": "CRM-Kontaktansicht · reguläre Supabase-Abfrage mit synthetischen Seed-Daten",
-        "caption": "CRM-Kontaktansicht · reguläre Supabase-Abfrage mit synthetischen Seed-Daten"
-      },
-      {
-        "src": "/media/leadpilot-deals-filtered.webp",
-        "alt": "Deal-Pipeline · Suchfilter „Enterprise“ · synthetischer Testdatensatz",
-        "caption": "Deal-Pipeline · Suchfilter „Enterprise“ · synthetischer Testdatensatz"
       },
       {
         "src": "/media/leadpilot-arr-details.webp",
