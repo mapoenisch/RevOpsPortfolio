@@ -19,13 +19,14 @@ export function RevenueBlock({ data }: { data: RevenueAnalysis }) {
     <h3 className="rv-heading">Meine Analyse</h3>
     <div className="rv-findings">{data.findings.map((f, i) => <article key={f.title}><span>{String(i + 1).padStart(2, '0')}</span><h4>{f.title}</h4><p>{f.text}</p></article>)}</div>
 
-    <div className="rv-panel"><div className="rv-panel-head"><h3>Der Weg zu {euro(data.bridge.target)} ARR</h3><span>ARR-Effekt der Hebel im Plan 2026</span></div>
+    <div className="rv-panel"><div className="rv-panel-head"><h3>Der Weg zu {euro(data.bridge.target)} ARR</h3><span>ARR-Effekt der Hebel im Plan 2026 · 12 Monate</span></div>
       <ul className="rv-bridge">
         <li className="rv-bridge-base"><span>Ausgangswert 2025</span><strong>{euro(data.bridge.start)}</strong></li>
-        {data.bridge.drivers.map(d => <li key={d.label}><span>{d.label}</span><span className="rv-bar"><span style={{ width: `${d.value / largest * 100}%` }} /></span><strong>+ {euro(d.value)}</strong></li>)}
+        {data.bridge.drivers.map(d => <li key={d.label}><span className="rv-driver">{d.label}{d.simulated !== undefined && <small className="rv-sim">Simulation 30 Tage: + {euro(d.simulated)}</small>}</span><span className="rv-bar"><span style={{ width: `${d.value / largest * 100}%` }} /></span><strong>+ {euro(d.value)}</strong></li>)}
         <li className="rv-bridge-base"><span>Summe der Hebel</span><strong>+ {euro(driverTotal)}</strong></li>
       </ul>
       <p className="rv-note">Die beiden größten Hebel liegen nach dem ersten Kontakt: bei der Testphase und bei der Kundenbindung.</p>
+      {data.bridge.simulation && <p className="rv-sim-note">{data.bridge.simulation}</p>}
     </div>
     <p className="rv-source">{data.source}</p>
   </div>;

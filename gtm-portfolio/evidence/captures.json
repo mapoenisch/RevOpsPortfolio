@@ -149,14 +149,14 @@
     "slug": "leadpilot",
     "view": "scenario-compare",
     "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
-    "session": "Regulär angemeldeter Manager-Testzugang aus den Seed-Daten, keine Authentifizierung umgangen. Zwei Szenario-Versionen (v2: dritter Sales Rep, v3: Churn 2,2 %) in der App angelegt und je einmal simuliert.",
+    "session": "Regulär angemeldeter Manager-Testzugang aus den Seed-Daten, keine Authentifizierung umgangen. Zwei Szenario-Versionen in der App angelegt, je nur ein Parameter gegenüber v1 geändert (v4: Churn 1,8 %, v5: Trial-to-Paid 26 %), je einmal über 30 Tage simuliert. Ältere Versionen v2/v3 im Vergleich abgewählt.",
     "url": "http://127.0.0.1:4175/crm/live-simulation",
-    "capturedAt": "2026-10-30T01:31:24.526Z",
+    "capturedAt": "2026-10-30T09:50:05.744Z",
     "viewport": {
       "width": 1440,
       "height": 1000
     },
     "original": "evidence/captures/leadpilot-scenario-compare.jpg",
-    "sha256": "51ddd5d6b554151dee19259c9c498be8cd94310553be3cebc69054b563f0009a"
+    "sha256": "1857c7b872dec9119e6ed5c588ac1f026c08067aec2153e181d2ff331ee5b317"
   }
 ]
