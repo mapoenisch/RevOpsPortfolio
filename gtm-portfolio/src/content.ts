@@ -10,7 +10,7 @@ export type RevenueAnalysis = {
   funnel: { stage: string; value: number; rate?: string }[];
   kpis: { label: string; value: string; target: string }[];
   findings: { title: string; text: string }[];
-  bridge: { start: number; target: number; drivers: { label: string; value: number }[] };
+  bridge: { start: number; target: number; drivers: { label: string; value: number; simulated?: number }[]; simulation?: string };
 };
 
 export const profile = {
@@ -64,12 +64,13 @@ export const cases: CaseStudy[] = [
       bridge: {
         start: 411840, target: 620000,
         drivers: [
-          { label: 'Trial-to-Paid 18 → 26 %', value: 72000 },
-          { label: 'Churn 2,8 → 1,8 %', value: 58000 },
+          { label: 'Trial-to-Paid 18 → 26 %', value: 72000, simulated: 27990 },
+          { label: 'Churn 2,8 → 1,8 %', value: 58000, simulated: 20250 },
           { label: 'Partnerprogramm', value: 34000 },
           { label: 'ICP-Schärfung (ARPA)', value: 26000 },
           { label: 'Upsell Starter → Growth', value: 18000 },
         ],
+        simulation: 'Gegenprobe in der LeadPilot-Simulation: Beide Hebel einzeln als Szenario gerechnet, je ein Lauf über 30 Tage. Trial bringt dort +27.990 €, Churn +20.250 € ARR – dieselbe Reihenfolge wie im Plan. Die Jahreswerte fallen höher aus, weil sich der Effekt über zwölf Monate aufbaut.',
       },
     },
   },
