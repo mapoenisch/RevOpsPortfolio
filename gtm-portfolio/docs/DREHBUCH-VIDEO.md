@@ -39,6 +39,8 @@ Kurze Sprechpausen sind mit „...“ markiert.
 >
 > Dazu rechnet sich die Akquise zu langsam: ... 13 Monate Payback ... LTV zu CAC 2,7 zu 1. ...
 >
+> *(etwa 5 Sekunden Pause: im Bild läuft die Simulation)*
+>
 > Beide Hebel habe ich in der Simulation gegengerechnet: ... 30 Tage ... je ein Szenario. ... Trial bringt fast 28.000 Euro ... Churn gut 20.000. ...
 >
 > Die Zahlen kommen nicht aus einer Folie. ... Sie liegen in Supabase ... und n8n berechnet die KPIs live. ...
@@ -81,6 +83,7 @@ Zahlen gegengeprüft:
 - Funnel: Leads 384 + 432 + 456 + 504 = 1.776, Neukunden 10 + 11 + 12 + 14 = 47 (`vertriebData.ts`)
 - Simulation: Die Werte +27.990 € und +20.250 € sind Deltas zum **Mittel der beiden Basis-Läufe** (411.840 € und 431.340 €, Mittel 421.590 €). Trial (Version 5): 449.580 €. Churn 1,8 % (Version 4): 441.840 €.
 - Backup aller `simulation_*`-Tabellen: `evidence/private/simulation-backup-2026-10-31.sql` (nicht versioniert)
+- Abends (31.10.) auf dieses Backup zurückgesetzt. Drei Läufe, die zwischen 13:42 und 21:00 entstanden waren, sind dabei entfallen. Marc hat entschieden, den Stand so zu lassen. Die Aufnahmen für das Video sind davon nicht betroffen.
 
 Folgen für die Aufnahme:
 
