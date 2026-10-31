@@ -98,6 +98,7 @@ Ablauf bei der Aufnahme:
 1. Terminal (nicht im Bild): `cd gtm-portfolio/work/case1-neuaufnahme`, dann `read -s LEADPILOT_INGEST_SECRET && export LEADPILOT_INGEST_SECRET` und das Secret aus dem Passwortmanager einfügen.
 2. n8n-Editor: Workflow öffnen, Aufnahme starten, **Execute workflow** klicken.
 3. Im Terminal `node send-kpi-event.mjs` ausführen. Erwartet: `201` und `status: accepted`. Im Editor werden die Knoten bis „Respond Accepted“ grün.
-4. Danach Supabase Studio: `live_kpi_events` hat dann eine Zeile. Die Tabelle kann für Szene 7 statt `simulation_scenario_versions` gezeigt werden.
+4. Zum Dashboard-CRM wechseln, Executive Dashboard: Die ARR-Karte im Live-Bereich zeigt 411.840 €. Der Wert steht schon in der Datenbank und wird beim Öffnen geladen; ist das Dashboard schon offen, kommt er per Realtime in etwa einer Sekunde.
+5. Danach Supabase Studio: `live_kpi_events` hat dann eine Zeile. Die Tabelle kann für Szene 7 statt `simulation_scenario_versions` gezeigt werden.
 
 Bei `401` stimmt das Secret nicht mit dem n8n-Credential überein. Ein `404` bedeutet, dass „Execute workflow“ nicht geklickt war; der Test-Webhook nimmt je Klick nur einen Aufruf an.
