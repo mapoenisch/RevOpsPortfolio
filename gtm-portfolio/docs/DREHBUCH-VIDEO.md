@@ -47,7 +47,7 @@ Gesprochener Text gesamt: rund 190 Wörter.
 
 - [ ] Benachrichtigungen aus (Fokus „Nicht stören“)
 - [ ] Fenster exakt 1920×1080, Browser im App- oder Kiosk-Modus
-- [ ] Simulation vor der Aufnahme zurückgesetzt
+- [ ] Simulation **nicht** zurücksetzen, keinen neuen Lauf starten (siehe „Stand der Umgebung“)
 - [ ] Szenen einzeln aufnehmen (8 Clips), lieber zu lang als zu kurz
 - [ ] Stimme als eine Datei, Satzpausen etwa 0,5 s
 
@@ -64,3 +64,25 @@ Gesprochener Text gesamt: rund 190 Wörter.
 - Dashboard-CRM: `npm run dev` im Repo „LeadPilot Dashboard-CRM“ (Branch `codex/leadpilot-live-demo`), läuft auf http://localhost:3000
 - Supabase Studio: Tabelle ohne personenbezogene Spalten öffnen
 - n8n: Live-KPI-Workflow öffnen, nach „Tidy up“ wie im Kapitel-6-Screenshot
+
+## Stand der Umgebung (31.10.2026)
+
+Gestartet und erreichbar:
+
+- Docker Desktop, lokales Supabase (Projekt `LeadPilot_Dashboard-CRM`)
+- Dashboard-CRM: http://localhost:3000 (Vite-Dev-Server, Commit `5f20c7c`)
+- Supabase Studio: http://127.0.0.1:54323
+- n8n lokal: http://localhost:5678 (Compose-Ordner `~/n8n`), Workflow „LeadPilot Live KPI Ingest Pipeline (Gate G18)“, ID `LeadPilotLiveKpiDemo`
+
+Zahlen gegengeprüft:
+
+- Funnel: Leads 384 + 432 + 456 + 504 = 1.776, Neukunden 10 + 11 + 12 + 14 = 47 (`vertriebData.ts`)
+- Simulation: Die Werte +27.990 € und +20.250 € sind Deltas zum **Mittel der beiden Basis-Läufe** (411.840 € und 431.340 €, Mittel 421.590 €). Trial (Version 5): 449.580 €. Churn 1,8 % (Version 4): 441.840 €.
+- Backup aller `simulation_*`-Tabellen: `evidence/private/simulation-backup-2026-10-31.sql` (nicht versioniert)
+
+Folgen für die Aufnahme:
+
+- **Keinen neuen Simulationslauf starten und die Simulation nicht zurücksetzen.** Jeder weitere Lauf hat einen neuen Zufalls-Seed und verschiebt das Mittel der Basis. Damit stimmen die Zahlen im Sprechertext nicht mehr. Szene 6 zeigt deshalb die vorhandenen Läufe; der Punkt „Simulation zurückgesetzt“ in der Checkliste entfällt.
+- Der Multi-Szenario-Vergleich rechnet Deltas gegen *eine* Referenzversion, nicht gegen das Mittel. Die Deltas auf dem Bildschirm können deshalb von +27.990 € / +20.250 € abweichen. Zoom-Punkt in Szene 6 also auf die ARR-Werte der Versionen legen, nicht auf eine Delta-Spalte.
+- Supabase Studio (Szene 7): `live_kpi_events` ist leer. Stattdessen `simulation_scenario_versions` zeigen (5 Versionen mit Beschreibung und Parametern, keine Personendaten).
+- n8n (Szene 7): Der Workflow ist inaktiv und hat keine gespeicherte Ausführung. Einen grünen Durchlauf gibt es nur mit einem signierten Test-Event (HMAC-Secret und Postgres-Zugang in n8n). Offen: einrichten oder Szene 7 mit dem statischen Workflow und einem Zoom im Schnitt lösen.
