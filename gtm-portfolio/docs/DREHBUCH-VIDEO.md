@@ -27,21 +27,23 @@ Gesprochener Text gesamt: rund 190 Wörter.
 
 ## Sprechertext am Stück (für dein Stimm-Tool)
 
-> LeadPilot lag 2025 bei 411.840 Euro Jahresumsatz, deutlich unter Plan. Die Frage: Wo geht der Umsatz verloren?
+Kurze Sprechpausen sind mit „...“ markiert.
+
+> LeadPilot lag 2025 bei 411.840 Euro Jahresumsatz ... deutlich unter Plan. ... Die Frage: ... Wo geht der Umsatz verloren? ...
 >
-> Im Funnel wird aus 1.776 Leads am Ende 47 Neukunden. Die Lücke liegt aber nicht am Anfang, sondern in der Testphase.
+> Im Funnel wird aus 1.776 Leads ... am Ende 47 Neukunden. ... Die Lücke liegt aber nicht am Anfang ... sondern in der Testphase. ...
 >
-> Nur 18 Prozent der Testkunden zahlen. Acht Punkte mehr wären rund 21 Kunden zusätzlich.
+> Nur 18 Prozent der Testkunden zahlen. ... Acht Punkte mehr ... wären rund 21 Kunden zusätzlich. ...
 >
-> Der zweite Hebel ist Kundenbindung. Gekündigt haben fast nur Kleinstkunden. Das ist kein Service-Problem, sondern ein ICP-Problem.
+> Der zweite Hebel ist Kundenbindung. ... Gekündigt haben fast nur Kleinstkunden. ... Das ist kein Service-Problem ... sondern ein ICP-Problem. ...
 >
-> Dazu rechnet sich die Akquise zu langsam: 13 Monate Payback, LTV zu CAC 2,7 zu 1.
+> Dazu rechnet sich die Akquise zu langsam: ... 13 Monate Payback ... LTV zu CAC 2,7 zu 1. ...
 >
-> Beide Hebel habe ich in der Simulation gegengerechnet: 30 Tage, je ein Szenario. Trial bringt fast 28.000 Euro, Churn gut 20.000.
+> Beide Hebel habe ich in der Simulation gegengerechnet: ... 30 Tage ... je ein Szenario. ... Trial bringt fast 28.000 Euro ... Churn gut 20.000. ...
 >
-> Die Zahlen kommen nicht aus einer Folie. Sie liegen in Supabase, und n8n berechnet die KPIs live.
+> Die Zahlen kommen nicht aus einer Folie. ... Sie liegen in Supabase ... und n8n berechnet die KPIs live. ...
 >
-> Daraus ergibt sich der Plan für 2026: fünf Hebel, die zwei größten nach dem ersten Kontakt.
+> Daraus ergibt sich der Plan für 2026: ... fünf Hebel ... die zwei größten nach dem ersten Kontakt.
 
 ## Aufnahme-Checkliste (Phase 3, Schritt 3)
 
