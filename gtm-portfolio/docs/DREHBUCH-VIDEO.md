@@ -85,4 +85,19 @@ Folgen für die Aufnahme:
 - **Keinen neuen Simulationslauf starten und die Simulation nicht zurücksetzen.** Jeder weitere Lauf hat einen neuen Zufalls-Seed und verschiebt das Mittel der Basis. Damit stimmen die Zahlen im Sprechertext nicht mehr. Szene 6 zeigt deshalb die vorhandenen Läufe; der Punkt „Simulation zurückgesetzt“ in der Checkliste entfällt.
 - Der Multi-Szenario-Vergleich rechnet Deltas gegen *eine* Referenzversion, nicht gegen das Mittel. Die Deltas auf dem Bildschirm können deshalb von +27.990 € / +20.250 € abweichen. Zoom-Punkt in Szene 6 also auf die ARR-Werte der Versionen legen, nicht auf eine Delta-Spalte.
 - Supabase Studio (Szene 7): `live_kpi_events` ist leer. Stattdessen `simulation_scenario_versions` zeigen (5 Versionen mit Beschreibung und Parametern, keine Personendaten).
-- n8n (Szene 7): Der Workflow ist inaktiv und hat keine gespeicherte Ausführung. Einen grünen Durchlauf gibt es nur mit einem signierten Test-Event (HMAC-Secret und Postgres-Zugang in n8n). Offen: einrichten oder Szene 7 mit dem statischen Workflow und einem Zoom im Schnitt lösen.
+- n8n (Szene 7): Der Workflow ist inaktiv und hat keine gespeicherte Ausführung. Der grüne Durchlauf wird live mit einem signierten Test-Event erzeugt (siehe unten).
+
+## Szene 7: grüner n8n-Durchlauf
+
+Vorhanden und geprüft: Credentials `LeadPilot PostgreSQL (n8n_ingest role)` und `LeadPilot Ingest HMAC` in n8n, Rolle `n8n_ingest` mit `EXECUTE` auf `ingest_live_kpi_event`, `claim_ingress_slot` und `claim_ingress_nonce`. Das Secret wird nicht ausgelesen und liegt nirgends im Repo.
+
+Sende-Skript: `work/case1-neuaufnahme/send-kpi-event.mjs` (nicht versioniert). Es schickt ein ARR-Event über 411.840 € mit Zeitstempel, Nonce und HMAC-SHA-256-Signatur.
+
+Ablauf bei der Aufnahme:
+
+1. Terminal (nicht im Bild): `cd gtm-portfolio/work/case1-neuaufnahme`, dann `read -s LEADPILOT_INGEST_SECRET && export LEADPILOT_INGEST_SECRET` und das Secret aus dem Passwortmanager einfügen.
+2. n8n-Editor: Workflow öffnen, Aufnahme starten, **Execute workflow** klicken.
+3. Im Terminal `node send-kpi-event.mjs` ausführen. Erwartet: `201` und `status: accepted`. Im Editor werden die Knoten bis „Respond Accepted“ grün.
+4. Danach Supabase Studio: `live_kpi_events` hat dann eine Zeile. Die Tabelle kann für Szene 7 statt `simulation_scenario_versions` gezeigt werden.
+
+Bei `401` stimmt das Secret nicht mit dem n8n-Credential überein. Ein `404` bedeutet, dass „Execute workflow“ nicht geklickt war; der Test-Webhook nimmt je Klick nur einen Aufruf an.
