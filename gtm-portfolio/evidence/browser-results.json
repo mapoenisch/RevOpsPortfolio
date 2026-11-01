@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T15:10:39.143Z",
+  "generatedAt": "2026-11-01T13:53:37.516Z",
   "results": [
     {
       "name": "home",
@@ -235,7 +235,7 @@
       "name": "routing",
       "path": "/cases/lead-routing",
       "width": 320,
-      "overflow": true,
+      "overflow": false,
       "brokenImages": [],
       "h1": 1,
       "violations": [],
@@ -282,5 +282,17 @@
       "screenshot": "evidence/browser/404-320.png"
     }
   ],
-  "interactionTests": "running"
+  "interactionTests": [
+    "Routing: vier Fälle",
+    "Scoring: Filter, Suche, Leerzustand",
+    "Nachweise: Filter und alle Dateien",
+    "Diagramme: drei SVGs, Textfassung, Download, Zoom, Einpassen, Escape und Fokusrückgabe; mobile Vergrößerung",
+    "Mobiles Menü, Escape, Fokus",
+    "Sprunglink",
+    "Direkte Seitenaufrufe",
+    "MP4-Wiedergabe, Dauer, Untertitelspur",
+    "Keine externen Datenaufrufe"
+  ],
+  "errors": [],
+  "externalRequests": []
 }

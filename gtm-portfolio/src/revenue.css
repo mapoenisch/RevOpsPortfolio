@@ -1,4 +1,4 @@
-.revenue{display:grid;gap:28px;margin-top:22px}
+.revenue{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:22px}
 .rv-panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
 .rv-panel-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:20px}
 .rv-panel-head h3{font-size:16px}
@@ -31,3 +31,4 @@
 .rv-source{font-size:11px;color:var(--muted)}
 @media(max-width:850px){.rv-kpis{grid-template-columns:repeat(2,1fr)}.rv-findings{grid-template-columns:1fr}}
 @media(max-width:620px){.rv-panel{padding:18px}.rv-funnel li{grid-template-columns:72px 1fr 48px;gap:10px}.rv-funnel small{grid-column:2/4;text-align:left;margin-top:-8px}.rv-bridge li{grid-template-columns:1fr auto}.rv-bridge li .rv-bar{grid-column:1/-1;grid-row:2}.rv-kpis strong{font-size:20px}}
+@media(max-width:400px){.rv-kpis{grid-template-columns:1fr}}
