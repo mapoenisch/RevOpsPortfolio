@@ -96,11 +96,11 @@ Folgen für die Aufnahme:
 
 Vorhanden und geprüft: Credentials `LeadPilot PostgreSQL (n8n_ingest role)` und `LeadPilot Ingest HMAC` in n8n, Rolle `n8n_ingest` mit `EXECUTE` auf `ingest_live_kpi_event`, `claim_ingress_slot` und `claim_ingress_nonce`. Das Secret wird nicht ausgelesen und liegt nirgends im Repo.
 
-Sende-Skript: `work/case1-neuaufnahme/send-kpi-event.mjs` (nicht versioniert). Es schickt ein ARR-Event über 411.840 € mit Zeitstempel, Nonce und HMAC-SHA-256-Signatur.
+Sende-Skript: `gtm-portfolio/video/send-kpi-event.mjs`. Es schickt ein ARR-Event über 411.840 € mit Zeitstempel, Nonce und HMAC-SHA-256-Signatur.
 
 Ablauf bei der Aufnahme:
 
-1. Terminal (nicht im Bild): `cd gtm-portfolio/work/case1-neuaufnahme`, dann `read -s LEADPILOT_INGEST_SECRET && export LEADPILOT_INGEST_SECRET` und das Secret aus dem Passwortmanager einfügen.
+1. Terminal (nicht im Bild): `cd gtm-portfolio/video`, dann `read -s LEADPILOT_INGEST_SECRET && export LEADPILOT_INGEST_SECRET` und das Secret aus dem Passwortmanager einfügen.
 2. n8n-Editor: Workflow öffnen, Aufnahme starten, **Execute workflow** klicken.
 3. Im Terminal `node send-kpi-event.mjs` ausführen. Erwartet: `201` und `status: accepted`. Im Editor werden die Knoten bis „Respond Accepted“ grün.
 4. Zum Dashboard-CRM wechseln, Executive Dashboard: Die Kachel „Live ARR“ zeigt 411.840 €. Achtung: Das persönliche Dashboard hat standardmäßig keinen Live-Bereich, die normale ARR-Kachel ist der Stammdatenwert. Vor der Aufnahme einmal über „Dashboard bearbeiten“ die Kachel „Live ARR“ (Kategorie Live) hinzufügen und speichern; die Einstellung bleibt pro Nutzer gespeichert. Am besten das Dashboard vor dem Senden offen lassen, dann springt der Wert per Realtime in etwa einer Sekunde sichtbar ein.

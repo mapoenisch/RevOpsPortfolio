@@ -13,7 +13,7 @@ Ergebnis der Rückfragerunde. Reihenfolge: erst aufräumen, dann Zahlen, dann Ch
    - Arbeitsnotizen: `work/`, `docs/auftraege`, `docs/wiederherstellung`, `evidence/case1-neuaufnahme-preflight.json`, `review/`
    - `evidence/browser`
 3. Behalten: `Ursprung/` (Kurs-PDFs, Quelle für Chronik Kapitel 1).
-4. `gtm-portfolio/work/case1-neuaufnahme` wird erst gelöscht, wenn das neue Video fertig ist.
+4. `gtm-portfolio/work/case1-neuaufnahme` ist gelöscht (01.11.2026). Render-Skript, Aufnahmeskripte und die im Schnitt benutzten Quellen liegen versioniert in `gtm-portfolio/video/`.
 5. Build, Tests, Content-Check; Commit.
 
 ## Phase 1 – Case 1: Zahlen angleichen
