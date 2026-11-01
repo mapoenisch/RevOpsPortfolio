@@ -100,7 +100,7 @@ try {
     await page.goto(base+`/cases/${slug}`);
     const video=page.locator('video'); await video.waitFor();
     const playback=await video.evaluate(async el=>{el.muted=true;await el.play();await new Promise(resolve=>el.addEventListener('timeupdate',resolve,{once:true}));el.pause();return{duration:el.duration,time:el.currentTime,error:el.error?.code||null,tracks:el.textTracks.length};});
-    assert.ok(Math.abs(playback.duration-90)<1);assert.ok(playback.time>0);assert.equal(playback.error,null);assert.equal(playback.tracks,1);
+    assert.ok(Math.abs(playback.duration-media[slug].video.duration)<1);assert.ok(playback.time>0);assert.equal(playback.error,null);assert.equal(playback.tracks,1);
   }
   if(media['leadpilot'].screenshots.length) {
     await page.goto(base+'/cases/leadpilot');

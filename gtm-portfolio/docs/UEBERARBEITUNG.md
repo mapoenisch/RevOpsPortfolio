@@ -52,7 +52,7 @@ Ablauf:
 1. Claude: Drehbuch mit Klickpfad, Zoom-Punkten und Sprechertext.
 2. Claude: Umgebung vorbereiten (App, Supabase Studio, n8n, Daten, sauberes Fenster).
 3. Marc: Aufnahme mit Cap.app; Stimme mit eigenem Tool erzeugen.
-4. Claude: Schnitt und Ton anlegen, Untertitel (VTT), Poster, einbinden.
+4. Claude: Schnitt und Ton anlegen, Untertitel (VTT), Poster, einbinden. – erledigt 01.11.2026 (93 s, Sprecher je Szene angelegt)
 5. Rohmaterial-Ordner löschen.
 
 ## Phase 4 – Abschluss
@@ -64,4 +64,3 @@ Build, Content-Check, Tests, Prüfung bei 1440/768/375 px, Commit.
 - Auswahl der Marketing-Assets (Kapitel 3)
 - Bild für das Designsystem (Kapitel 4)
 - Bilder für „Vom Dashboard zum CRM“ (Kapitel 6)
-- Cap-Aufnahme und eingesprochene Stimme (Phase 3)

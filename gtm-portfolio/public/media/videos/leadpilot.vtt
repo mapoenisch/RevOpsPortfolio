@@ -1,13 +1,25 @@
 WEBVTT
 
-00:00.000 --> 00:24.779
-LeadPilot: regulär angemeldete lokale Anwendung. Die Zahlen sind Stammdaten eines fiktiven Unternehmens.
+00:00.400 --> 00:11.190
+LeadPilot lag 2025 bei 411.840 Euro Jahresumsatz, deutlich unter Plan. Die Frage: Wo geht der Umsatz verloren?
 
-00:24.779 --> 00:47.309
-Kontakte werden mandantengebunden aus Supabase abgefragt. Zu sehen ist ein synthetischer Seed-Datensatz.
+00:12.000 --> 00:21.140
+Im Funnel wird aus 1.776 Leads am Ende 47 Neukunden. Die Lücke liegt aber nicht am Anfang, sondern in der Testphase.
 
-00:47.309 --> 01:09.587
-Die Suche filtert die Deal-Pipeline auf „Enterprise“. Keine produktiven Kundendaten.
+00:24.000 --> 00:30.290
+Nur 18 Prozent der Testkunden zahlen. Acht Punkte mehr wären rund 21 Kunden zusätzlich.
 
-01:09.587 --> 01:30.000
-Die Detailansicht erklärt Definition, Zeitraum und Quelle der Kennzahl. Die Simulation bleibt pausiert.
+00:34.000 --> 00:42.880
+Der zweite Hebel ist Kundenbindung. Gekündigt haben fast nur Kleinstkunden. Das ist kein Service-Problem, sondern ein ICP-Problem.
+
+00:43.500 --> 00:52.610
+Dazu rechnet sich die Akquise zu langsam: 13 Monate Payback, LTV zu CAC 2,7 zu 1.
+
+00:59.000 --> 01:08.980
+Beide Hebel habe ich in der Simulation gegengerechnet: 30 Tage, je ein Szenario. Trial bringt fast 28.000 Euro, Churn gut 20.000.
+
+01:09.567 --> 01:16.827
+Die Zahlen kommen nicht aus einer Folie. Sie liegen in Supabase, und n8n spielt neue Werte live ins Dashboard.
+
+01:25.833 --> 01:32.933
+Daraus ergibt sich der Plan für 2026: fünf Hebel, die zwei größten nach dem ersten Kontakt.

@@ -52,9 +52,10 @@
     ],
     "video": {
       "src": "/media/videos/leadpilot.mp4",
-      "poster": "/media/leadpilot-dashboard.webp",
+      "poster": "/media/videos/leadpilot-poster.webp",
       "subtitles": "/media/videos/leadpilot.vtt",
-      "duration": 90
+      "duration": 93,
+      "captionsBurnedIn": true
     }
   },
   "lead-routing": {
