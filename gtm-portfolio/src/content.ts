@@ -23,6 +23,7 @@ export type RevenueAnalysis = {
 export const profile = {
   name: 'Marc Pönisch', email: 'ma.poenisch@gmail.com', city: 'Leipzig',
   linkedin: 'https://www.linkedin.com/in/marc-poenisch/',
+  github: 'https://github.com/mapoenisch',
   resume: '/downloads/Marc-Poenisch-Lebenslauf.pdf',
 };
 
@@ -169,7 +170,7 @@ export const cases: CaseStudy[] = [
 
 export const certificates = [
   { title: 'Sales-Software', issuer: 'HubSpot Academy', kind: 'Zertifizierung', topic: 'CRM & Vertrieb', date: '26.08.2026', until: '25.09.2027', file: 'hubspot-sales.png', text: 'Funktionen und Anwendung des Sales Hub.' },
-  { title: 'Berichterstattung', issuer: 'HubSpot Academy', kind: 'Zertifizierung', topic: 'Reporting', date: '07.10.2026', until: '06.11.2027', file: 'hubspot-reporting.png', text: 'Berichte, Analysen und datenbasierte Entscheidungen.' },
+  { title: 'Reporting', issuer: 'HubSpot Academy', kind: 'Zertifizierung', topic: 'Reporting', date: '07.10.2026', until: '06.11.2027', file: 'hubspot-reporting.png', text: 'Berichte, Analysen und datenbasierte Entscheidungen. Originaltitel der Zertifizierung: Berichterstattung.' },
   { title: 'Inbound Sales', issuer: 'HubSpot Academy', kind: 'Zertifizierung', topic: 'CRM & Vertrieb', date: '30.08.2026', until: '28.09.2028', file: 'hubspot-inbound.png', text: 'Bedarf verstehen und Gespräche strukturiert führen.' },
   { title: 'Grundwissen Business-Analyse', issuer: 'Microsoft / LinkedIn Learning', kind: 'Lernnachweis', topic: 'Prozesse', date: '07.07.2026', file: 'business-analyse.pdf', text: 'Anforderungen, Probleme und Lösungswege strukturieren.' },
   { title: 'Claude Code in Action', issuer: 'Anthropic Academy', kind: 'Lernnachweis', topic: 'KI & Umsetzung', file: 'claude-code.png', text: 'KI-Werkzeuge für die Softwareentwicklung einsetzen.' },

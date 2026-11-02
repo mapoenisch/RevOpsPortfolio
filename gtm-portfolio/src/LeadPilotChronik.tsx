@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { profile } from './content';
 import './leadpilot-chronik.css';
 
 const asset = '/leadpilot/assets/';
@@ -108,18 +109,18 @@ function VideoSwitcher() {
 }
 
 export function LeadPilotTeaser() {
-  return <section id="leadpilot-hintergrund" className="lp-teaser section-pad" aria-labelledby="lp-teaser-title"><div className="lp-teaser-copy"><span className="eyebrow">Hinter dem Projekt</span><h2 id="lp-teaser-title">Wie LeadPilot<br />entstanden ist.</h2><p>Von einer Geschäftsidee über Content und Pitch bis zum eigenen Dashboard und Designsystem.</p><Link to="/leadpilot" className="text-link">Die Projektchronik ansehen <ArrowRight size={17} /></Link></div><Link to="/leadpilot" className="lp-teaser-visual" aria-label="LeadPilot-Projektchronik ansehen"><span>PROJEKTCHRONIK <ArrowUpRight size={16} /></span><img src={asset + 'logo.webp'} alt="" width="900" height="450" loading="lazy" /><small>Idee · Marke · Anwendung</small></Link></section>;
+  return <section id="leadpilot-hintergrund" className="lp-teaser section-pad" aria-labelledby="lp-teaser-title"><div className="lp-teaser-copy"><span className="eyebrow">Hinter dem Projekt</span><h2 id="lp-teaser-title">Wie LeadPilot<br />entstanden ist.</h2><p>Von einer Geschäftsidee über Content und Pitch bis zum eigenen Dashboard und Designsystem.</p><Link to="/leadpilot" className="text-link">Die Projektchronik ansehen <ArrowRight size={17} /></Link></div><Link to="/leadpilot" className="lp-teaser-visual" aria-label="LeadPilot-Projektchronik ansehen"><span>PROJEKTCHRONIK <ArrowRight size={16} /></span><img src={asset + 'logo.webp'} alt="" width="900" height="450" loading="lazy" /><small>Idee · Marke · Anwendung</small></Link></section>;
 }
 
 export default function LeadPilotChronik() {
   return <Lightbox><article className="lp-chronicle">
-    <div className="lp-hero section-pad"><Link className="back-link" to="/"><ArrowLeft size={16} /> Zur Startseite</Link><div className="lp-hero-grid"><div><span className="eyebrow">Projektchronik · seit Juli 2026</span><h1 tabIndex={-1}>Aus einer Idee<br />wird <span>LeadPilot.</span></h1><p>Ein fiktives B2B-Unternehmen als praktisches Lernprojekt: von den ersten Gedanken über Unternehmenswelt, Marketing und Pitch bis zur eigenen Anwendung.</p><a className="button blue" href="#idee">Die Geschichte entdecken <ArrowRight size={17} /></a></div><div className="lp-hero-art"><span>VON DER IDEE ZUR ANWENDUNG</span><img src={asset + 'logo.webp'} alt="LeadPilot-Logo" width="900" height="450" /><small>Konzeption & Umsetzung mit KI</small></div></div></div>
+    <div className="lp-hero section-pad"><Link className="back-link" to="/"><ArrowLeft size={16} /> Zur Startseite</Link><div className="lp-hero-grid"><div><span className="eyebrow">Projektchronik · seit Juli 2026</span><h1 tabIndex={-1}>Aus einer Idee<br />wird <span>LeadPilot.</span></h1><p>Ein fiktives B2B-Unternehmen als End-to-End-Praxis-Szenario: von den ersten Gedanken über Unternehmenswelt, Marketing und Pitch bis zur eigenen Anwendung.</p><a className="button blue" href="#idee">Die Geschichte entdecken <ArrowRight size={17} /></a></div><div className="lp-hero-art"><span>VON DER IDEE ZUR ANWENDUNG</span><img src={asset + 'logo.webp'} alt="LeadPilot-Logo" width="900" height="450" /><small>Konzeption & Umsetzung mit KI</small></div></div></div>
     <div className="lp-boundary section-pad"><strong>Zur Einordnung</strong><p>LeadPilot ist ein fiktives Unternehmen aus meiner Weiterbildung. Historie, Kennzahlen, Kundenbeispiele und Marketingmotive sind Teil des Szenarios.</p></div>
     <div className="lp-layout section-pad"><aside className="lp-toc"><span>Auf dieser Seite</span><nav aria-label="Meilensteine der LeadPilot-Chronik">{chapters.map(([id,label],i) => <a key={id} href={`#${id}`}><small>{String(i+1).padStart(2,'0')}</small>{label}</a>)}</nav></aside>
     <div className="lp-content">
       <section className="lp-chapter"><ChapterTitle number="01" kicker="Juli 2026 · Der Anfang" title="Eine Idee für den Vertriebsalltag." id="idee" />
         <p className="lp-lead">Wie lässt sich verhindern, dass ein vielversprechender Kontakt nach dem ersten Gespräch liegen bleibt?</p>
-        <p>Aus einer Aufgabe der Digital Business Akademie, ein fiktives B2B-Unternehmen zu entwickeln, entstand meine Idee für LeadPilot.</p>
+        <p>Aus einem Praxis-Szenario der Digital Business Akademie, ein fiktives B2B-Unternehmen zu entwickeln, entstand meine Idee für LeadPilot.</p>
         <dl className="lp-idea">
           <div><dt>Angebot</dt><dd>Ein KI-gestütztes Sales-CRM als SaaS für Lead-Management und Vertriebsautomatisierung.</dd></div>
           <div><dt>Zielgruppe</dt><dd>Vertriebsleiter in kleinen und mittelständischen B2B-Unternehmen bis etwa 200 Mitarbeitende, etwa aus Maschinenbau, IT, Großhandel oder Agenturen.</dd></div>
@@ -178,7 +179,7 @@ export default function LeadPilotChronik() {
         <div className="lp-components" aria-label="Beispiele aus dem Standalone-Komponentengerüst"><div><strong>KpiCard</strong><span>Kennzahlen</span></div><div><strong>InfoCard</strong><span>Informationen</span></div><div><strong>ChartCard</strong><span>Diagramme</span></div><div><strong>DataTableCard</strong><span>Tabellen</span></div></div>
         <SourceNote><p>Ursprüngliches „LeadPilot_Unternehmens_Dashboard.html“, Standalone-Dashboard-Dateistruktur und Aufnahmen des Dashboard-CRM v2.5.0, lokale Supabase-Studio-Aufnahmen vom 30. Oktober 2026 sowie die n8n-Workflows und ihre Dokumentation im Projektordner „tools/n8n“. Die neueren Ausschnitte zeigen fiktive Stammdaten. Eine damalige Live-Anbindung folgt nicht aus dem alten Dashboard.</p></SourceNote>
       </section>
-      <div className="lp-next"><span className="eyebrow">Die Anwendung im Detail</span><h2>Von der Geschichte<br />zur Arbeitsprobe.</h2><p>Die Case Study zeigt, wie ich CRM, Kennzahlen und Datenquellen in der aktuellen Anwendung einordne.</p><Link to="/cases/leadpilot" className="button blue">Zur LeadPilot Case Study <ArrowRight size={17} /></Link></div>
+      <div className="lp-next"><span className="eyebrow">Die Anwendung im Detail</span><h2>Von der Geschichte<br />zur Arbeitsprobe.</h2><p>Die Case Study zeigt, wie ich CRM, Kennzahlen und Datenquellen in der aktuellen Anwendung einordne.</p><div className="lp-next-actions"><Link to="/cases/leadpilot" className="button blue">Zur LeadPilot Case Study <ArrowRight size={17} /></Link><a className="button quiet" href={`mailto:${profile.email}`}>Projekt besprechen <ArrowUpRight size={17} /></a></div><Link className="back-link lp-next-home" to="/"><ArrowLeft size={16} /> Zur Startseite</Link></div>
     </div></div>
   </article></Lightbox>;
 }
