@@ -17,8 +17,8 @@ weil für die statische Portfolio-Seite nur fertige Website-Dateien benötigt we
 
 - [x] Repository, Build-Befehle und vorhandene GitHub-Einstellungen prüfen.
 - [x] Workflow und Veröffentlichungsskript vorbereiten; Übertragung standardmäßig deaktiviert.
-- [x] Bestehende Projektprüfungen, Build, YAML-Syntax und lokale Abbruchtests erfolgreich; Linux-Veröffentlichungstests folgen im GitHub-Lauf.
-- [ ] Änderungen als Pull Request bereitstellen; Merge führt ausschließlich Marc aus.
+- [x] Projektprüfungen, Build, YAML-Syntax und lokale Abbruchtests erfolgreich. GitHub-Lauf 41704052775 einschließlich Linux-Veröffentlichungstests erfolgreich; Deployment erwartungsgemäß übersprungen.
+- [x] Änderungen als Pull Request #3 bereitgestellt; Merge führt ausschließlich Marc aus.
 - [ ] Serverzugang, Webserver, DNS und vorhandene Websites prüfen.
 - [ ] Eigenen Deployment-Benutzer und dedizierten Website-Ordner einrichten.
 - [ ] HTTPS und Weiterleitung für React-Unterseiten einrichten und prüfen.
@@ -71,5 +71,10 @@ Kontaktlinks und mobile Darstellung prüfen. Release-Kennung muss dem Commit ent
 Der bestehende Suchmaschinen-Ausschluss (`noindex, nofollow`) bleibt unverändert;
 vor einer gewünschten Suchmaschinenfreigabe bewusst gesondert entscheiden.
 
-Die Serverprüfung ist aktuell durch eine noch nicht bestätigte Weiterleitung zur
-Cloudflare-Anmeldung `alexle135.cloudflareaccess.com` blockiert.
+## Stand der Einrichtung
+
+Die vorhandene Anmeldung im Benutzerbrowser ist nutzbar; keine zusätzliche
+Anmeldung erforderlich. Der zunächst verwendete getrennte Browser hatte diese
+Anmeldung nicht. Interne Infrastrukturdetails gehören nicht in diese öffentliche
+Dokumentation. Die Servereinrichtung ist noch offen und das GitHub-Deployment
+bleibt bis zur vollständigen Prüfung deaktiviert.
