@@ -22,3 +22,13 @@ Quelle: https://rollupjs.org/configuration-options/#maxparallelfileops
 - Keine npm-Installationsskripte pauschal freigegeben und keine automatischen Abhängigkeits-Upgrades vorgenommen.
 
 Der Änderungssatz wird auch dem getrennten PR im öffentlichen Repository zugeordnet, damit beide Website-Quellstände dieselbe Buildkonfiguration erhalten. Merge und Freigabe ausschließlich durch Marc.
+
+## Separater Fehler im Vorschau-Check von PR #2
+
+Der Check zum Commit `d0899b7` (Cloudflare-Build `d001d33b-8b73-4354-97f8-c22e4b0dc76c`) startete `npx wrangler preview` und brach vor dem benutzerdefinierten Website-Build ab, weil der erforderliche `previews`-Abschnitt in `wrangler.jsonc` fehlte. Dieser Check testete die Dateizugriffsbegrenzung noch nicht.
+
+Für die reine statische Website wird ein leerer Abschnitt `"previews": {}` ergänzt. Cloudflare dokumentiert genau diese Konfiguration für Worker ohne besondere Vorschau-Bindungen. Workername, Buildkommando, Assetverzeichnis und SPA-Fallback bleiben unverändert; keine neuen Datenbindungen oder Geheimnisse.
+
+Quelle: https://developers.cloudflare.com/workers/previews/configuration/#wrangler-configuration-file
+
+Prüfung vor dem Push: JSON erfolgreich geparst; der Produktionskonfigurationsinhalt ist bis auf den neuen leeren Vorschauabschnitt unverändert. Der eigentliche Vorschau-Build wird anschließend durch Cloudflare geprüft.
