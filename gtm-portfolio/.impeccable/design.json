@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T20:28:31.512466+00:00",
+  "title": "Design System: Marc Pönisch – Hauptportfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Klares Königsblau",
+        "canonical": "#244fcd",
+        "tonalRamp": [
+          "oklch(15.0% 0.05017 264.99)",
+          "oklch(26.0% 0.10033 264.99)",
+          "oklch(38.0% 0.16053 264.99)",
+          "oklch(49.0% 0.20066 264.99)",
+          "oklch(61.0% 0.20066 264.99)",
+          "oklch(72.0% 0.16053 264.99)",
+          "oklch(84.0% 0.10033 264.99)",
+          "oklch(95.0% 0.03010 264.99)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Vertieftes Königsblau",
+        "canonical": "#183ba6",
+        "tonalRamp": [
+          "oklch(15.0% 0.04410 265.03)",
+          "oklch(26.0% 0.08820 265.03)",
+          "oklch(38.0% 0.14111 265.03)",
+          "oklch(49.0% 0.17639 265.03)",
+          "oklch(61.0% 0.17639 265.03)",
+          "oklch(72.0% 0.14111 265.03)",
+          "oklch(84.0% 0.08820 265.03)",
+          "oklch(95.0% 0.02646 265.03)"
+        ]
+      },
+      "primary-soft": {
+        "role": "primary",
+        "displayName": "Helles Blaufeld",
+        "canonical": "#eef2ff",
+        "tonalRamp": [
+          "oklch(15.0% 0.00448 272.31)",
+          "oklch(26.0% 0.00897 272.31)",
+          "oklch(38.0% 0.01435 272.31)",
+          "oklch(49.0% 0.01793 272.31)",
+          "oklch(61.0% 0.01793 272.31)",
+          "oklch(72.0% 0.01435 272.31)",
+          "oklch(84.0% 0.00897 272.31)",
+          "oklch(95.0% 0.00269 272.31)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Druckfarbe",
+        "canonical": "#202632",
+        "tonalRamp": [
+          "oklch(15.0% 0.00602 264.04)",
+          "oklch(26.0% 0.01205 264.04)",
+          "oklch(38.0% 0.01928 264.04)",
+          "oklch(49.0% 0.02410 264.04)",
+          "oklch(61.0% 0.02410 264.04)",
+          "oklch(72.0% 0.01928 264.04)",
+          "oklch(84.0% 0.01205 264.04)",
+          "oklch(95.0% 0.00361 264.04)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Schiefergrau",
+        "canonical": "#626b79",
+        "tonalRamp": [
+          "oklch(15.0% 0.00617 259.19)",
+          "oklch(26.0% 0.01234 259.19)",
+          "oklch(38.0% 0.01974 259.19)",
+          "oklch(49.0% 0.02467 259.19)",
+          "oklch(61.0% 0.02467 259.19)",
+          "oklch(72.0% 0.01974 259.19)",
+          "oklch(84.0% 0.01234 259.19)",
+          "oklch(95.0% 0.00370 259.19)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Trennlinie",
+        "canonical": "#dfe3e9",
+        "tonalRamp": [
+          "oklch(15.0% 0.00231 258.34)",
+          "oklch(26.0% 0.00461 258.34)",
+          "oklch(38.0% 0.00738 258.34)",
+          "oklch(49.0% 0.00923 258.34)",
+          "oklch(61.0% 0.00923 258.34)",
+          "oklch(72.0% 0.00738 258.34)",
+          "oklch(84.0% 0.00461 258.34)",
+          "oklch(95.0% 0.00138 258.34)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Kühles Papier",
+        "canonical": "#f8f9fb",
+        "tonalRamp": [
+          "oklch(15.0% 0.00072 264.54)",
+          "oklch(26.0% 0.00143 264.54)",
+          "oklch(38.0% 0.00229 264.54)",
+          "oklch(49.0% 0.00286 264.54)",
+          "oklch(61.0% 0.00286 264.54)",
+          "oklch(72.0% 0.00229 264.54)",
+          "oklch(84.0% 0.00143 264.54)",
+          "oklch(95.0% 0.00043 264.54)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Weißes Blatt",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15.0% 0.00000 89.88)",
+          "oklch(26.0% 0.00000 89.88)",
+          "oklch(38.0% 0.00000 89.88)",
+          "oklch(49.0% 0.00000 89.88)",
+          "oklch(61.0% 0.00000 89.88)",
+          "oklch(72.0% 0.00000 89.88)",
+          "oklch(84.0% 0.00000 89.88)",
+          "oklch(95.0% 0.00000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Heroüberschrift; responsive Overrides beachten."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Globale Abschnittsüberschrift; lokale Overrides beachten."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Unterüberschriften."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Kontextabhängiger Lesetext; auf der mobilen Startseite wesentliche Absätze mit 16 px, Metadaten überwiegend 12–14 px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Kompakte Metadaten und Beschriftungen."
+      }
+    },
+    "shadows": [
+      {
+        "name": "routing-demo",
+        "value": "0 15px 40px #25395d08",
+        "purpose": "Eingebettete Routing-Demo."
+      },
+      {
+        "name": "dialog",
+        "value": "0 20px 100px #0005",
+        "purpose": "Medien- und Diagrammdialoge."
+      },
+      {
+        "name": "button-primary",
+        "value": "0 3px 5px #1d3e9f12",
+        "purpose": "Primäre Standardaktion."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-state",
+        "value": "background .18s,color .18s,transform .18s",
+        "purpose": "Geerbte Standardbuttons."
+      },
+      {
+        "name": "project-image",
+        "value": "transform .4s",
+        "purpose": "Projektvorschaubilder."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "large",
+        "value": "min-width:1600px"
+      },
+      {
+        "name": "wide",
+        "value": "max-width:1100px"
+      },
+      {
+        "name": "medium",
+        "value": "max-width:850px"
+      },
+      {
+        "name": "mobile",
+        "value": "max-width:620px"
+      },
+      {
+        "name": "small",
+        "value": "max-width:360px"
+      },
+      {
+        "name": "chronicle-tablet",
+        "value": "max-width:900px"
+      },
+      {
+        "name": "chronicle-medium",
+        "value": "max-width:760px"
+      },
+      {
+        "name": "chronicle-mobile",
+        "value": "max-width:700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primäre Aktion",
+      "kind": "button",
+      "description": "Vorhandene Standardaktion; kompakte Demos haben eigene Maße.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Arbeitsprobe ansehen</button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:46px;padding:12px 20px;font:600 13px 'DM Sans',sans-serif;border:1px solid transparent;border-radius:7px;cursor:pointer;transition:background .18s,color .18s,transform .18s;background:var(--blue,#244fcd);color:#fff;box-shadow:0 3px 5px #1d3e9f12;}.ds-button-primary:hover{background:#183ba6;transform:translateY(-1px)}.ds-button-primary:focus-visible{outline:3px solid var(--blue,#244fcd);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none!important;animation:none!important}}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Sekundäre Aktion",
+      "kind": "button",
+      "description": "Weiße Aktion mit neutralem Rahmen.",
+      "html": "<button class=\"ds-button-quiet\" type=\"button\">Lebenslauf</button>",
+      "css": ".ds-button-quiet{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:46px;padding:12px 20px;font:600 13px 'DM Sans',sans-serif;border:1px solid transparent;border-radius:7px;cursor:pointer;transition:background .18s,color .18s,transform .18s;background:#fff;border-color:var(--line,#dfe3e9);color:var(--ink,#202632)}.ds-button-quiet:hover{border-color:#a5b3d9;color:var(--blue,#244fcd)}.ds-button-quiet:focus-visible{outline:3px solid var(--blue,#244fcd);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button-quiet{transition:none!important;animation:none!important}}",
+      "refersTo": "button-quiet"
+    },
+    {
+      "name": "Profilsuche",
+      "kind": "input",
+      "description": "Suchfeld mit Fokus auf dem leicht gerundeten Wrapper.",
+      "html": "<label class=\"ds-search\"><span>Suche</span><input aria-label=\"Profile suchen\" placeholder=\"Profil suchen\"></label>",
+      "css": ".ds-search{display:flex;align-items:center;border:1px solid var(--line,#dfe3e9);border-radius:6px;padding:0 11px;gap:8px;color:#687388;font:10px 'DM Sans',sans-serif}.ds-search input{font:10px 'DM Sans',sans-serif;border:0;padding:10px 0;outline:none;width:100%;min-width:0;background:none;color:var(--ink,#202632)}.ds-search:focus-within{outline:2px solid var(--blue,#244fcd);outline-offset:2px}@media(prefers-reduced-motion:reduce){.ds-search{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Nachweisfilter",
+      "kind": "chip",
+      "description": "Neutraler Filter und vorhandener aktiver Zustand.",
+      "html": "<div class=\"ds-filters\"><button type=\"button\">Alle</button><button class=\"ds-active\" type=\"button\" aria-pressed=\"true\">CRM</button></div>",
+      "css": ".ds-filters{display:flex;gap:7px}.ds-filters button{border:1px solid var(--line,#dfe3e9);border-radius:6px;background:#fff;padding:9px 13px;font:11px 'DM Sans',sans-serif;color:var(--ink,#202632);cursor:pointer}.ds-filters .ds-active{background:var(--ink,#202632);color:#fff;border-color:var(--ink,#202632)}.ds-filters button:focus-visible{outline:3px solid var(--blue,#244fcd);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-filters,.ds-active{transition:none!important;animation:none!important}}",
+      "refersTo": "filter"
+    },
+    {
+      "name": "Nachweiskarte",
+      "kind": "card",
+      "description": "Weiße, gerahmte Karte der Nachweisseite.",
+      "html": "<article class=\"ds-card\"><span>HubSpot Academy</span><h2>Reporting</h2><p>Ausgewählter Nachweis</p></article>",
+      "css": ".ds-card{border:1px solid var(--line,#dfe3e9);background:#fff;border-radius:10px;padding:27px;color:var(--ink,#202632);font-family:'DM Sans',sans-serif}.ds-card span,.ds-card p{font-size:11px;color:var(--muted,#626b79)}.ds-card h2{font-family:Manrope,sans-serif;font-weight:600;font-size:23px;letter-spacing:-.035em;line-height:1.18}@media(prefers-reduced-motion:reduce){.ds-card{transition:none!important;animation:none!important}}",
+      "refersTo": "certificate-card"
+    },
+    {
+      "name": "Hauptnavigation",
+      "kind": "nav",
+      "description": "Kompakte Desktopnavigation mit blauem aktivem Link.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Beispielnavigation\"><a href=\"#projekte\" aria-current=\"page\">Arbeitsproben</a><a href=\"#profil\">Profil</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:29px;font:12px 'DM Sans',sans-serif;color:#596273}.ds-nav a{color:inherit;text-decoration:none}.ds-nav a:hover,.ds-nav a[aria-current]{color:var(--blue,#244fcd)}.ds-nav a:focus-visible{outline:3px solid var(--blue,#244fcd);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-nav{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Routing-Container",
+      "kind": "card",
+      "description": "Weißer Demo-Container mit Toolbar und dezentem Schatten.",
+      "html": "<section class=\"ds-demo\"><header>ANFRAGE PRÜFEN</header><p>Ein Eingang. Ein nächster Schritt.</p></section>",
+      "css": ".ds-demo{border:1px solid #d8dfe9;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 15px 40px #25395d08;font-family:'DM Sans',sans-serif;color:var(--ink,#202632);text-align:left}.ds-demo header{padding:16px 20px;background:#fafbfc;border-bottom:1px solid #e5e8ee;font-size:10px;font-weight:700;letter-spacing:.09em}.ds-demo p{padding:24px 23px 20px;font:600 13px Manrope,sans-serif;margin:0}@media(prefers-reduced-motion:reduce){.ds-demo{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Demo-Eingang und Regel",
+      "kind": "custom",
+      "description": "Nativer Aufklappbereich der kompakten Routing-Demo mit mindestens 44 px hoher Bedienfläche.",
+      "html": "<details class=\"ds-evidence\"><summary>Eingang &amp; Regel ansehen</summary><dl><dt>Unternehmensgröße</dt><dd>42 Beschäftigte</dd></dl><p>Unter 50 Beschäftigten → Inside Sales, ab 50 → Account Management.</p></details>",
+      "css": ".ds-evidence{font-family:\"DM Sans\",sans-serif;color:var(--ink,#202632)}.ds-evidence summary{display:flex;align-items:center;min-height:44px;padding:8px 0;box-sizing:border-box;cursor:pointer;font-size:13px;font-weight:600;color:var(--blue,#244fcd)}.ds-evidence summary:hover{text-decoration:underline;text-underline-offset:4px}.ds-evidence summary:focus-visible{outline:3px solid var(--blue,#244fcd);outline-offset:5px}.ds-evidence dt{font-size:12px;line-height:1.5;color:var(--muted,#626b79)}.ds-evidence dd{margin:3px 0 0;font-size:14px;line-height:1.6}.ds-evidence p{font-size:13px;line-height:1.7;color:var(--muted,#626b79)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Die strukturierte Arbeitsmappe",
+    "overview": "Die Gestaltung ist klar, sachlich und zugänglich. Große, eng laufende Überschriften geben Orientierung; helle Flächen, feine Rahmen und kompakte Metadaten gliedern die Arbeitsproben. Blau markiert Aktionen und ausgewählte inhaltliche Akzente. Buttons, Karten und Eingabefelder wirken ruhig, leicht gerundet und funktional.\n\nGeltungsbereich ist ausschließlich `gtm-portfolio/`. Grundlage sind `src/style.css`, die gezielten Ergänzungen in `src/home.css`, die Komponenten in `src/App.tsx` und `src/Demos.tsx` sowie die ergänzenden Stylesheets. Die Begriffe wurden von Marc am 4. November 2026 bestätigt. Dies ist eine Bestandsdokumentation, kein Redesign.",
+    "keyCharacteristics": [
+      "Helle, kühl neutrale Flächen mit gezielten blauen Akzenten.",
+      "Manrope für Überschriften, DM Sans für Lesetext und Bedienung.",
+      "Leichte Rundungen, dünne Rahmen und zurückhaltende Schatten.",
+      "Kompakte Demonstrationen innerhalb großzügiger Seitenabschnitte."
+    ],
+    "rules": [
+      {
+        "name": "Kontextfarben",
+        "body": "Grüne Ergebniszustände sowie violette und grüne Projektvorschauen bleiben an ihre Komponenten gebunden. Die dunklen grün-türkisen LeadPilot-Medien sind Teil der gezeigten Projektidentität; sie ersetzen nicht die Portfolio-Palette.",
+        "section": "colors"
+      },
+      {
+        "name": "Kontexttypografie",
+        "body": "Die Website besitzt keine durchgängig mathematische Schriftgrößenskala. Bestehende Rollen und responsive Overrides übernehmen, statt jede Überschrift auf den Hero-Wert zu setzen.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** Kontextfarben und Projektdesigns innerhalb ihrer bestehenden Komponenten halten.",
+      "**Do** die jeweiligen responsiven Rollen und Komponentenmaße übernehmen.",
+      "**Do** Tastaturfokus, Textzustände und reduzierte Bewegung berücksichtigen."
+    ],
+    "donts": [
+      "**Don't** den Hero-Schriftgrad oder den allgemeinen Radius auf alle Komponenten übertragen.",
+      "**Don't** die Projektidentität von LeadPilot mit der Portfolioidentität gleichsetzen."
+    ]
+  }
+}

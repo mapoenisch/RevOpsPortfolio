@@ -11,5 +11,6 @@ import '@fontsource/manrope/latin-700.css';
 import '@fontsource/manrope/latin-800.css';
 import './style.css';
 import App from './App';
+import './home.css';
 
 createRoot(document.getElementById('root')!).render(<React.StrictMode><BrowserRouter><App /></BrowserRouter></React.StrictMode>);

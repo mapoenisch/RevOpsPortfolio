@@ -1,0 +1,149 @@
+/* Scoped homepage refinements; shared routing controls keep the same readable
+   states on the start page and the full routing case. */
+.home-page .hero { padding-top: 56px; padding-bottom: 64px; }
+.home-page .hero .eyebrow { font-size: 12px; letter-spacing: .08em; }
+.home-page .hero-person strong { font-size: 14px; }
+.home-page .hero-person span { font-size: 12px; line-height: 1.6; }
+.home-page .hero-proof { padding-top: 0; }
+.home-page .proof-note { margin-top: 16px; font-size: 13px; }
+.home-page .proof-note a { min-height: 44px; gap: 8px; }
+.home-page .projects-section { padding-top: 56px; padding-bottom: 64px; border-top: 1px solid var(--line); }
+.home-page .section-heading > p { font-size: 15px; line-height: 1.7; }
+.home-page .section-heading h2 { text-wrap: balance; }
+.home-page .project-card { display: flex; flex-direction: column; }
+.home-page .project-image { flex-shrink: 0; }
+.home-page .project-content { display: flex; flex: 1; flex-direction: column; }
+.home-page .project-category { font-size: 12px; line-height: 1.5; letter-spacing: .05em; }
+.home-page .project-card h3 { font-size: 22px; line-height: 1.35; }
+.home-page .project-card p { font-size: 14px; line-height: 1.75; min-height: 0; margin-top: 12px; }
+.home-page .project-card .project-decision { font-size: 13px; line-height: 1.65; margin: 16px 0 20px; }
+.home-page .project-decision strong { color: var(--ink); font-weight: 600; }
+.home-page .project-bottom { margin-top: auto; gap: 12px; align-items: flex-start; }
+.home-page .project-bottom .status-label { font-size: 12px; max-width: none; }
+.home-page .project-bottom .project-action { min-height: 44px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 7px; font-size: 13px; line-height: 1.5; color: var(--blue); white-space: normal; }
+.home-page .project-action:hover { background: var(--blue-soft); border-color: var(--blue); text-decoration: none; }
+.home-page .about-section { padding-top: 64px; padding-bottom: 64px; border-top: 1px solid var(--line); }
+.home-page .about-copy p { font-size: 15px; line-height: 1.75; }
+.home-page .about-copy .large-copy { font-size: 17px; line-height: 1.65; }
+.home-page .about-portrait > span { font-size: 12px; line-height: 1.5; }
+.home-page .about-facts span, .home-page .about-facts small { font-size: 12px; line-height: 1.6; }
+.home-page .about-facts strong { font-size: 14px; line-height: 1.5; }
+.home-page .about-copy > .text-link { min-height: 44px; font-size: 14px; }
+.home-page .qualifications-section { padding-top: 48px; padding-bottom: 56px; }
+.home-page .qualifications-section .text-link { min-height: 44px; font-size: 14px; }
+.home-page .qualification-preview small,
+.home-page .qualification-preview > a > span > span { font-size: 12px; line-height: 1.5; }
+.home-page .qualification-preview strong { font-size: 15px; line-height: 1.5; }
+.home-page .section-note { font-size: 13px; line-height: 1.65; }
+.home-page .lp-teaser { padding-top: 40px; padding-bottom: 56px; border-top: 1px solid var(--line); }
+.home-page .lp-teaser-copy > .eyebrow, .home-page .contact-section .eyebrow { display: none; }
+.home-page .lp-teaser-copy > p { font-size: 15px; line-height: 1.7; }
+.home-page .lp-teaser-copy .text-link { min-height: 44px; font-size: 14px; }
+.home-page .lp-teaser-visual > span, .home-page .lp-teaser-visual small { font-size: 12px; line-height: 1.5; }
+.home-page .contact-section p { font-size: 15px; line-height: 1.7; }
+.home-page .contact-actions { gap: 12px; }
+.home-page .contact-actions .text-link { min-height: 44px; font-size: 14px; }
+.site-footer > div, .site-footer a { font-size: 12px; line-height: 1.6; }
+.site-footer a { display: inline-flex; align-items: center; min-height: 44px; }
+.site-footer strong { font-size: 13px; }
+
+.routing-demo .demo-toolbar { padding: 16px 20px; }
+.routing-demo .tiny-label, .routing-demo .mono { font-size: 12px; line-height: 1.5; }
+.routing-demo .tiny-label { letter-spacing: .05em; }
+.routing-demo .demo-intro { padding: 22px 20px 18px; }
+.routing-demo .demo-intro :is(h2,h3) { font-family: 'Manrope',sans-serif; font-size: 17px; font-weight: 600; line-height: 1.4; letter-spacing: -.025em; }
+.routing-demo .demo-intro p { font-size: 13px; line-height: 1.6; margin-top: 6px; }
+.routing-demo .demo-symbol { display: flex; }
+.routing-demo .incoming-record { margin: 0 20px; padding: 14px; }
+.routing-demo .incoming-record strong { font-size: 14px; }
+.routing-demo .incoming-record div > span { font-size: 12px; line-height: 1.5; }
+.routing-demo .record-state { font-size: 11px; line-height: 1.5; }
+.routing-demo .record-avatar { font-size: 11px; }
+.routing-evidence { margin: 10px 20px 0; }
+.routing-evidence summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; padding: 8px 0; cursor: pointer; list-style: none; font-size: 13px; font-weight: 600; color: var(--blue); }
+.routing-evidence summary::-webkit-details-marker { display: none; }
+.routing-evidence summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.routing-evidence[open] summary > svg { transform: rotate(180deg); }
+.routing-input { display: grid; gap: 12px; margin: 10px 0 14px; padding: 0; }
+.routing-input > div { min-width: 0; }
+.routing-input dt { font-size: 12px; line-height: 1.5; color: var(--muted); margin-bottom: 3px; }
+.routing-input dd { margin: 0; font-size: 14px; line-height: 1.6; }
+.routing-input code { font: 13px/1.6 ui-monospace,monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.routing-demo .routing-rule { font-size: 13px; line-height: 1.7; margin-bottom: 14px; }
+.routing-demo .demo-controls { margin: 16px 20px 20px; gap: 12px; }
+.routing-demo .demo-controls label { font-size: 13px; line-height: 1.5; }
+.routing-demo .demo-controls select { min-height: 44px; padding: 10px 26px 10px 10px; font-size: 16px; line-height: 1.4; }
+.routing-demo .demo-controls .button { min-height: 44px; padding: 10px 14px; font-size: 14px; gap: 8px; }
+.routing-demo .demo-result { padding: 20px; min-height: 112px; margin-top: 0; }
+.routing-demo .result-placeholder, .routing-demo .result-heading { font-size: 14px; line-height: 1.5; }
+.routing-demo .result-heading svg { flex-shrink: 0; }
+.routing-demo .demo-result p { font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.routing-demo .result-review, .routing-demo .result-error { color: #765515; }
+.routing-demo .result-counts { font-size: 13px; line-height: 1.5; }
+.routing-demo .routing-recovery { margin-top: 14px; }
+.routing-demo .execution-log { font-size: 13px; line-height: 1.6; }
+.routing-demo .execution-log li > span { font-size: 12px; line-height: 1.6; }
+.routing-demo .demo-foot { padding: 8px 20px; gap: 8px; font-size: 12px; line-height: 1.5; flex-wrap: wrap; }
+.routing-demo .demo-foot .text-action { min-height: 44px; padding: 8px 0 8px 8px; font-size: 13px; gap: 8px; }
+
+@media (max-width: 1100px) {
+  .home-page .hero { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .routing-demo .demo-controls { flex-direction: column; align-items: stretch; }
+  .routing-demo .record-state { display: none; }
+}
+@media (max-width: 850px) {
+  .home-page .hero { grid-template-columns: 1fr; gap: 40px; }
+  .home-page .hero-copy { max-width: 640px; }
+  .home-page .hero h1 { font-size: clamp(52px,7vw,64px); }
+  .home-page .hero-description { font-size: 16px; max-width: 520px; }
+  .home-page .hero-actions .button { min-height: 44px; font-size: 14px; padding: 12px 16px; }
+  .home-page .hero-proof { max-width: 600px; width: 100%; margin: 0 auto; }
+  .home-page .project-card { display: grid; grid-template-columns: 1fr 1fr; }
+  .home-page .project-content { min-width: 0; }
+  .home-page .project-image { height: 280px; }
+  .home-page .project-bottom .project-action { margin-top: 0; }
+  .routing-demo .demo-controls { flex-direction: row; align-items: flex-end; }
+}
+@media (max-width: 620px) {
+  .menu-toggle { min-width: 44px; min-height: 44px; }
+  .site-header nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 16px; }
+  .site-header nav { gap: 12px; }
+  .home-page .hero { padding-top: 36px; padding-bottom: 40px; gap: 32px; }
+  .home-page .hero .eyebrow { font-size: 12px; line-height: 1.7; letter-spacing: .04em; }
+  .home-page .hero h1 { font-size: clamp(46px,10.9vw,67px); }
+  .home-page .hero-description { font-size: 16px; margin-top: 20px; }
+  .home-page .hero-actions { flex-direction: column; align-items: flex-start; }
+  .home-page .hero-person span { font-size: 13px; max-width: 240px; }
+  .home-page .proof-note { text-align: left; }
+  .home-page .projects-section { padding-top: 40px; padding-bottom: 40px; }
+  .home-page .section-heading > p { font-size: 16px; margin-top: 16px; }
+  .home-page .section-heading h2 { font-size: 30px; }
+  .home-page .project-card { display: flex; gap: 0; }
+  .home-page .project-image { height: 220px; }
+  .home-page .project-content { padding-top: 20px; }
+  .home-page .project-card p { font-size: 16px; line-height: 1.7; }
+  .home-page .project-card .project-decision { font-size: 14px; margin-bottom: 16px; }
+  .home-page .project-bottom { flex-direction: column; align-items: stretch; gap: 12px; }
+  .home-page .project-bottom .project-action { justify-content: space-between; font-size: 14px; }
+  .home-page .about-section { padding-top: 40px; padding-bottom: 40px; }
+  .home-page .about-copy p { font-size: 16px; }
+  .home-page .about-copy .large-copy { font-size: 18px; }
+  .home-page .about-facts { grid-template-columns: 1fr; gap: 20px; }
+  .home-page .qualifications-section { padding-top: 40px; padding-bottom: 40px; }
+  .home-page .qualification-preview strong { font-size: 16px; }
+  .home-page .lp-teaser { padding-top: 32px; padding-bottom: 40px; }
+  .home-page .lp-teaser-copy > p { font-size: 16px; }
+  .home-page .contact-section p { font-size: 16px; }
+  .home-page .contact-actions .button { font-size: 14px; min-height: 44px; }
+  .routing-demo .demo-toolbar { padding: 14px 16px; }
+  .routing-demo .tiny-label { font-size: 11px; }
+  .routing-demo .demo-intro { padding: 20px 16px 16px; }
+  .routing-demo .demo-intro :is(h2,h3) { font-size: 17px; }
+  .routing-demo .incoming-record { margin: 0 16px; }
+  .routing-evidence { margin-left: 16px; margin-right: 16px; }
+  .routing-demo .demo-controls { margin: 12px 16px 20px; flex-direction: column; align-items: stretch; }
+  .routing-demo .demo-result { padding: 20px 16px; }
+  .routing-demo .demo-foot { padding: 8px 16px; }
+  .routing-demo .demo-result p { font-size: 16px; line-height: 1.6; }
+  .routing-demo .result-counts { font-size: 14px; }
+}
