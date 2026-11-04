@@ -10,5 +10,9 @@ export default defineConfig({
     watch: { ignored: ['**/evidence/**'] },
   },
   preview: { host: '127.0.0.1', port: 4317, strictPort: true },
-  build: { sourcemap: false },
+  build: {
+    sourcemap: false,
+    // Cloudflare builds have a tighter file-descriptor budget than local builds.
+    rollupOptions: { maxParallelFileOps: 64 },
+  },
 });
