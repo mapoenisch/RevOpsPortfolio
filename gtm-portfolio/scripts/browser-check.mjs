@@ -13,6 +13,8 @@ const pages = [['home','/'],['leadpilot','/cases/leadpilot'],['routing','/cases/
 try {
   const context = await browser.newContext({ reducedMotion: 'reduce' });
   const page = await context.newPage();
+  page.setDefaultTimeout(15000);
+  page.setDefaultNavigationTimeout(15000);
   page.on('pageerror', e => errors.push(e.message));
   page.on('request', r => { if(!r.url().startsWith(base) && !r.url().startsWith('data:')) requests.add(new URL(r.url()).origin); });
   for(const width of [1440,768,375,320]) {
@@ -30,7 +32,57 @@ try {
     }
   }
   await writeFile(`${root}evidence/browser-results.json`,JSON.stringify({generatedAt:new Date().toISOString(),results,interactionTests:'running'},null,2));
+  const homeChecks = [];
+  for (const width of [1440,768,375,320]) {
+    console.log(`Startseite: Interaktionen bei ${width}px`);
+    await page.setViewportSize({width,height:1000});
+    await page.goto(base+'/');
+    const demo=page.locator('.compact-demo');
+    const disclosure=demo.locator('.routing-evidence');
+    await disclosure.locator('summary').focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await disclosure.evaluate(el=>el.open),true,'Eingangsgrundlage per Tastatur erreichbar');
+    assert.ok((await disclosure.innerText()).includes('42 Beschäftigte'));
+    assert.ok((await disclosure.innerText()).includes('ab 50'));
+    for (const [scenario,label,counts] of [
+      ['new','Sauber übergeben',['1','1']],
+      ['duplicate','Dublette abgefangen',['1','1']],
+      ['missing','Manuelle Prüfung',['0','0']],
+      ['error','Übergabe unvollständig',['1','0']],
+    ]) {
+      await demo.getByLabel('Testfall',{exact:true}).selectOption(scenario);
+      assert.equal(await demo.locator('.result-counts').count(),0,'Testfallwechsel entfernt altes Ergebnis');
+      await demo.getByRole('button',{name:'Anfrage prüfen',exact:true}).click();
+      await demo.getByText(label,{exact:true}).waitFor();
+      assert.deepEqual(await demo.locator('.result-counts strong').allTextContents(),counts);
+      if(scenario==='missing') {
+        assert.ok((await disclosure.innerText()).includes('Fehlt in diesem Testfall'),JSON.stringify({width,open:await disclosure.evaluate(el=>el.open),text:await disclosure.innerText()}));
+        assert.ok((await demo.locator('.demo-result').innerText()).includes('Unternehmensangabe fehlt'));
+      }
+      if(scenario==='error') {
+        assert.ok((await demo.locator('.routing-recovery').innerText()).includes('neuen Demolauf'));
+        assert.equal(await demo.locator('.result-heading .lucide-circle-alert').count(),1);
+      }
+    }
+    const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+    assert.deepEqual(axe.violations.map(v=>v.id),[],'Startseite mit geöffneten Daten und Fehlerzustand');
+    await demo.getByRole('button',{name:'Demo zurücksetzen'}).click();
+    assert.equal(await demo.getByLabel('Testfall',{exact:true}).inputValue(),'new');
+    await demo.getByText('Bereit für den Testlauf',{exact:true}).waitFor();
+    await disclosure.locator('summary').click();
+    const metrics=await page.evaluate(()=>({
+      width:innerWidth,height:document.documentElement.scrollHeight,
+      overflow:document.documentElement.scrollWidth>innerWidth,
+      controls:[...document.querySelectorAll('.compact-demo select,.compact-demo .button,.compact-demo .text-action,.compact-demo summary,.project-action')].map(el=>({label:el.textContent.trim(),height:el.getBoundingClientRect().height,font:getComputedStyle(el).fontSize})),
+    }));
+    assert.equal(metrics.overflow,false);
+    assert.ok(metrics.controls.every(c=>c.height>=44),'Bedienflächen mindestens 44 px hoch');
+    assert.equal(await page.locator('.project-card').count(),3);
+    assert.equal(await page.locator('.lp-jump').count(),0);
+    homeChecks.push(metrics);
+  }
   await page.setViewportSize({width:1440,height:1000});
+  console.log('Routing-Unterseite: vier Testfälle');
   await page.goto(base+'/cases/lead-routing');
   await page.getByRole('button',{name:'Anfrage prüfen'}).click();
   await page.getByText('Sauber übergeben',{exact:true}).waitFor();
@@ -42,12 +94,14 @@ try {
   await page.getByText('Manuelle Prüfung',{exact:true}).first().waitFor();
   await page.getByLabel('Testfall',{exact:true}).selectOption('error');
   await page.getByRole('button',{name:'Anfrage prüfen'}).click();
-  await page.getByText('Zwischenstand gesichert',{exact:true}).waitFor();
+  await page.getByText('Übergabe unvollständig',{exact:true}).waitFor();
+  console.log('Diagramme und Downloads prüfen');
   const media=JSON.parse(await readFile(`${root}public/data/media.json`,'utf8'));
   for(const slug of ['leadpilot','lead-routing','ki-prospecting']) {
     const diagram=media[slug].diagram;assert.ok(diagram,slug+': Diagramm vorhanden');
     await page.goto(base+`/cases/${slug}`);
     const trigger=page.locator('.diagram-trigger');await trigger.waitFor();
+    await trigger.scrollIntoViewIfNeeded();
     await trigger.locator('img').evaluate(img=>img.decode());
     assert.equal(await page.getByText('Architekturdiagramm in Vorbereitung',{exact:true}).count(),0);
     const response=await page.request.get(base+diagram.src);assert.equal(response.status(),200);assert.ok(response.headers()['content-type'].includes('image/svg+xml'));
@@ -95,6 +149,7 @@ try {
   assert.equal(await page.getByRole('button',{name:'Menü öffnen'}).evaluate(el=>el===document.activeElement),true);
   const keyboardPage=await context.newPage();await keyboardPage.goto(base+'/');await keyboardPage.locator('h1').waitFor();await keyboardPage.keyboard.press('Tab');
   assert.equal(await keyboardPage.getByRole('link',{name:'Zum Inhalt'}).evaluate(el=>el===document.activeElement),true);await keyboardPage.close();
+  console.log('Videos prüfen');
   for(const slug of ['leadpilot','lead-routing','ki-prospecting']) {
     if(!media[slug].video) continue;
     await page.goto(base+`/cases/${slug}`);
@@ -110,7 +165,7 @@ try {
   const failures=results.filter(r=>r.overflow||r.brokenImages.length||r.h1!==1||r.violations.length);
   await page.setViewportSize({width:1440,height:1000});await page.goto(base+'/');await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:root+'evidence/browser/portfolio-desktop.png'});
   await page.setViewportSize({width:375,height:1000});await page.screenshot({path:root+'evidence/browser/portfolio-mobile.png'});
-  await writeFile(`${root}evidence/browser-results.json`,JSON.stringify({generatedAt:new Date().toISOString(),results,interactionTests:['Routing: vier Fälle','Scoring: Filter, Suche, Leerzustand','Nachweise: Filter und alle Dateien','Diagramme: drei SVGs, Textfassung, Download, Zoom, Einpassen, Escape und Fokusrückgabe; mobile Vergrößerung','Mobiles Menü, Escape, Fokus','Sprunglink','Direkte Seitenaufrufe','MP4-Wiedergabe, Dauer, Untertitelspur','Keine externen Datenaufrufe'],errors,externalRequests:[...requests]},null,2));
+  await writeFile(`${root}evidence/browser-results.json`,JSON.stringify({generatedAt:new Date().toISOString(),results,homeChecks,interactionTests:['Startseite: vier Routing-Fälle, Daten/Regel per Tastatur, Fehlerhilfe, Reset und 44-px-Bedienflächen bei vier Breiten','Routing: vier Fälle','Scoring: Filter, Suche, Leerzustand','Nachweise: Filter und alle Dateien','Diagramme: drei SVGs, Textfassung, Download, Zoom, Einpassen, Escape und Fokusrückgabe; mobile Vergrößerung','Mobiles Menü, Escape, Fokus','Sprunglink','Direkte Seitenaufrufe','MP4-Wiedergabe, Dauer, Untertitelspur','Keine externen Datenaufrufe'],errors,externalRequests:[...requests]},null,2));
   console.log(JSON.stringify({views:results.length,failures:failures.map(r=>({name:r.name,width:r.width,overflow:r.overflow,violations:r.violations})),errors,externalRequests:[...requests]},null,2));
   assert.equal(failures.length,0,'Darstellungs- oder Accessibility-Fehler');
 } finally { await browser.close(); }

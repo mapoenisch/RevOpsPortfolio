@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from 'react';
-import { ArrowRight, Check, CircleAlert, Copy, RotateCcw, Search, SlidersHorizontal } from 'lucide-react';
+import { ArrowRight, Check, ChevronDown, CircleAlert, Copy, RotateCcw, Search, SlidersHorizontal } from 'lucide-react';
 import { createRouter } from '../demos/routing/core.mjs';
 import { profiles } from '../demos/prospecting/fixtures.mjs';
 import { scoreProfile } from '../demos/prospecting/core.mjs';
@@ -10,28 +10,46 @@ export function RoutingDemo({ compact = false }: { compact?: boolean }) {
   const [result, setResult] = useState<RoutingResult | null>(null);
   const [busy, setBusy] = useState(false);
   const [counts, setCounts] = useState({ contacts: 0, tasks: 0 });
-  const statuses: Record<string, string> = { accepted: 'Sauber übergeben', duplicate: 'Dublette abgefangen', review: 'Manuelle Prüfung', error: 'Zwischenstand gesichert' };
+  const Heading = compact ? 'h2' : 'h3';
+  const statuses: Record<string, string> = { accepted: 'Sauber übergeben', duplicate: 'Dublette abgefangen', review: 'Manuelle Prüfung', error: 'Übergabe unvollständig' };
+  const input = { eventId: 'portfolio-test-01', email: ' Mara@Testfirma.example ', firstName: 'Mara', lastName: 'Beispiel', company: scenario === 'missing' ? '' : 'Testfirma', employees: 42, source: 'demo' };
+  const evidence = <>
+    <dl className="routing-input">
+      <div><dt>E-Mail im Eingang</dt><dd><code>{input.email}</code></dd></div>
+      <div><dt>Unternehmen</dt><dd>{input.company || 'Fehlt in diesem Testfall'}</dd></div>
+      <div><dt>Unternehmensgröße</dt><dd>{input.employees} Beschäftigte</dd></div>
+    </dl>
+    <p className="routing-rule">Die Regel: unter 50 Beschäftigten → Inside Sales, ab 50 → Account Management. Fehlt eine Pflichtangabe, wird die Anfrage manuell geprüft.</p>
+  </>;
   async function run() {
     setBusy(true);
-    const contacts = new Map(); const tasks = new Map();
-    const crm = {
-      async upsertContact(lead: { email: string }) { contacts.set(lead.email, 'DEMO-K01'); return { id: 'DEMO-K01' }; },
-      async ensureTask(_: string, lead: { email: string }) { if (scenario === 'error') throw new Error('Testfehler'); tasks.set(lead.email, 'DEMO-A01'); return { id: 'DEMO-A01' }; },
-    };
-    const router = createRouter({ crm });
-    const input = { eventId: 'portfolio-test-01', email: ' Mara@Testfirma.example ', firstName: 'Mara', lastName: 'Beispiel', company: 'Testfirma', employees: 42, source: 'demo' };
-    if (scenario === 'duplicate') await router.route(input);
-    const value = await router.route(scenario === 'missing' ? { ...input, company: '' } : input);
-    setResult(value as RoutingResult); setCounts({ contacts: contacts.size, tasks: tasks.size }); setBusy(false);
+    try {
+      const contacts = new Map(); const tasks = new Map();
+      const crm = {
+        async upsertContact(lead: { email: string }) { contacts.set(lead.email, 'DEMO-K01'); return { id: 'DEMO-K01' }; },
+        async ensureTask(_: string, lead: { email: string }) { if (scenario === 'error') throw new Error('Testfehler'); tasks.set(lead.email, 'DEMO-A01'); return { id: 'DEMO-A01' }; },
+      };
+      const router = createRouter({ crm });
+      if (scenario === 'duplicate') await router.route(input);
+      const value = await router.route(input);
+      setResult(value as RoutingResult); setCounts({ contacts: contacts.size, tasks: tasks.size });
+    } finally { setBusy(false); }
   }
+  const reset = () => { setScenario('new'); setResult(null); setCounts({ contacts: 0, tasks: 0 }); };
   return <div className={`routing-demo ${compact ? 'compact-demo' : ''}`}>
-    <div className="demo-toolbar"><span className="tiny-label"><span className="live-dot" /> Lokale Arbeitsprobe</span><span className="mono">CASE 02</span></div>
-    <div className="demo-intro"><div className="demo-symbol">↳</div><div><h3>Eine Anfrage. Ein klarer nächster Schritt.</h3><p>Synthetische Daten · simuliertes CRM</p></div></div>
-    <div className="incoming-record"><div className="record-avatar">MB</div><div><strong>Mara Beispiel</strong><span>Vertrieb · Testfirma</span></div><span className="record-state">Neue Anfrage</span></div>
-    {!compact && <div className="record-fields"><div><span>E-Mail im Eingang</span><code> Mara@Testfirma.example </code></div><div><span>Unternehmensgröße</span><strong>42 Beschäftigte</strong></div></div>}
-    <div className="demo-controls"><label htmlFor={compact ? 'scenario-hero' : 'scenario-case'}>Testfall<select id={compact ? 'scenario-hero' : 'scenario-case'} aria-label="Testfall" value={scenario} onChange={e => { setScenario(e.target.value); setResult(null); }}><option value="new">Vollständige Anfrage</option><option value="duplicate">Doppelte Anfrage</option><option value="missing">Pflichtangabe fehlt</option><option value="error">CRM nicht erreichbar</option></select></label><button type="button" className="button blue" onClick={run} disabled={busy}>Anfrage prüfen <ArrowRight size={16} /></button></div>
-    <div className="demo-result" aria-live="polite" aria-atomic="true">{result ? <><div className={`result-heading result-${result.status}`}><Check size={16} /><strong>{statuses[result.status]}</strong></div><p>{result.reason || 'Die E-Mail wurde normalisiert und Inside Sales zugeordnet.'}</p><div className="result-counts"><span><strong>{counts.contacts}</strong> Kontakt</span><span><strong>{counts.tasks}</strong> Folgeaufgabe</span></div>{!compact && <ol className="execution-log">{result.steps.map((s, i) => <li key={s}><span>{String(i + 1).padStart(2, '0')}</span>{s}</li>)}</ol>}</> : <><div className="result-placeholder"><span className="status-outline" />Bereit für den Testlauf</div><p>Wähle einen Fall und prüfe die Verarbeitung.</p></>}</div>
-    <div className="demo-foot"><span>Keine externen Schreibzugriffe</span><button className="text-action" onClick={() => { setResult(null); setCounts({ contacts: 0, tasks: 0 }); }} aria-label="Demo zurücksetzen"><RotateCcw size={13} /> Zurücksetzen</button></div>
+    <div className="demo-toolbar"><span className="tiny-label"><span className="live-dot" /> Lokale Arbeitsprobe</span><span className="mono">02</span></div>
+    <div className="demo-intro"><div className="demo-symbol" aria-hidden="true"><ArrowRight size={20}/></div><div><Heading>Eine Anfrage. Ein klarer nächster Schritt.</Heading><p>Synthetische Daten · simuliertes CRM</p></div></div>
+    <div className="incoming-record"><div className="record-avatar" aria-hidden="true">MB</div><div><strong>Mara Beispiel</strong><span>{input.company || 'Unternehmen fehlt'}</span></div><span className="record-state">{scenario === 'duplicate' ? 'Erneuter Eingang' : 'Neue Anfrage'}</span></div>
+    {compact ? <details className="routing-evidence"><summary>Eingang & Regel ansehen <ChevronDown size={17} aria-hidden="true"/></summary><div>{evidence}</div></details> : <div className="routing-evidence routing-evidence-expanded">{evidence}</div>}
+    <div className="demo-controls"><label htmlFor={compact ? 'scenario-hero' : 'scenario-case'}>Testfall<select id={compact ? 'scenario-hero' : 'scenario-case'} aria-label="Testfall" value={scenario} onChange={e => { setScenario(e.target.value); setResult(null); setCounts({ contacts: 0, tasks: 0 }); }}><option value="new">Vollständige Anfrage</option><option value="duplicate">Doppelte Anfrage</option><option value="missing">Pflichtangabe fehlt</option><option value="error">CRM nicht erreichbar</option></select></label><button type="button" className="button blue" onClick={run} disabled={busy}>{busy ? 'Wird geprüft …' : 'Anfrage prüfen'} <ArrowRight size={16} aria-hidden="true"/></button></div>
+    <div className="demo-result" aria-live="polite" aria-atomic="true">{result ? <>
+      <div className={`result-heading result-${result.status}`}>{result.status === 'error' || result.status === 'review' ? <CircleAlert size={18} aria-hidden="true"/> : <Check size={18} aria-hidden="true"/>}<strong>{statuses[result.status]}</strong></div>
+      <p>{result.status === 'review' && scenario === 'missing' ? 'Die Unternehmensangabe fehlt. Vor der Übergabe muss sie ergänzt und geprüft werden.' : result.status === 'error' ? 'Der Kontakt wurde angelegt. Die Folgeaufgabe fehlt, weil der simulierte CRM-Zugriff unterbrochen wurde.' : result.reason || 'Aus „ Mara@Testfirma.example “ wird „mara@testfirma.example“. 42 Beschäftigte → Inside Sales.'}</p>
+      <div className="result-counts"><span><strong>{counts.contacts}</strong> Kontakt</span><span><strong>{counts.tasks}</strong> Folgeaufgabe</span></div>
+      {result.status === 'error' && <p className="routing-recovery">Nächster Schritt im echten Ablauf: Kontakt und Aufgaben im CRM abgleichen, dann den gesicherten Vorgang fortsetzen. Jeder Klick hier startet einen neuen Demolauf.</p>}
+      {!compact && <ol className="execution-log">{result.steps.map((s, i) => <li key={s}><span>{String(i + 1).padStart(2, '0')}</span>{s}</li>)}</ol>}
+    </> : <><div className="result-placeholder"><span className="status-outline" />Bereit für den Testlauf</div><p>Wähle einen Fall und prüfe die Verarbeitung.</p></>}</div>
+    <div className="demo-foot"><span>Keine externen Schreibzugriffe</span><button type="button" className="text-action" onClick={reset} aria-label="Demo zurücksetzen"><RotateCcw size={16} aria-hidden="true"/> Zurücksetzen</button></div>
   </div>;
 }
 

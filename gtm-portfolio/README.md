@@ -23,7 +23,7 @@ Beide Server binden ausschließlich an `127.0.0.1:4317`. Die Website kann ohne L
 ## Inhalte und Medien pflegen
 
 - Texte, Profil, Cases und ausgewählte Nachweise: `src/content.ts`.
-- Gestaltung und responsive Regeln: `src/style.css`.
+- Gestaltung und responsive Regeln: `src/style.css`; gezielte Startseiten- und Routing-Demo-Ergänzungen: `src/home.css`.
 - Originalnachweise und Download-Lebenslauf: `public/nachweise/` und `public/downloads/`.
 - Medienzuordnung: `public/data/media.json`. Jeder Case hat `screenshots`; `video` und `diagram` sind optional.
 - Tatsächlicher KI-Lauf: `public/data/prospecting-report.json`.
@@ -33,7 +33,7 @@ Beide Server binden ausschließlich an `127.0.0.1:4317`. Die Website kann ohne L
 
 Die Chronik unter `/leadpilot` beschreibt in acht Kapiteln die Entwicklung von der Geschäftsidee über Marketing, Unternehmensdaten und Pitch bis zu Dashboard und Designsystem. LeadPilot und die darin gezeigten Unternehmenszahlen sind fiktiv. Produktideen und Marketingvisualisierungen sind keine Nachweise für reale Kundenergebnisse oder bereits umgesetzte Funktionen.
 
-Auf der Startseite steht unter den Arbeitsproben der Button „LeadPilot-Entstehung ansehen“. Er springt zum LeadPilot-Abschnitt am Seitenende; dort führt „Die Projektchronik ansehen“ zur eigenen Chronikseite. Die LeadPilot-Case-Study und die Chronik verweisen gegenseitig aufeinander.
+Auf der Startseite steht die Projektchronik als ergänzender Kontext nach Profil und Nachweisen. „Die Projektchronik ansehen“ führt zur eigenen Chronikseite. Die LeadPilot-Case-Study und die Chronik verweisen gegenseitig aufeinander. Ein zusätzlicher Chronik-Sprungbutton unter den Arbeitsproben ist nicht vorgesehen.
 
 - Inhalt und Komponenten: `src/LeadPilotChronik.tsx`; Gestaltung: `src/leadpilot-chronik.css`.
 - Ausgewählte Bilder, drei Werbeclips, Untertitel und Schriftdateien: `public/leadpilot/assets/`. Die Marketinggalerie enthält zwölf durchblätterbare Motive.

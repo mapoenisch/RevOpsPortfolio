@@ -33,25 +33,63 @@ function Contact() {
 
 function ProjectCard({ project, media }: { project: CaseStudy; media?: CaseMedia }) {
   const image = media?.screenshots[0];
-  return <article className={`project-card project-${project.slug}`}><Link className="project-image" to={`/cases/${project.slug}`} aria-label={`${project.name}: Fallstudie ansehen`}>{image ? <img src={image.src} alt={image.alt} loading="lazy" width="1440" height="1000" /> : <div className="project-cover-text"><span className="cover-kicker">{project.number} / ARBEITSPROBE</span><strong>{project.slug === 'leadpilot' ? 'LeadPilot' : project.slug === 'lead-routing' ? 'Eine Anfrage.\nEin klarer Ablauf.' : '50 Profile.\nKlare Kriterien.'}</strong><span>{project.slug === 'leadpilot' ? 'CRM · Reporting · Datenquellen' : project.category}</span></div>}<span className="cover-link"><ArrowRight size={19} strokeWidth={1.7} aria-hidden="true" /></span></Link><div className="project-content"><span className="project-category">{project.category}</span><h3><Link to={`/cases/${project.slug}`}>{project.name}</Link></h3><p>{project.short}</p><div className="project-bottom"><span className="status-label"><span />{project.status}</span><Link to={`/cases/${project.slug}`} className="text-link">Case ansehen <ArrowRight size={16} /></Link></div></div></article>;
+  return <article className={`project-card project-${project.slug}`}>
+    <Link className="project-image" to={`/cases/${project.slug}`} aria-label={`${project.name}: Arbeitsprobe ansehen`}>
+      {image ? <img src={image.src} alt={image.alt} loading="lazy" width="1440" height="1000" /> : <div className="project-cover-text"><span className="cover-kicker">{project.number} / ARBEITSPROBE</span><strong>{project.slug === 'leadpilot' ? 'LeadPilot' : project.slug === 'lead-routing' ? 'Eine Anfrage.\nEin klarer Ablauf.' : '50 Profile.\nKlare Kriterien.'}</strong><span>{project.slug === 'leadpilot' ? 'CRM · Reporting · Datenquellen' : project.category}</span></div>}
+      <span className="cover-link"><ArrowRight size={19} strokeWidth={1.7} aria-hidden="true" /></span>
+    </Link>
+    <div className="project-content">
+      <span className="project-category">{project.category}</span>
+      <h3><Link to={`/cases/${project.slug}`}>{project.name}</Link></h3>
+      <p>{project.short}</p>
+      <p className="project-decision"><strong>Meine Entscheidung:</strong> {project.decisions[0].title}.</p>
+      <div className="project-bottom">
+        <span className="status-label"><span />{project.status}</span>
+        <Link to={`/cases/${project.slug}`} className="text-link project-action" aria-label={`${project.name}: Arbeitsprobe ansehen`}>Arbeitsprobe ansehen <ArrowRight size={16} /></Link>
+      </div>
+    </div>
+  </article>;
 }
 
 function Home() {
   const media = useMedia();
-  return <>
-    <section className="hero section-pad"><div className="hero-copy"><span className="eyebrow"><span className="blue-square" /> Sales Operations & Revenue Operations</span><h1 tabIndex={-1}>Vertrieb kennen.<br />Prozesse<br /><span>weiterdenken.</span></h1><p className="hero-description">Ich komme aus dem B2B-Vertrieb. Heute verbinde ich diese Erfahrung mit CRM, Daten und KI – und baue digitale Vertriebsprozesse in eigenen Praxisprojekten direkt nach.</p><div className="hero-actions"><a className="button blue" href="#arbeitsproben">Arbeitsproben ansehen <ArrowDown size={17} /></a><a className="button quiet" href={profile.resume} target="_blank" rel="noreferrer">Lebenslauf <Download size={16} /></a></div><div className="hero-person"><img src="/images/marc.webp" alt="Marc Pönisch" width="48" height="48" /><div><strong>Marc Pönisch</strong><span>Leipzig · Weiterbildung zum Digital Sales Manager</span></div></div></div><div className="hero-proof"><div className="proof-caption"><span className="line-mark" /> Nicht nur darüber reden. Ausprobieren.</div><RoutingDemo compact /><p className="proof-note">Ein kleiner Einblick in meine Arbeitsweise.<br /><Link to="/cases/lead-routing">Die ganze Fallstudie <ArrowRight size={13} /></Link></p></div></section>
-    <div className="focus-strip"><span>Mein Fokus</span><strong>CRM & Prozesse</strong><span className="strip-divider" /><strong>Reporting & Daten</strong><span className="strip-divider" /><strong>Automatisierung</strong><span className="strip-divider" /><strong>Umsetzung mit KI</strong></div>
-    <section id="arbeitsproben" className="projects-section section-pad"><div className="section-heading"><div><span className="eyebrow">Ausgewählte Arbeitsproben</span><h2>Von der Frage<br />zur prüfbaren Lösung.</h2></div><p>Drei Perspektiven auf digitale Vertriebsprozesse.<br />Mit fachlichen Entscheidungen, konkreter Umsetzung<br className="desktop-break" /> und nachvollziehbaren Ergebnissen.</p></div><div className="project-grid">{cases.map(project => <ProjectCard project={project} media={media[project.slug]} key={project.slug} />)}</div><div className="lp-jump"><a className="button blue" href="#leadpilot-hintergrund">LeadPilot-Entstehung ansehen <ArrowDown size={17} /></a></div></section>
-    <section className="approach-section section-pad"><div className="section-heading"><div><span className="eyebrow">Was ich mitbringe</span><h2>Die Verbindung macht’s.</h2></div><p>Ich denke vom Vertriebsalltag aus.<br />Die Technik hilft mir, daraus klare Abläufe zu machen.</p></div><div className="approach-grid">{[
-      ['01', 'Vertrieb verstehen', 'Kundenbedarf klären, Angebote erstellen und Aufträge begleiten. Mein Ausgangspunkt ist die Arbeit im B2B-Baustoffhandel.', '#profil', 'Beruflicher Hintergrund'],
-      ['02', 'Prozesse ordnen', 'Daten, Zuständigkeiten und nächste Schritte zusammenbringen. LeadPilot und die Routing-Demo zeigen, wie ich daran arbeite.', '/cases/lead-routing', 'Routing-Arbeitsprobe'],
-      ['03', 'Ergebnisse prüfen', 'Kriterien offenlegen, Fehlerfälle testen und Grenzen benennen. KI-Unterstützung gehört dazu – ebenso die eigene Prüfung.', '/cases/ki-prospecting', 'Scoring-Arbeitsprobe'],
-    ].map(([number, title, text, href, label]) => <article key={number}><span className="approach-number">{number}</span><h3>{title}</h3><p>{text}</p>{href.startsWith('#') ? <a className="text-link" href={href}>{label}<ArrowRight size={15}/></a> : <Link className="text-link" to={href}>{label}<ArrowRight size={15}/></Link>}</article>)}</div></section>
-    <section id="profil" className="about-section section-pad"><div className="about-portrait"><img src="/images/marc.webp" alt="Marc Pönisch, kaufmännischer Hintergrund im B2B-Vertrieb" width="480" height="640" loading="lazy" /><span>Marc Pönisch · Leipzig</span></div><div className="about-copy"><span className="eyebrow">Über mich</span><h2>Aus dem Vertrieb.<br />Mit Blick aufs Ganze.</h2><p className="large-copy">Ich kenne den Weg von der Kundenanfrage bis zur Auftragsabwicklung. Jetzt beschäftige ich mich mit den Systemen und Prozessen dahinter.</p><p>Als Kaufmann im Groß- und Außenhandel habe ich im Baustoffhandel B2B-Kunden beraten, Angebote erstellt und Stammdaten gepflegt. Diese Erfahrung ist die Grundlage für meine Projekte.</p><p>Seit dem 18. Mai 2026 absolviere ich die Weiterbildung zum Digital Sales Manager. Mein nächster beruflicher Schritt liegt an der Schnittstelle von Vertrieb, CRM und Operations.</p><div className="about-facts"><div><span>2019–2024</span><strong>Ausbildung & B2B-Vertrieb</strong><small>Raiffeisen Waren GmbH</small></div><div><span>Seit Mai 2026</span><strong>Digital Sales Manager</strong><small>Laufende Vollzeit-Weiterbildung · remote</small></div></div><a className="text-link" href={profile.resume} target="_blank" rel="noreferrer">Lebenslauf als PDF <Arrow /></a></div></section>
-    <section className="qualifications-section section-pad"><div className="section-heading"><div><span className="eyebrow">Lernen & Anwenden</span><h2>Wissen mit Grundlage.</h2></div><Link className="text-link" to="/nachweise">Ausgewählte Nachweise <ArrowRight size={17}/></Link></div><div className="qualification-preview">{certificates.slice(0, 3).map(c => <a href={`/nachweise/${c.file}`} key={c.file} target="_blank" rel="noreferrer"><div className="certificate-icon"><FileText size={21}/></div><span><small>{c.issuer}</small><strong>{c.title}</strong><span>{c.kind}{c.date && ` · ${c.date.slice(-4)}`}</span></span><Arrow /></a>)}</div><p className="section-note">Die Kurse liefern das Fundament, die Arbeitsproben zeigen die Anwendung.</p></section>
+  return <div className="home-page">
+    <section className="hero section-pad">
+      <div className="hero-copy">
+        <span className="eyebrow"><span className="blue-square" /> Sales Operations & Revenue Operations</span>
+        <h1 tabIndex={-1}>Vertrieb kennen.<br />Prozesse<br /><span>weiterdenken.</span></h1>
+        <p className="hero-description">Ich komme aus dem B2B-Vertrieb. Heute verbinde ich diese Erfahrung mit CRM, Daten und KI – und baue digitale Vertriebsprozesse in eigenen Praxisprojekten direkt nach.</p>
+        <div className="hero-actions"><a className="button blue" href="#arbeitsproben">Arbeitsproben ansehen <ArrowDown size={17} /></a><a className="button quiet" href={profile.resume} target="_blank" rel="noreferrer">Lebenslauf als PDF <Arrow /></a></div>
+        <div className="hero-person"><img src="/images/marc.webp" alt="Marc Pönisch" width="48" height="48" /><div><strong>Marc Pönisch</strong><span>Leipzig · Weiterbildung zum Digital Sales Manager</span></div></div>
+      </div>
+      <div className="hero-proof">
+        <RoutingDemo compact />
+        <p className="proof-note"><Link to="/cases/lead-routing">Zur vollständigen Routing-Arbeitsprobe <ArrowRight size={16} /></Link></p>
+      </div>
+    </section>
+    <section id="arbeitsproben" className="projects-section section-pad" aria-labelledby="projects-title">
+      <div className="section-heading"><div><h2 id="projects-title">Drei Arbeitsproben.<br />Entscheidungen zum Nachprüfen.</h2></div><p>Umsatz analysieren, Anfragen sauber übergeben und passende Profile priorisieren – mit Umsetzung, Ergebnissen und klar benannten Grenzen.</p></div>
+      <div className="project-grid">{cases.map(project => <ProjectCard project={project} media={media[project.slug]} key={project.slug} />)}</div>
+    </section>
+    <section id="profil" className="about-section section-pad">
+      <div className="about-portrait"><img src="/images/marc.webp" alt="Marc Pönisch, kaufmännischer Hintergrund im B2B-Vertrieb" width="480" height="640" loading="lazy" /><span>Marc Pönisch · Leipzig</span></div>
+      <div className="about-copy">
+        <h2>Aus dem Vertrieb.<br />Mit Blick aufs Ganze.</h2>
+        <p className="large-copy">Als Kaufmann im Groß- und Außenhandel habe ich im Baustoffhandel B2B-Kunden beraten, Angebote erstellt und Stammdaten gepflegt.</p>
+        <p>Seit dem 18. Mai 2026 absolviere ich die Weiterbildung zum Digital Sales Manager. Mein nächster beruflicher Schritt liegt an der Schnittstelle von Vertrieb, CRM und Operations.</p>
+        <p>In meinen Projekten definiere ich die fachlichen Anforderungen und Regeln, setze sie mit KI-Coding-Agenten um und prüfe die Ergebnisse selbst.</p>
+        <div className="about-facts"><div><span>2019–2024</span><strong>Ausbildung & B2B-Vertrieb</strong><small>Raiffeisen Waren GmbH</small></div><div><span>Seit Mai 2026</span><strong>Digital Sales Manager</strong><small>Laufende Vollzeit-Weiterbildung · remote</small></div></div>
+        <a className="text-link" href={profile.resume} target="_blank" rel="noreferrer">Lebenslauf als PDF <Arrow /></a>
+      </div>
+    </section>
+    <section className="qualifications-section section-pad" aria-labelledby="qualifications-title">
+      <div className="section-heading"><div><h2 id="qualifications-title">Wissen mit Grundlage.</h2></div><Link className="text-link" to="/nachweise">Alle Nachweise ansehen <ArrowRight size={17}/></Link></div>
+      <div className="qualification-preview">{certificates.slice(0, 3).map(c => <a href={`/nachweise/${c.file}`} key={c.file} target="_blank" rel="noreferrer"><div className="certificate-icon"><FileText size={21}/></div><span><small>{c.issuer}</small><strong>{c.title}</strong><span>{c.kind}{c.date && ` · ${c.date.slice(-4)}`}</span></span><Arrow /></a>)}</div>
+      <p className="section-note">Ausgewählte Zertifikate aus meiner Weiterbildung und ergänzenden Kursen.</p>
+    </section>
     <LeadPilotTeaser />
     <Contact />
-  </>;
+  </div>;
 }
 
 function ImageViewer({ items }: { items: MediaItem[] }) {

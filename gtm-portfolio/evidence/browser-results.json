@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T13:53:37.516Z",
+  "generatedAt": "2026-11-04T20:27:10.366Z",
   "results": [
     {
       "name": "home",
@@ -282,7 +282,178 @@
       "screenshot": "evidence/browser/404-320.png"
     }
   ],
+  "homeChecks": [
+    {
+      "width": 1440,
+      "height": 3381,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 4653,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "height": 6618,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 6942,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        }
+      ]
+    }
+  ],
   "interactionTests": [
+    "Startseite: vier Routing-Fälle, Daten/Regel per Tastatur, Fehlerhilfe, Reset und 44-px-Bedienflächen bei vier Breiten",
     "Routing: vier Fälle",
     "Scoring: Filter, Suche, Leerzustand",
     "Nachweise: Filter und alle Dateien",
