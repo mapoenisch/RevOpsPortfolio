@@ -1,0 +1,44 @@
+{
+  "modules": [
+    "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js",
+    "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/utils/BufferGeometryUtils.js"
+  ],
+  "media": [
+    {
+      "url": "https://pub-1b4063cac4b14c2ba151fd94c6eb8117.r2.dev/M_Mecha._v2.glb",
+      "file": "assets/bbe784fe4b8a-M_Mecha._v2.glb",
+      "bytes": 434228
+    },
+    {
+      "url": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Greenwaycomputervision%20Short2.webm",
+      "file": "assets/de1c3c060763-Greenwaycomputervision_Short2.webm",
+      "bytes": 2298942
+    },
+    {
+      "url": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Reka%201%20Grey.webm",
+      "file": "assets/14f5ae9d106d-Reka_1_Grey.webm",
+      "bytes": 417222
+    },
+    {
+      "url": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Tr%20Greenville%20Robot%20Edit.webm",
+      "file": "assets/db7968172860-Tr_Greenville_Robot_Edit.webm",
+      "bytes": 769051
+    },
+    {
+      "url": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Aescape%20Edit%203.webm",
+      "file": "assets/e534838ffbd6-Aescape_Edit_3.webm",
+      "bytes": 954095
+    },
+    {
+      "url": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Aescape%20-%20Video%20(1).mp4",
+      "file": "assets/faf9632c4db0-Aescape_-_Video__1_.mp4",
+      "bytes": 35937976
+    },
+    {
+      "url": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Pojazd%20Sand.webm",
+      "file": "assets/66dbd63ce0d5-Pojazd_Sand.webm",
+      "bytes": 778244
+    }
+  ]
+}

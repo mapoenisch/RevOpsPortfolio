@@ -1,0 +1,9 @@
+{
+  "capturedAt": "2026-10-27T17:42:48.540Z",
+  "source": "LeadPilot Dashboard-CRM, gespeicherter Original-Build v2.5.0",
+  "session": "Regulär angemeldeter Nur-Lesen-Testzugang, keine Authentifizierung umgangen",
+  "data": "Historische Daten des fiktiven Unternehmens und synthetische Supabase-Seed-Datensätze",
+  "fixtureReference": "supabase/seed.sql:265",
+  "detailUrl": "http://127.0.0.1:4175/dashboard/tiles/std_baseline_arr",
+  "editing": "Unveränderte Browseraufnahmen; keine Daten oder Ansichten nachgebaut"
+}

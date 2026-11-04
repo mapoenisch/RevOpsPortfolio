@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1320" viewBox="0 0 900 1320" role="img" aria-labelledby="title desc">
+  <title id="title">Inbound-Routing mit n8n, lokalem Gateway und HubSpot</title>
+  <desc id="desc">Synthetische Anfragen werden über einen geschützten n8n-Webhook an das Gateway übergeben. Das Gateway validiert, normalisiert und prüft Wiederholungen. Unter 50 und ab 50 Beschäftigten gelten zwei Zuständigkeitsregeln, im Test beide Marc Pönisch. Ein Kontakt und eine verknüpfte Folgeaufgabe werden sichergestellt. Unklare Fälle erfordern manuelle Prüfung.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#52647b"/></marker></defs>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#25354b}.heading{font-size:25px;font-weight:700}.label{font-size:19px;font-weight:700}.body{font-size:16px}.small{font-size:14px;fill:#54657c}.line{fill:none;stroke:#52647b;stroke-width:2;marker-end:url(#arrow)}</style>
+  <rect width="900" height="1320" rx="14" fill="#fff"/>
+  <text x="32" y="44" class="heading">Inbound Lead-Routing · n8n + HubSpot</text>
+  <text x="32" y="72" class="body">Eigenständige Erweiterungsdemo mit synthetischen Anfragen</text>
+  <rect x="230" y="106" width="440" height="74" rx="30" fill="#edf5df" stroke="#91ad61"/>
+  <text x="450" y="136" class="label" text-anchor="middle">Synthetische Anfrage</text>
+  <text x="450" y="162" class="body" text-anchor="middle">source: demo · reservierte Beispieldomain</text>
+  <path d="M450 180V218" class="line"/>
+  <rect x="230" y="218" width="440" height="80" rx="11" fill="#faf1ff" stroke="#bf8ed4"/>
+  <text x="450" y="250" class="label" text-anchor="middle">n8n-Webhook · Header-Auth</text>
+  <text x="450" y="278" class="body" text-anchor="middle">Weiterleitung an das geschützte lokale Gateway</text>
+  <path d="M450 298V336" class="line"/>
+  <rect x="230" y="336" width="440" height="88" rx="11" fill="#edf5ff" stroke="#8da4cd"/>
+  <text x="450" y="368" class="label" text-anchor="middle">Gateway: prüfen &amp; normalisieren</text>
+  <text x="450" y="397" class="body" text-anchor="middle">E-Mail, Unternehmen, Beschäftigte und Event-ID</text>
+  <path d="M230 380H114V438" class="line"/>
+  <text x="112" y="364" class="small" text-anchor="middle">ungültig</text>
+  <rect x="28" y="438" width="174" height="91" rx="11" fill="#fff2ed" stroke="#d6a08d"/>
+  <text x="115" y="468" class="body" text-anchor="middle">Manuelle Prüfung</text>
+  <text x="115" y="495" class="small" text-anchor="middle">Kein CRM-Schreiben</text>
+  <path d="M450 424V462" class="line"/>
+  <path d="M450 462 610 542 450 622 290 542Z" fill="#fff" stroke="#73859c" stroke-width="2"/>
+  <text x="450" y="537" class="label" text-anchor="middle">Bereits</text>
+  <text x="450" y="562" class="label" text-anchor="middle">bearbeitet?</text>
+  <path d="M610 542H686" class="line"/>
+  <text x="643" y="525" class="small">Ja</text>
+  <rect x="688" y="499" width="184" height="88" rx="11" fill="#edf5df" stroke="#91ad61"/>
+  <text x="780" y="529" class="body" text-anchor="middle">Dublette</text>
+  <text x="780" y="556" class="small" text-anchor="middle">Keine weitere Aufgabe</text>
+  <path d="M450 622V666" class="line"/>
+  <text x="465" y="649" class="small">Nein</text>
+  <rect x="230" y="666" width="440" height="100" rx="11" fill="#faf1ff" stroke="#bf8ed4"/>
+  <text x="450" y="697" class="label" text-anchor="middle">Zuständigkeit festlegen</text>
+  <text x="450" y="724" class="body" text-anchor="middle">Unter 50: Inside Sales · ab 50: Account Management</text>
+  <text x="450" y="748" class="small" text-anchor="middle">Im Test beide Wege: Marc Pönisch</text>
+  <path d="M450 766V804" class="line"/>
+  <rect x="230" y="804" width="440" height="80" rx="11" fill="#fff6ea" stroke="#d9a15b"/>
+  <text x="450" y="836" class="label" text-anchor="middle">HubSpot: Kontakt abgleichen</text>
+  <text x="450" y="864" class="body" text-anchor="middle">Upsert anhand der normalisierten E-Mail</text>
+  <path d="M450 884V922" class="line"/>
+  <rect x="230" y="922" width="440" height="88" rx="11" fill="#faf1ff" stroke="#bf8ed4"/>
+  <text x="450" y="955" class="label" text-anchor="middle">Folgeaufgabe sicherstellen</text>
+  <text x="450" y="983" class="body" text-anchor="middle">Mit Kontakt verknüpfen · Owner zuweisen</text>
+  <path d="M450 1010V1048" class="line"/>
+  <rect x="230" y="1048" width="440" height="80" rx="30" fill="#eefaf7" stroke="#73b8a5"/>
+  <text x="450" y="1080" class="label" text-anchor="middle">Gesicherten Zustand behalten</text>
+  <text x="450" y="1108" class="body" text-anchor="middle">Kontakt- und Aufgaben-ID für Wiederholungen</text>
+  <rect x="32" y="1169" width="836" height="118" rx="9" fill="#f4f6f9"/>
+  <text x="54" y="1198" class="body">Zwischenstände werden vor und nach den CRM-Schritten gespeichert.</text>
+  <text x="54" y="1226" class="small">Eindeutig fehlgeschlagen: fortsetzbar. Unklarer Schreibstatus: manuell prüfen.</text>
+  <text x="54" y="1256" class="small">Testbeleg: je ein Kontakt und eine verknüpfte Aufgabe, auch nach Wiederholungen.</text>
+</svg>

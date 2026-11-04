@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-27T19:11:27.939Z",
+  "n8nVersion": "2.45.4",
+  "isolatedDatabase": true,
+  "normalOwnerSetup": true,
+  "authenticatedCredentialSetup": true,
+  "workflowActivated": true,
+  "webhookRejectsUnauthorized": true,
+  "integrationPassed": true,
+  "workflowDeactivated": true,
+  "serverStopped": true,
+  "unauthorizedHttpStatus": 403
+}

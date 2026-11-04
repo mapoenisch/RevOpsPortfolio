@@ -1,0 +1,2564 @@
+{
+  "generatedAt": "2026-10-27T14:29:55.977Z",
+  "dataset": "50 synthetische Testprofile, Version 1",
+  "status": "ai-partial",
+  "model": "qwen3:0.6b",
+  "cloudModel": null,
+  "durationMs": 35804,
+  "stats": {
+    "total": 50,
+    "prefiltered": 14,
+    "eligible": 36,
+    "prioritized": 25,
+    "aiReviewed": 36,
+    "aiValid": 34,
+    "drafts": 24,
+    "aiErrors": 2,
+    "promptTokens": 13445,
+    "outputTokens": 4478,
+    "localCalls": 60,
+    "cloudCalls": 0
+  },
+  "results": [
+    {
+      "profile": {
+        "id": "LP-P001",
+        "company": "Testunternehmen 01",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Vertriebsleitung mit der Rolle der CRM-Lösung in einem DACH-Mittelstand fachlich verknüpft. Der Prozessbedarf, der im Profil beschrieben ist, bezieht sich auf die manuelle Pflege zwischen Marketing und Vertrieb, was eine Rolle in einer CRM-Lösung mit der Rolle der CRM-Tools und der CRM-Systeme verknüpft."
+      },
+      "opener": "Welches ist der wichtigste Herausforderung für die Vertriebsleitung in der Testunternehmen 01?"
+    },
+    {
+      "profile": {
+        "id": "LP-P002",
+        "company": "Testunternehmen 02",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Geschäftsführung im Bereich IT-Dienstleistung und die Prozesse zur Manuelle Pflege beschreibt. Die Rolle und die Prozessbedarfe sind direkt mit der Erforschung und Optimierung von CRM-Tools in der B2B-Praxis verknüpft."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P003",
+        "company": "Testunternehmen 03",
+        "country": "CH",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Assistenten im Bereich Maschinenbau und der Integration von CRM-Tools beschreibt. Der Prozessbedarf bezieht sich auf die Automatisierung von manuellen Übergaben zwischen Marketing und Vertrieb, was eine klare Rolle für die CRM-Implementierung ist."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P004",
+        "company": "Testunternehmen 04",
+        "country": "DE",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er eine Rolle in der CRM- und Pflege-Industrie belegt, die in einem DACH-Mittelstand (Deutschland) relevant ist. Der Testunternehmen 04 ist ein großer Handelsgut, und die Rolle 'Revenue Operations' bezieht sich auf die Erfassung und Verwaltung von Ressourcen und Pflegebedürfnissen, was in der CRM-Industrie relevant ist."
+      },
+      "opener": "Welches Produktverifikationsprozess ermöglicht die automatisierte Erstellung von Testdaten für die Testunternehmen 04?"
+    },
+    {
+      "profile": {
+        "id": "LP-P005",
+        "company": "Testunternehmen 05",
+        "country": "AT",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Einkauf' und die Prozesse zur Manuelle Pflege beschreibt, die im B2B-Unternehmen häufige und oft unverzichtbare Aufgaben sind. Die Rolle 'Einkauf' ist entscheidend für die Erfüllung von CRM- und Pflegeprozessen, wobei die Rolle 'Tabellen und manuelle Pflege' die Integration von CRM-Tools in die tägliche Arbeit beschreibt."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P006",
+        "company": "Testunternehmen 06",
+        "country": "CH",
+        "b2b": false,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P007",
+        "company": "Testunternehmen 07",
+        "country": "US",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P008",
+        "company": "Testunternehmen 08",
+        "country": "AT",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 65,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profilbereich ist fachlich relevant, da er eine Rolle in der Assistentenposition mit einem fachlichen Bedarf in der IT-Dienstleistung und einem CRM-Unternehmen mit Tabellen und manuelle Pflege betont. Der B2B-Unternehmen mit fachlich relevanten Ressourcen und einer strukturierten CRM-Lösung ist ideal für die Erfüllung der Rolle."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P009",
+        "company": "Testunternehmen 09",
+        "country": "CH",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profilbereich ist fachlich relevant, da er die Rolle von Revenue Operations und die Prozesse zur Manuellen Übergabe zwischen Marketing und Vertrieb beschreibt. Dies ist ein zentraler Aspekt der CRM-Strategie, um die Effizienz und Konsistenz der CRM-Implementierung zu maximieren."
+      },
+      "opener": "Welche Rolle hat die manuelle Übergabe zwischen Marketing und Vertrieb in der Vertriebsprozesse der Maschinenbauindustrie?"
+    },
+    {
+      "profile": {
+        "id": "LP-P010",
+        "company": "Testunternehmen 10",
+        "country": "DE",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "error",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P011",
+        "company": "Testunternehmen 11",
+        "country": "AT",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Vertriebsleitung mit der Rolle von CRM-Tools (Tabellen und manuelle Pflege) verknüpft. Der Prozessbedarf bezieht sich auf die Übertragung von Manuelle Übergaben zwischen Marketing und Vertrieb, was in der CRM-Implementierung oft verarbeitet wird."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P012",
+        "company": "Testunternehmen 12",
+        "country": "CH",
+        "b2b": false,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P013",
+        "company": "Testunternehmen 13",
+        "country": "DE",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Assistenten im Bereich der Tabellen und manuelle Pflege beschreibt. Der Prozessbedarf bezieht sich auf die Erfassung von manueller Pflege und Übergabepflichten zwischen Marketing und Vertrieb, was in der B2B-CRM-Lösung relevant ist."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P014",
+        "company": "Testunternehmen 14",
+        "country": "US",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P015",
+        "company": "Testunternehmen 15",
+        "country": "CH",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 55,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Einkauf' im Bereich Maschinenbau betont und die Prozesse der Übergabe von Marketing und Vertrieb beschreibt. Die Rolle und die Prozessbedarf betonen die Bedeutung der CRM in der B2B-Unternehmen."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P016",
+        "company": "Testunternehmen 16",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er eine Rolle wie Vertriebsleitung mit einem Branchenspektrum von Großhandel und einem CRM-Modus (Tabellen und manuelle Pflege) betont. Der B2B-Aspekt und die Rolle im Vertrieb betonen die Bedeutung der CRM-Tools für die Vertriebsprozesse."
+      },
+      "opener": "Welches Produktvertriebsverfahren fördert die effizienten und kosteneffizivsten Vertriebsstrategien für den Testunternehmen 16?"
+    },
+    {
+      "profile": {
+        "id": "LP-P017",
+        "company": "Testunternehmen 17",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Geschäftsführung in einem IT-Dienstleistungsbereich mit der Rolle 'Tabellen und manuelle Pflege' und dem Prozess 'Manuelle Übergaben zwischen Marketing und Vertrieb' betont. Dies veranschault die Bedeutung der CRM-Lösung in der Automatisierung und der Effizienz in der IT-Dienstleistung."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P018",
+        "company": "Testunternehmen 18",
+        "country": "CH",
+        "b2b": false,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P019",
+        "company": "Testunternehmen 19",
+        "country": "DE",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Revenue Operations' und die Prozesse zur Manuelle Pflege beschreibt, die im B2B-Handel häufig vorkommen. Die Rolle betont die Zusammenarbeit zwischen Marketing und Vertrieb, was im Rahmen der CRM-Lösung relevant ist."
+      },
+      "opener": "Welches Produktverifikationsprozess ermöglicht die automatisierte Überprüfung von Vertragsverhandlungen und Vertragsbedingungen?"
+    },
+    {
+      "profile": {
+        "id": "LP-P020",
+        "company": "Testunternehmen 20",
+        "country": "AT",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 50,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er eine Rolle wie Einkauf in der IT-Dienstleistung bettet, die in der CRM-Lösung genutzt wird. Der B2B-Aspekt und die Rolle im IT-Dienstleistung betonen die Bedeutung der CRM-Tools für die Prozesse der Einkaufsprozesse."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P021",
+        "company": "Testunternehmen 21",
+        "country": "US",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P022",
+        "company": "Testunternehmen 22",
+        "country": "DE",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Geschäftsführung und die Prozesse der manuellen Pflege beschreibt, die im Geschäftsfeld der Großhandel und im CRM-System Tabellen und manuelle Pflege betreffen. Die Rolle und die Prozesse sind direkt mit der Erfassung und der Automatisierung von Kundenerfahrungen in der CRM-Unterstützung verbunden."
+      },
+      "opener": "Welche Herausforderungen können durch die automatisierte Manuelle Übergabe reduziert werden?"
+    },
+    {
+      "profile": {
+        "id": "LP-P023",
+        "company": "Testunternehmen 23",
+        "country": "AT",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "error",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P024",
+        "company": "Testunternehmen 24",
+        "country": "CH",
+        "b2b": false,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P025",
+        "company": "Testunternehmen 25",
+        "country": "DE",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Einkauf' im Bereich 'Großhandel' betont und die Prozesse wie 'Manuelle Übergaben zwischen Marketing und Vertrieb' betont. Dies veranschault die Bedeutung der CRM-Tools für die Automatisierung dieser Prozesse."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P026",
+        "company": "Testunternehmen 26",
+        "country": "AT",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Vertriebsleitung mit der Rolle von CRM-Tools (Tabellen und manuelle Pflege) verknüpft. Der Prozessbedarf bezieht sich auf die Übertragung von Manuelle Übergaben zwischen Marketing und Vertrieb, was in der CRM-Implementierung oft verarbeitet wird."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P027",
+        "company": "Testunternehmen 27",
+        "country": "CH",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profilbereich ist fachlich relevant, da er die Rolle von Geschäftsführung im Bereich Maschinenbau betont und die Prozesse der Übergabe von Marketing und Vertrieb beschreibt. Die Integration des CRM-Tools ermöglicht eine effizientere Kommunikations- und Vertriebsprozess."
+      },
+      "opener": "Welche Rolle hat die manuelle Übergabe zwischen Marketing und Vertrieb in der Geschäftsführung der Testunternehmen 27?"
+    },
+    {
+      "profile": {
+        "id": "LP-P028",
+        "company": "Testunternehmen 28",
+        "country": "US",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P029",
+        "company": "Testunternehmen 29",
+        "country": "AT",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Revenue Operations' und die Prozesse zur Manuelle Übergabe zwischen Marketing und Vertrieb betont. Die Rolle betont die Bedeutung der CRM-Tools für die Erfolgsempfehlungen und die Effizienz in der IT-Dienstleistungsbranche."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P030",
+        "company": "Testunternehmen 30",
+        "country": "CH",
+        "b2b": false,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P031",
+        "company": "Testunternehmen 31",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Vertriebsleitung mit der Rolle der CRM-Lösung in einem DACH-Mittelstand fachlich verknüpft. Der Prozessbedarf, der im Profil beschrieben ist, bezieht sich auf die manuelle Pflege zwischen Marketing und Vertrieb, was eine Rolle in einer CRM-Lösung mit der Rolle der CRM-Tools und der CRM-Systeme verknüpft."
+      },
+      "opener": "Welches ist der wichtigste Herausforderung für die Vertriebsleitung im Testunternehmen 31?"
+    },
+    {
+      "profile": {
+        "id": "LP-P032",
+        "company": "Testunternehmen 32",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profilbereich ist fachlich relevant, da er eine Rolle wie die Geschäftsführung in der IT-Dienstleistung betreibt und die CRM-Tools zur Manuelle Pflege und Verwaltung beitragen. Der Testunternehmen 32 ist in der Automatisierung und digitalisierten Lösungen fachlich relevant."
+      },
+      "opener": "Welches dieser Bedürfnisse ist in der IT-Dienstleistung verortet?"
+    },
+    {
+      "profile": {
+        "id": "LP-P033",
+        "company": "Testunternehmen 33",
+        "country": "CH",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Assistenten im Bereich Maschinenbau und der Integration von CRM-Tools beschreibt. Der Prozessbedarf bezieht sich auf die Automatisierung von manuellen Übergaben zwischen Marketing und Vertrieb, was eine klare Rolle für die CRM-Implementierung ist."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P034",
+        "company": "Testunternehmen 34",
+        "country": "DE",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Revenue Operations' und die Prozesse zur Manuelle Übergabe zwischen Marketing und Vertrieb betont. Der B2B-Unternehmen mit großer Anzahl an Mitarbeitern und fachlich relevanten Branchenbedarf (Großhandel) passt sich an, um die Erfassung und Optimierung dieser Prozesse zu ermöglichen."
+      },
+      "opener": "Welches Produktverifikationsprozess ermöglicht die automatisierte Überprüfung von Vertragsverhandlungen und Vertragsbedingungen?"
+    },
+    {
+      "profile": {
+        "id": "LP-P035",
+        "company": "Testunternehmen 35",
+        "country": "US",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P036",
+        "company": "Testunternehmen 36",
+        "country": "CH",
+        "b2b": false,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P037",
+        "company": "Testunternehmen 37",
+        "country": "DE",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Geschäftsführung und die Prozesse der manuellen Pflege beschreibt, die im Geschäftsfeld der Großhandel und im CRM-Unternehmen verortet sind. Die Rolle und die Prozesse sind direkt mit der Erfassung und der Automatisierung von Handlungen in der CRM-Unternehmen verbunden."
+      },
+      "opener": "Welche Herausforderungen können durch die automatisierte Manuelle Übergabe reduziert werden?"
+    },
+    {
+      "profile": {
+        "id": "LP-P038",
+        "company": "Testunternehmen 38",
+        "country": "AT",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Assistenten im Bereich der IT-Dienstleistung und der Pflege beschreibt. Der B2B-Unternehmen mit fachlich relevanten Fähigkeiten und einer Rolle im IT-Dienstleistungsprozess passt sich an die Bedürfnisse der CRM-Lösung, die manuelle Pflege und die Übergabe zwischen Marketing und Vertrieb betreibt."
+      },
+      "opener": "Welches Problem wird durch die manuelle Übergabe zwischen Marketing und Vertrieb gelöst?"
+    },
+    {
+      "profile": {
+        "id": "LP-P039",
+        "company": "Testunternehmen 39",
+        "country": "CH",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profilbereich ist fachlich relevant, da er die Rolle von Revenue Operations und die Prozesse zur Manuellen Übergabe zwischen Marketing und Vertrieb beschreibt. Dies ist ein zentraler Aspekt der CRM-Strategie, um die Effizienz und Konsistenz der Geschäftsprozesse zu optimieren."
+      },
+      "opener": "Welche Rolle hat die manuelle Übergabe zwischen Marketing und Vertrieb in der Vertriebsprozesse der Maschinenbauindustrie?"
+    },
+    {
+      "profile": {
+        "id": "LP-P040",
+        "company": "Testunternehmen 40",
+        "country": "DE",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 50,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er eine Rolle wie Einkauf in einem Großhandel-Unternehmen mit einer CRM-Strategie zur Tabellen- und manuellen Pflege bezieht. Der B2B-Unternehmen mit Rolle und Prozessbedarf passt sich eine CRM-Lösung an, um die Prozesse effizient und effektiv zu gestalten."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P041",
+        "company": "Testunternehmen 41",
+        "country": "AT",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Vertriebsleitung mit der Rolle von CRM-Tools (Tabellen und manuelle Pflege) verknüpft. Der Prozessbedarf bezieht sich auf die Übertragung von Manuelle Übergaben zwischen Marketing und Vertrieb, was in der CRM-Implementierung oft verarbeitet wird."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P042",
+        "company": "Testunternehmen 42",
+        "country": "US",
+        "b2b": false,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P043",
+        "company": "Testunternehmen 43",
+        "country": "DE",
+        "b2b": true,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 85,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Assistenten im Bereich der Tabellen und manuelle Pflege beschreibt. Der Prozessbedarf bezieht sich auf die Erfassung von manueller Pflege und Übergabepflichten zwischen Marketing und Vertrieb, was in der B2B-CRM-Lösung relevant ist."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P044",
+        "company": "Testunternehmen 44",
+        "country": "AT",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 80,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 0
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profilbereich ist fachlich relevant, da er eine Rolle in der IT-Dienstleistung mit der Rolle 'Revenue Operations' und dem Prozessbedarf für die Erfassung und Verwaltung von CRM-Systemen (Tabellen und manuelle Pflege) betont. Der Testunternehmen 44 ist in der Automatisierung und der digitalen Transformation des IT-Bereichs in der DACH-Mittelstandregion fachlich relevant."
+      },
+      "opener": "Welches Produktverifikationsprozess ermöglicht die automatisierte Erstellung von Testdaten für die Testunternehmen 44?"
+    },
+    {
+      "profile": {
+        "id": "LP-P045",
+        "company": "Testunternehmen 45",
+        "country": "CH",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 55,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 0
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle der Einkaufsprozesse in der Maschinenbauindustrie beschreibt. Der CRM-Unternehmen ist in der CH-Region und hat eine breite B2B-Struktur, was die relevanten Prozesse und Ressourcen für die CRM-Lösung sorgt."
+      },
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P046",
+        "company": "Testunternehmen 46",
+        "country": "DE",
+        "b2b": true,
+        "employees": 12,
+        "role": "Vertriebsleitung",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Vertriebsleitung mit der Rolle der CRM-Tools (Tabellen und manuelle Pflege) verknüpft. Der Prozessbedarf bezieht sich auf die Übertragung von Manuelle Übergaben zwischen Marketing und Vertrieb, was in der CRM-Implementierung oft verarbeitet wird."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P047",
+        "company": "Testunternehmen 47",
+        "country": "AT",
+        "b2b": true,
+        "employees": 42,
+        "role": "Geschäftsführung",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 100,
+      "createOpener": true,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Für eine vertiefte Prüfung priorisiert.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle von Geschäftsführung im Bereich IT-Dienstleistung und die Prozesse zur Manuelle Pflege beschreibt. Die Rolle und die Prozessbedarfe sind direkt mit der Erforschung und Optimierung von CRM-Tools in der B2B-Praxis verknüpft."
+      },
+      "opener": "Welches ist der beste Weg, um die manuelle Übergabe zwischen Marketing und Vertrieb zu optimieren?"
+    },
+    {
+      "profile": {
+        "id": "LP-P048",
+        "company": "Testunternehmen 48",
+        "country": "CH",
+        "b2b": false,
+        "employees": 85,
+        "role": "Assistenz",
+        "industry": "Maschinenbau",
+        "crm": "CRM vorhanden",
+        "pain": "Kein Bedarf benannt",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P049",
+        "company": "Testunternehmen 49",
+        "country": "US",
+        "b2b": true,
+        "employees": 160,
+        "role": "Revenue Operations",
+        "industry": "Großhandel",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": false,
+      "score": 0,
+      "createOpener": false,
+      "criteria": [],
+      "reason": "Außerhalb des gewählten B2B-Zielmarkts DACH.",
+      "aiStatus": "prefiltered",
+      "ai": null,
+      "opener": null
+    },
+    {
+      "profile": {
+        "id": "LP-P050",
+        "company": "Testunternehmen 50",
+        "country": "AT",
+        "b2b": true,
+        "employees": 320,
+        "role": "Einkauf",
+        "industry": "IT-Dienstleistung",
+        "crm": "Tabellen und manuelle Pflege",
+        "pain": "Manuelle Übergaben zwischen Marketing und Vertrieb",
+        "synthetic": true
+      },
+      "eligible": true,
+      "score": 70,
+      "createOpener": false,
+      "criteria": [
+        {
+          "id": "region",
+          "label": "DACH-Region",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "size",
+          "label": "10–250 Beschäftigte",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "role",
+          "label": "Entscheidungsnahe Vertriebsrolle",
+          "max": 20,
+          "points": 5
+        },
+        {
+          "id": "crm",
+          "label": "Tabellen oder manuelle CRM-Pflege",
+          "max": 15,
+          "points": 15
+        },
+        {
+          "id": "pain",
+          "label": "Benannter Prozessbedarf",
+          "max": 20,
+          "points": 20
+        },
+        {
+          "id": "b2b",
+          "label": "B2B-Geschäftsmodell",
+          "max": 10,
+          "points": 10
+        }
+      ],
+      "reason": "Unterhalb der Schwelle für einen Kontaktentwurf.",
+      "aiStatus": "validated",
+      "ai": {
+        "relevant": true,
+        "reason": "Der Profil ist fachlich relevant, da er die Rolle 'Einkauf' und die Prozesse zur Manuelle Pflege beschreibt, die im B2B-Unternehmen häufige und oft unverzichtbare Aufgaben sind. Die Rolle 'Einkauf' ist entscheidend für die Erfüllung von CRM- und Pflege-Industriepflichten, während die Prozesse die Effizienz und die Konsistenz der CRM-Strategien betreffen."
+      },
+      "opener": null
+    }
+  ],
+  "limitations": [
+    "Regelbasierte Priorisierung, keine Erfolgsprognose.",
+    "Alle Profile sind erfunden. Keine LinkedIn-Abfrage.",
+    "KI-Antworten sind strukturell geprüft; fachliche Qualität muss geprüft werden.",
+    "Es wird keine Nachricht versandt."
+  ]
+}

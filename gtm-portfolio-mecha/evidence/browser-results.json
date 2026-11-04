@@ -1,0 +1,338 @@
+{
+  "generatedAt": "2026-11-04T12:17:41.374Z",
+  "results": [
+    {
+      "name": "home",
+      "path": "/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-1440.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-1440.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-1440.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-1440.png"
+    },
+    {
+      "name": "chronicle",
+      "path": "/leadpilot",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/chronicle-1440.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-1440.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-1440.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-1440.png"
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-768.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-768.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-768.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-768.png"
+    },
+    {
+      "name": "chronicle",
+      "path": "/leadpilot",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/chronicle-768.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-768.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-768.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-768.png"
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-375.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-375.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-375.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-375.png"
+    },
+    {
+      "name": "chronicle",
+      "path": "/leadpilot",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/chronicle-375.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-375.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-375.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-375.png"
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-320.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-320.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-320.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-320.png"
+    },
+    {
+      "name": "chronicle",
+      "path": "/leadpilot",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/chronicle-320.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-320.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-320.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-320.png"
+    }
+  ],
+  "interactionTests": [
+    "Routing: vier Fälle",
+    "Scoring: Filter, Suche, Leerzustand",
+    "Nachweise: Filter und alle Dateien",
+    "Diagramme: drei SVGs, Textfassung, Download, Zoom, Einpassen, Escape und Fokusrückgabe; mobile Vergrößerung",
+    "Mobiles Menü, Escape, Fokus",
+    "Sprunglink",
+    "Direkte Seitenaufrufe",
+    "MP4-Wiedergabe, Dauer, Untertitelspur",
+    "Keine externen Datenaufrufe"
+  ],
+  "errors": [],
+  "externalRequests": []
+}
