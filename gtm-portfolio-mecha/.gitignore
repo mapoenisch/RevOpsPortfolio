@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.cache/
+.env*
+!.env.example
+evidence/private/
+.DS_Store
+evidence/browser/
+evidence/diagrams/
+video/quellen/
+video/master/
+cap-projekte/
+
+# Lokale Rohdaten, nicht versioniert
+/Dashboard  alt - Anwendung jetzt/
+/demos/hubspot/
+/Assets/

@@ -1,0 +1,24 @@
+{
+  "stand": "2026-10-28",
+  "entscheidung": "Auswahl durch Marc im Chat",
+  "ausgewaehlt": [
+    "LP-01-01", "LP-01-02",
+    "LP-02-01", "LP-02-02", "LP-02-03", "LP-02-04",
+    "LP-03-01", "LP-03-02", "LP-03-03",
+    "LP-04-01", "LP-04-02", "LP-04-03",
+    "LP-05-01", "LP-05-03", "LP-05-04",
+    "LP-06-01", "LP-06-02",
+    "LP-07-01", "LP-07-02", "LP-07-03",
+    "LP-08-01", "LP-08-02", "LP-08-03", "LP-08-04"
+  ],
+  "nicht_ausgewaehlt": ["LP-01-03", "LP-04-04", "LP-05-02", "LP-06-03"],
+  "vorgaben": {
+    "LP-01-01": "DBA-Aufgabenstellung sinngemäß beschreiben; das Design nicht 1:1 übernehmen.",
+    "LP-05-03": "Dieser Werbespot mit LeadPilot Expo soll auf jeden Fall enthalten sein.",
+    "LP-05-04": "Als erster Werbespot-Versuch kennzeichnen.",
+    "LP-07": "Mehrere alte und heutige Seiten gegenüberstellen, darunter Firmensitz mit früherer Adresse und heutigen eingebetteten Bildern.",
+    "LP-08-01": "Abweichend vom Kandidaten das Logo Final/Logo(final-big).png verwenden.",
+    "LP-08-04": "Optional das Claude-Artefakt verlinken, wenn die korrekte URL vorliegt.",
+    "marketinggalerie": "Zusätzliche Motive aus Marketing und Marketing/LeadPilot-Expo-Marketingpaket als durchblätterbare Galerie."
+  }
+}

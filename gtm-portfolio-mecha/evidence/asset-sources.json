@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-10-27T21:55:30.873Z",
+  "portrait": {
+    "source": "/Users/marcpoenisch/Projekte/RevOpsPortfolio/Untitled Project Kopie.png",
+    "transformation": "Unverändertes Motiv, WebP-Konvertierung"
+  },
+  "certificates": [
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/HubSpot Academy/HubSpot Sales-Software_fd7f815653214e1098ac22466afe8de9 Kopie.png",
+      "target": "public/nachweise/hubspot-sales.png",
+      "sha256": "aa06e535fc7529679bf280cfa29180666915a228487a4a9441e9874b17e9a667",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/HubSpot Academy/HubSpot-Berichterstattung_eec9134c2d3544a9bcbd9c3fcd4dbb66 Kopie.png",
+      "target": "public/nachweise/hubspot-reporting.png",
+      "sha256": "915e6bba8d77a440577e8b4d6937c5b51eaf7090e0f6d6887a35691a46b679a5",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/HubSpot Academy/HubSpot Inbound-Sales_e4e0b4c1905a44fba6e7dae69f761fdf Kopie.png",
+      "target": "public/nachweise/hubspot-inbound.png",
+      "sha256": "217be3668bbbb15ea2c45135b2929321808c7e8e064f9ee43509047f04c4841c",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Anthropic Academy/Claude Code in Action Certificate_wwcyei5y7tk8-1788239173 Kopie.png",
+      "target": "public/nachweise/claude-code.png",
+      "sha256": "db41122f9cc1bc6d5fe797fd21798cd287d3d72e9bb666822d3c1baed637427a",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Anthropic Academy/Claude 101 Certificate_ribsrofhki6a-1785593559 Kopie.png",
+      "target": "public/nachweise/claude-101.png",
+      "sha256": "a230fb766bf007f7612eca6c5f51f656fc9685e31ab71c4cc7239818ff76ac2e",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Anthropic Academy/Claude Code 101 Certificate_q8mnzf7a5iw8-1785626465 Kopie.png",
+      "target": "public/nachweise/claude-code-101.png",
+      "sha256": "0129bdfc2259a440dffbb4b82f8339eff8db1dd2be6c252c7d4c50aa05b338d8",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Anthropic Academy/Claude Platform 101 Certificate_ysoghnwiub-1786049205 Kopie.png",
+      "target": "public/nachweise/claude-platform-101.png",
+      "sha256": "0b3a0adb221518594cc84701ace49dbef63f4e82d791d12687fdc9c4a0ea47d2",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Anthropic Academy/Introduction to MCP Certificate_z4u4bpddrcr3-1791752486 Kopie.png",
+      "target": "public/nachweise/introduction-to-mcp.png",
+      "sha256": "768b769bb073136f20e28268e4e92440aee9ec08e261ea8e7f822659ae15e66c",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Anthropic Academy/Model Context Protocol Advanced Topics Certificate_w3e5yruwqng5-1791756416 Kopie.png",
+      "target": "public/nachweise/mcp-advanced-topics.png",
+      "sha256": "fb1d86453069121144012bb031dc1fe290ee23d8a4cd3b734355bab39381cf1b",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/LinkedIn Learning/Abschlusszertifikat_Grundwissen Business-Analyse Kopie.pdf",
+      "target": "public/nachweise/business-analyse.pdf",
+      "sha256": "00cdcc09e667cb8fd063c8e5d7f27c07f765d9a464a7958ab2b1a2defd082e96",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    },
+    {
+      "source": "/Users/marcpoenisch/Projekte/Jobsuche 2026/Zertifikate/Demandbase Academy Kopie/marketing-operations-it-administrator/marketing-operations-it-administrator-Badge20261010-22-i0zejw.pdf",
+      "target": "public/nachweise/demandbase-marketing-operations.pdf",
+      "sha256": "488bbaca9dc610c107679e1077b5cd41da0f2e1cde83bb9a2b340be1d803f142",
+      "verified": true,
+      "check": "Originalinhalt visuell bzw. per PDF-Text geprüft; Kopie bytegleich."
+    }
+  ]
+}

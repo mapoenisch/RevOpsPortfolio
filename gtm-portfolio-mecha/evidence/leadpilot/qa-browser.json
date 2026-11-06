@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-30T15:10:18.658Z",
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 6,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 6,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 6,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "chapters": 6,
+      "videos": [
+        {
+          "autoplay": false,
+          "preload": "none",
+          "tracks": 1
+        }
+      ],
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "checks": [
+    "Teaser und Case-Verweis",
+    "Galerie vor/zurück",
+    "vier Vorher-Nachher-Vergleiche mit Lightbox",
+    "Untertiteldateien",
+    "alle Clips starten",
+    "keine Autoplay-Videos"
+  ]
+}

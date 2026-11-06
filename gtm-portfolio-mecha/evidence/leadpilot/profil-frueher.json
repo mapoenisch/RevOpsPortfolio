@@ -1,0 +1,18 @@
+{
+  "kind": "legacy_profile",
+  "time": "2026-10-28T09:19:53+01:00",
+  "original_sha256": "1f7d68b69d8d18de6649ec98cd457ce9634ecd0a51983670a80769297be19991",
+  "output_sha256": "f2e87822ad4f977a76da703ac09e163e0cc1b5565272035fb01699feed92f867",
+  "viewport": [
+    1265,
+    712
+  ],
+  "crop": [
+    219,
+    71,
+    1265,
+    712
+  ],
+  "source": "Ursprüngliches Unternehmensdashboard; lokale HTML-Originaldatei",
+  "output": "public/leadpilot/assets/profil-frueher.webp"
+}

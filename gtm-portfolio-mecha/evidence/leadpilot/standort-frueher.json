@@ -1,0 +1,18 @@
+{
+  "kind": "legacy_location",
+  "time": "2026-10-28T09:19:35+01:00",
+  "original_sha256": "b895fa12e5c281ec2039e88442834d89d2a7bfbef6c87806cec71102f18cb04d",
+  "output_sha256": "4f458373c0de8519dc4616522471616d7c3da99cfee4b1a2f787738da15a8a29",
+  "viewport": [
+    1265,
+    712
+  ],
+  "crop": [
+    219,
+    71,
+    1265,
+    712
+  ],
+  "source": "Ursprüngliches Unternehmensdashboard; lokale HTML-Originaldatei",
+  "output": "public/leadpilot/assets/standort-frueher.webp"
+}
