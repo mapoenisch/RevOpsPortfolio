@@ -56,7 +56,7 @@ function Home() {
   return <div className="home-page">
     <section className="hero section-pad">
       <div className="hero-copy">
-        <span className="eyebrow"><span className="blue-square" /> Sales Operations & Revenue Operations</span>
+        <span className="eyebrow"><span className="blue-square" /> B2B-Vertrieb & CRM</span>
         <h1 tabIndex={-1}>Vertrieb kennen.<br />Prozesse<br /><span>weiterdenken.</span></h1>
         <p className="hero-description">Ich komme aus dem B2B-Vertrieb. Heute verbinde ich diese Erfahrung mit CRM, Daten und KI – und baue digitale Vertriebsprozesse in eigenen Praxisprojekten direkt nach.</p>
         <div className="hero-actions"><a className="button blue" href="#arbeitsproben">Arbeitsproben ansehen <ArrowDown size={17} /></a><a className="button quiet" href={profile.resume} target="_blank" rel="noreferrer">Lebenslauf als PDF <Arrow /></a></div>
@@ -74,11 +74,12 @@ function Home() {
     <section id="profil" className="about-section section-pad">
       <div className="about-portrait"><img src="/images/marc.webp" alt="Marc Pönisch, kaufmännischer Hintergrund im B2B-Vertrieb" width="480" height="640" loading="lazy" /><span>Marc Pönisch · Leipzig</span></div>
       <div className="about-copy">
-        <h2>Aus dem Vertrieb.<br />Mit Blick aufs Ganze.</h2>
-        <p className="large-copy">Als Kaufmann im Groß- und Außenhandel habe ich im Baustoffhandel B2B-Kunden beraten, Angebote erstellt und Stammdaten gepflegt.</p>
-        <p>Seit dem 18. Mai 2026 absolviere ich die Weiterbildung zum Digital Sales Manager. Mein nächster beruflicher Schritt liegt an der Schnittstelle von Vertrieb, CRM und Operations.</p>
-        <p>In meinen Projekten definiere ich die fachlichen Anforderungen und Regeln, setze sie mit KI-Coding-Agenten um und prüfe die Ergebnisse selbst.</p>
-        <div className="about-facts"><div><span>2019–2024</span><strong>Ausbildung & B2B-Vertrieb</strong><small>Raiffeisen Waren GmbH</small></div><div><span>Seit Mai 2026</span><strong>Digital Sales Manager</strong><small>Laufende Vollzeit-Weiterbildung · remote</small></div></div>
+        <h2>Gelernt am Telefon<br />und im ERP-System.</h2>
+        <p className="large-copy">Bei der Raiffeisen Waren GmbH in Erfurt habe ich über 30 Stammkunden aus dem Baustoffhandel betreut und jede Woche mehr als 20 Angebote geschrieben. Nachgefasst habe ich am Telefon.</p>
+        <p>Mit der Zusage des Kunden ging die Arbeit erst richtig los: Aufträge abwickeln, Lieferungen mit Kunden, Lieferanten und Lager abstimmen, Gutschriften und Rechnungsabweichungen prüfen, damit Fehler nicht erst nach der Buchung auffallen, und die Stammdaten im ERP aktuell halten. Den Außendienst habe ich mit Preisabfragen bei Zulieferern unterstützt; im Einkauf habe ich Angebote von 30 Lieferanten verglichen und verhandelt.</p>
+        <p>Seit dem 18. Mai 2026 mache ich in Vollzeit die Weiterbildung zum Digital Sales Manager und arbeite dort mit HubSpot und Salesforce. Für die Arbeitsproben oben lege ich die fachlichen Regeln fest und lasse KI-Coding-Agenten den Code schreiben; ob das Ergebnis stimmt, prüfe ich selbst.</p>
+        <p>Ob die Stelle dann Inside Sales oder Sales Operations heißt, ist mir weniger wichtig als zwei Dinge: dass ich mit Kunden zu tun habe und dass die Daten im CRM stimmen.</p>
+        <div className="about-facts"><div><span>2019–2024</span><strong>Ausbildung & B2B-Kundenbetreuung</strong><small>Raiffeisen Waren GmbH, Erfurt</small></div><div><span>2025</span><strong>Fachberater</strong><small>OBI, Jena</small></div><div><span>Seit Mai 2026</span><strong>Digital Sales Manager</strong><small>Vollzeit-Weiterbildung · remote</small></div></div>
         <a className="text-link" href={profile.resume} target="_blank" rel="noreferrer">Lebenslauf als PDF <Arrow /></a>
       </div>
     </section>

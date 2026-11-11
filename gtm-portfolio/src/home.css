@@ -26,6 +26,7 @@
 .home-page .about-copy p { font-size: 15px; line-height: 1.75; }
 .home-page .about-copy .large-copy { font-size: 17px; line-height: 1.65; }
 .home-page .about-portrait > span { font-size: 12px; line-height: 1.5; }
+.home-page .about-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .home-page .about-facts span, .home-page .about-facts small { font-size: 12px; line-height: 1.6; }
 .home-page .about-facts strong { font-size: 14px; line-height: 1.5; }
 .home-page .about-copy > .text-link { min-height: 44px; font-size: 14px; }
