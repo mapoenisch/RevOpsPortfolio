@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:10.000
+Eigenständige Routing-Demo für das fiktive LeadPilot-Szenario.
+
+00:10.000 --> 00:27.000
+Eine vollständige Testanfrage wird normalisiert und Inside Sales zugeordnet.
+
+00:27.000 --> 00:44.000
+Ein doppelter Eingang erzeugt keine zweite Folgeaufgabe.
+
+00:44.000 --> 01:00.000
+Fehlende Pflichtangaben führen in die manuelle Prüfung.
+
+01:00.000 --> 01:16.000
+Bei einem CRM-Fehler bleibt der Zwischenstand erhalten.
+
+01:16.000 --> 01:30.000
+Diese Aufnahme zeigt die lokale Demo. Der separate n8n-/HubSpot-Test ist dokumentiert.

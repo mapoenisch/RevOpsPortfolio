@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-27T21:54:36.887Z",
+  "source": "Untitled Project Kopie.png",
+  "websitePlacements": 2,
+  "servedFileMatches": true,
+  "results": [
+    {
+      "width": 1440,
+      "photo": {
+        "width": 1080,
+        "height": 1080,
+        "filter": "none"
+      },
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "photo": {
+        "width": 1080,
+        "height": 1080,
+        "filter": "none"
+      },
+      "overflow": false
+    }
+  ]
+}

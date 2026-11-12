@@ -1,0 +1,11 @@
+{
+  "name": "ma-poenisch-portfolio",
+  "compatibility_date": "2026-11-01",
+  "build": {
+    "command": "cd gtm-portfolio && npm ci && npm run build"
+  },
+  "assets": {
+    "directory": "./gtm-portfolio/dist",
+    "not_found_handling": "single-page-application"
+  }
+}

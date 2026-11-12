@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1430" viewBox="0 0 900 1430" role="img" aria-labelledby="title desc">
+  <title id="title">Mehrstufiges KI-Prospecting mit getrenntem Regelscore</title>
+  <desc id="desc">50 synthetische Profile werden lokal ohne KI vorgefiltert. 14 werden ausgesondert. Sechs feste Kriterien bewerten 36 Profile mit 0 bis 100 Punkten. Ollama mit qwen3:1.7b ergänzt Relevanz und Begründung. Validierte relevante Profile ab 75 Punkten erhalten einen allgemeinen Kontaktentwurf aus einem zweiten KI-Schritt. 25 Entwürfe werden lokal gespeichert; nichts wird an ein CRM oder an Kontakte versandt.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#52647b"/></marker></defs>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#25354b}.heading{font-size:25px;font-weight:700}.label{font-size:19px;font-weight:700}.body{font-size:16px}.small{font-size:14px;fill:#54657c}.line{fill:none;stroke:#52647b;stroke-width:2;marker-end:url(#arrow)}</style>
+  <rect width="900" height="1430" rx="14" fill="#fff"/>
+  <text x="32" y="44" class="heading">Mehrstufiges KI-Prospecting &amp; Scoring</text>
+  <text x="32" y="72" class="body">Regelbasierte Bewertung und KI-Ausgaben getrennt nachvollziehen</text>
+  <rect x="230" y="107" width="440" height="74" rx="30" fill="#edf5df" stroke="#91ad61"/>
+  <text x="450" y="138" class="label" text-anchor="middle">50 synthetische B2B-Profile</text>
+  <text x="450" y="164" class="body" text-anchor="middle">Fester, dokumentierter Testdatensatz</text>
+  <path d="M450 181V220" class="line"/>
+  <rect x="230" y="220" width="440" height="88" rx="11" fill="#edf5ff" stroke="#8da4cd"/>
+  <text x="450" y="251" class="label" text-anchor="middle">Lokale Vorfilterung · ohne KI</text>
+  <text x="450" y="281" class="body" text-anchor="middle">Pflichtangaben, B2B-Geschäftsmodell und DACH</text>
+  <path d="M230 264H114V332" class="line"/>
+  <text x="112" y="248" class="small" text-anchor="middle">nicht passend</text>
+  <rect x="28" y="332" width="174" height="92" rx="11" fill="#fff2ed" stroke="#d6a08d"/>
+  <text x="115" y="362" class="body" text-anchor="middle">14 ausgesondert</text>
+  <text x="115" y="389" class="small" text-anchor="middle">Kein Modellaufruf</text>
+  <path d="M450 308V356" class="line"/>
+  <text x="466" y="337" class="small">36 Profile</text>
+  <rect x="230" y="356" width="440" height="88" rx="11" fill="#faf1ff" stroke="#bf8ed4"/>
+  <text x="450" y="388" class="label" text-anchor="middle">Regelbasierter Score · 0–100 Punkte</text>
+  <text x="450" y="417" class="body" text-anchor="middle">Sechs offene Kriterien · keine KI-Punktvergabe</text>
+  <path d="M450 444V492" class="line"/>
+  <rect x="230" y="492" width="440" height="108" rx="11" fill="#eefaf7" stroke="#73b8a5"/>
+  <text x="450" y="525" class="label" text-anchor="middle">Lokale KI-Einschätzung</text>
+  <text x="450" y="553" class="body" text-anchor="middle">Ollama · qwen3:1.7b · für alle 36 Profile</text>
+  <text x="450" y="579" class="small" text-anchor="middle">Relevanz und Begründung als JSON</text>
+  <path d="M450 600V648" class="line"/>
+  <rect x="230" y="648" width="440" height="88" rx="11" fill="#edf5ff" stroke="#8da4cd"/>
+  <text x="450" y="680" class="label" text-anchor="middle">Antwort validieren</text>
+  <text x="450" y="709" class="body" text-anchor="middle">JSON-Struktur, Datentypen und Textlängen</text>
+  <path d="M230 692H202" class="line"/>
+  <rect x="28" y="648" width="174" height="88" rx="11" fill="#fff2ed" stroke="#d6a08d"/>
+  <text x="115" y="676" class="body" text-anchor="middle">Ungültige Ausgabe</text>
+  <text x="115" y="703" class="small" text-anchor="middle">Fehler kennzeichnen</text>
+  <text x="115" y="723" class="small" text-anchor="middle">Nicht übernehmen</text>
+  <path d="M450 736V784" class="line"/>
+  <path d="M450 784 610 874 450 964 290 874Z" fill="#fff" stroke="#73859c" stroke-width="2"/>
+  <text x="450" y="865" class="label" text-anchor="middle">Score ≥ 75</text>
+  <text x="450" y="893" class="label" text-anchor="middle">und KI: relevant?</text>
+  <path d="M610 874H686" class="line"/>
+  <text x="632" y="857" class="small">Nein</text>
+  <rect x="688" y="829" width="184" height="90" rx="11" fill="#f4f6f9" stroke="#a9b4c3"/>
+  <text x="780" y="858" class="body" text-anchor="middle">Kein Kontaktentwurf</text>
+  <text x="780" y="886" class="small" text-anchor="middle">Bewertung speichern</text>
+  <path d="M450 964V1012" class="line"/>
+  <text x="466" y="992" class="small">Ja</text>
+  <rect x="230" y="1012" width="440" height="108" rx="11" fill="#faf1ff" stroke="#bf8ed4"/>
+  <text x="450" y="1045" class="label" text-anchor="middle">Zweiter KI-Schritt: Kontaktentwurf</text>
+  <text x="450" y="1073" class="body" text-anchor="middle">Allgemeine Frage zur Übergabe neuer Anfragen</text>
+  <text x="450" y="1099" class="small" text-anchor="middle">Erneute Validierung · keine individuelle Recherche</text>
+  <path d="M450 1120V1168" class="line"/>
+  <rect x="230" y="1168" width="440" height="88" rx="30" fill="#eefaf7" stroke="#73b8a5"/>
+  <text x="450" y="1200" class="label" text-anchor="middle">Laufbericht lokal speichern</text>
+  <text x="450" y="1229" class="body" text-anchor="middle">JSON · Score, Begründung und optionaler Entwurf</text>
+  <rect x="32" y="1304" width="836" height="94" rx="9" fill="#f4f6f9"/>
+  <text x="54" y="1335" class="body">Dokumentierter Lauf: 14 ausgesondert · 36 KI-Einschätzungen · 25 Entwürfe.</text>
+  <text x="54" y="1365" class="small">Keine Cloud-Aufrufe, kein CRM-Export, kein Versand. Fachliche Prüfung bleibt erforderlich.</text>
+</svg>

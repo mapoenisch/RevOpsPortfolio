@@ -1,0 +1,18 @@
+{
+  "kind": "profile",
+  "time": "2026-10-28T09:19:12+01:00",
+  "original_sha256": "d362e3aa5622d8444866b9a4db1d25b0cecac90b193d3204a6d579b250a34b74",
+  "output_sha256": "549859e7362dbce845503745f57cdf8f283a6c711d059b9e2158960fcd43fd19",
+  "viewport": [
+    1499,
+    649
+  ],
+  "crop": [
+    259,
+    107,
+    1499,
+    649
+  ],
+  "source": "LeadPilot Dashboard-CRM v2.5.0; reguläre Viewer-Sitzung",
+  "output": "public/leadpilot/assets/profil-v25.webp"
+}

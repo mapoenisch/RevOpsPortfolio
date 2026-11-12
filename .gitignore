@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.cache/
+.playwright-mcp/
+*.tsbuildinfo
+tmp/
+.DS_Store
+.env*
+!.env.example
+**/evidence/private/
+gtm-portfolio/evidence/browser/
+gtm-portfolio/work/
+
+# Video-Rohmaterial nie wieder einchecken
+**/video/quellen/
+**/video/parts/
+**/video/export/

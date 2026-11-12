@@ -1,0 +1,117 @@
+{
+  "assets": [
+    {
+      "id": "logo",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Logo Final/Logo(final-big).png",
+      "source_sha256": "ee6bdd58575288ce333d09e809823fb757a87610ce4ed245b3bc4d562c30d467",
+      "output": "public/leadpilot/assets/logo.webp",
+      "output_sha256": "9d5bf4ed4b52e9d993d4e81f70c9ba1bcb8b59eafd83c161948535267e8e9cbe",
+      "kind": "image",
+      "processing": "WebP, max 900px, transparent margins trimmed"
+    },
+    {
+      "id": "leadqualifizierung",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Leadqualifizierung.png",
+      "source_sha256": "bdf03586618abeba50dcf6adf2980efbf313df3b360d9b32b3299a4d0f5e9db0",
+      "output": "public/leadpilot/assets/leadqualifizierung.webp",
+      "output_sha256": "8ef234047e6f89c439b94f8f8c313364480eb87630026df11d6fe13358b28067",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "expo-nachbereitung",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo-Nachbereitung-dunkel.png",
+      "source_sha256": "c7281e59eecdc6af1f64fe668ee6b105c722576fd066fa0d5f290f706b6dc850",
+      "output": "public/leadpilot/assets/expo-nachbereitung.webp",
+      "output_sha256": "06ad2a2f350071d9e27ebc89c9cd08383c9f2c316f004c95901dab9b5c942a51",
+      "kind": "image",
+      "processing": "WebP, max 1600px"
+    },
+    {
+      "id": "geschaeftsbericht",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot - Unternehmensdaten-Projekt Kontext/LeadPilot - Geschaeftsbericht2025.pdf",
+      "source_sha256": "76150d101aae163bb5d80e2de1ee0614bbb252c74b0cb1baad8277ea29f477c8",
+      "output": "public/leadpilot/assets/geschaeftsbericht.webp",
+      "output_sha256": "d1dafa0070e641b1e5c3cc7bafe0da0c93bd008104ac05a2b377a783763819d7",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "Poppler PDF page to WebP"
+    },
+    {
+      "id": "kundenpitch",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/Power-Friday/Kunden-Pitch(2.8)/LeadPilot Final Pitch-Deck Weidner.pdf",
+      "source_sha256": "ad90627fb41bd9426e257deb6108f9b99a716c56da628e49b39749afd1f6c5f6",
+      "output": "public/leadpilot/assets/kundenpitch.webp",
+      "output_sha256": "62e6e215a37780ee81f666a2598eac944bc2882e53b1ce789f332b7a09db3359",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "Poppler PDF page to WebP"
+    },
+    {
+      "id": "teampitch",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/Power-Friday/Team-Pitch(2.9)/Teampitch-Deck final mit Schlussfolie.pptx",
+      "source_sha256": "4eb9a90e774a96d5348d21959de8738f1b5be8dda6cf85e86bcb6631cc1535c0",
+      "output": "public/leadpilot/assets/teampitch.webp",
+      "output_sha256": "7b475f0ef548335de847d410604efa4f5ba6aa59cacd1b75d1afc112e48046c2",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "LibreOffice PDF preview to WebP; layout may differ"
+    },
+    {
+      "id": "teamdossier",
+      "source": "/Users/marcpoenisch/Documents/DBA Batch 8/Power-Friday/Team-Pitch(2.9)/Team-Pitch Dossier LeadPilot.docx",
+      "source_sha256": "529fe2f7cff292cbec39e4b482d249416748a169530b39cce76864e240a50458",
+      "output": "public/leadpilot/assets/teamdossier.webp",
+      "output_sha256": "18c901ffe98a271de2fb90746999d14941614b45a70ab63103c4feb063633ee2",
+      "kind": "document-preview",
+      "page": 1,
+      "processing": "LibreOffice PDF preview to WebP; layout may differ"
+    },
+    {
+      "id": "expo-spot",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP Expo - Werbespot.mp4",
+      "source_sha256": "3cebc49d685ded35bfcf4cce6334e41be4f46a2b717633c72aa7ae55790aae22",
+      "output": "public/leadpilot/assets/expo-spot.mp4",
+      "output_sha256": "64633b467b7eae0f6da3f91ecd5776aa8a5107c0377fad8fd1cec2be038e6e29",
+      "poster": "public/leadpilot/assets/expo-spot-poster.webp",
+      "kind": "video",
+      "processing": "H.264 MP4, max 1280px, original audio retained"
+    },
+    {
+      "id": "expo-feature",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot-Expo-Marketingpaket/LP-Werbespot2.mp4",
+      "source_sha256": "a63ab1f273d59b00f0eae1632e9d7b0dd1ca9f9f08561a2447fb77107bda29ef",
+      "output": "public/leadpilot/assets/expo-feature.mp4",
+      "output_sha256": "6f3c81fb1c2c376c1e3859e6a45bca24f9d179a0100e3d77bbdde8be6c9d5fde",
+      "poster": "public/leadpilot/assets/expo-feature-poster.webp",
+      "kind": "video",
+      "processing": "H.264 MP4, max 1280px, original audio retained"
+    },
+    {
+      "id": "erster-werbespot",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/Marketing/LeadPilot - Werbespot.webm",
+      "source_sha256": "146fd5ffb0f5a996bbf4b0b5ac4fdc8aefc9cb21b497e5214b3e246589662141",
+      "output": "public/leadpilot/assets/erster-werbespot.mp4",
+      "output_sha256": "bef86b4b7295c9271d089452a27ef3594474ab7c668c455ca75f114d76839245",
+      "poster": "public/leadpilot/assets/erster-werbespot-poster.webp",
+      "kind": "video",
+      "processing": "H.264 MP4, max 1280px, original audio retained"
+    },
+    {
+      "id": "LeadPilotGrotesk-Regular.woff2",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/fonts/LeadPilotGrotesk-Regular.woff2",
+      "source_sha256": "b8e27fef3bb0e32fadfb1707f0cca5d195601e35df6309fdfc7cec5e7318d66b",
+      "output": "public/leadpilot/assets/LeadPilotGrotesk-Regular.woff2",
+      "output_sha256": "b8e27fef3bb0e32fadfb1707f0cca5d195601e35df6309fdfc7cec5e7318d66b",
+      "kind": "font"
+    },
+    {
+      "id": "LeadPilotGrotesk-OFL.txt",
+      "source": "/Users/marcpoenisch/Projekte/LeadPilot - Eine fiktive Geschäftsidee/LeadPilot-Designsystem/fonts/OFL.txt",
+      "source_sha256": "2ee3c193368816c5f1e6941e7ae77e0bbaa874fd1a6196a0dfe3d418d87fe8a3",
+      "output": "public/leadpilot/assets/LeadPilotGrotesk-OFL.txt",
+      "output_sha256": "2ee3c193368816c5f1e6941e7ae77e0bbaa874fd1a6196a0dfe3d418d87fe8a3",
+      "kind": "font"
+    }
+  ]
+}

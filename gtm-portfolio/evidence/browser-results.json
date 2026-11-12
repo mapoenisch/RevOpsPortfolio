@@ -1,0 +1,469 @@
+{
+  "generatedAt": "2026-11-04T20:27:10.366Z",
+  "results": [
+    {
+      "name": "home",
+      "path": "/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-1440.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-1440.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-1440.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-1440.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-1440.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-1440.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-1440.png"
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-768.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-768.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-768.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-768.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-768.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-768.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-768.png"
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-375.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-375.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-375.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-375.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-375.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-375.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 375,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-375.png"
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/home-320.png"
+    },
+    {
+      "name": "leadpilot",
+      "path": "/cases/leadpilot",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/leadpilot-320.png"
+    },
+    {
+      "name": "routing",
+      "path": "/cases/lead-routing",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/routing-320.png"
+    },
+    {
+      "name": "prospecting",
+      "path": "/cases/ki-prospecting",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/prospecting-320.png"
+    },
+    {
+      "name": "certificates",
+      "path": "/nachweise",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/certificates-320.png"
+    },
+    {
+      "name": "notes",
+      "path": "/hinweise",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/notes-320.png"
+    },
+    {
+      "name": "404",
+      "path": "/gibt-es-nicht",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "h1": 1,
+      "violations": [],
+      "screenshot": "evidence/browser/404-320.png"
+    }
+  ],
+  "homeChecks": [
+    {
+      "width": 1440,
+      "height": 3381,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 4653,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "13px"
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "height": 6618,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 6942,
+      "overflow": false,
+      "controls": [
+        {
+          "label": "Eingang & Regel ansehen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Vollständige AnfrageDoppelte AnfragePflichtangabe fehltCRM nicht erreichbar",
+          "height": 45,
+          "font": "16px"
+        },
+        {
+          "label": "Anfrage prüfen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Zurücksetzen",
+          "height": 44,
+          "font": "13px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        },
+        {
+          "label": "Arbeitsprobe ansehen",
+          "height": 44,
+          "font": "14px"
+        }
+      ]
+    }
+  ],
+  "interactionTests": [
+    "Startseite: vier Routing-Fälle, Daten/Regel per Tastatur, Fehlerhilfe, Reset und 44-px-Bedienflächen bei vier Breiten",
+    "Routing: vier Fälle",
+    "Scoring: Filter, Suche, Leerzustand",
+    "Nachweise: Filter und alle Dateien",
+    "Diagramme: drei SVGs, Textfassung, Download, Zoom, Einpassen, Escape und Fokusrückgabe; mobile Vergrößerung",
+    "Mobiles Menü, Escape, Fokus",
+    "Sprunglink",
+    "Direkte Seitenaufrufe",
+    "MP4-Wiedergabe, Dauer, Untertitelspur",
+    "Keine externen Datenaufrufe"
+  ],
+  "errors": [],
+  "externalRequests": []
+}

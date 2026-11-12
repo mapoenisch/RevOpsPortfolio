@@ -1,0 +1,11 @@
+{
+  "name": "LeadPilot Portfolio – synthetisches Inbound-Routing",
+  "active": false,
+  "nodes": [
+    { "id": "input", "name": "Synthetische Anfrage", "type": "n8n-nodes-base.webhook", "typeVersion": 2, "position": [0, 0], "parameters": { "httpMethod": "POST", "path": "portfolio-lead-routing", "responseMode": "responseNode", "authentication": "headerAuth", "options": {} } },
+    { "id": "route", "name": "Validieren und idempotent routen", "type": "n8n-nodes-base.httpRequest", "typeVersion": 4.2, "position": [280, 0], "parameters": { "method": "POST", "url": "http://127.0.0.1:5680/route", "authentication": "genericCredentialType", "genericAuthType": "httpHeaderAuth", "sendBody": true, "specifyBody": "json", "jsonBody": "={{ JSON.stringify($json.body) }}", "options": { "timeout": 20000, "response": { "response": { "neverError": true } } } } },
+    { "id": "reply", "name": "Ergebnis zurückgeben", "type": "n8n-nodes-base.respondToWebhook", "typeVersion": 1.4, "position": [560, 0], "parameters": { "respondWith": "json", "responseBody": "={{ JSON.stringify($json) }}", "options": { "responseCode": "={{ $json.status === 'accepted' ? 201 : $json.status === 'duplicate' ? 200 : $json.status === 'review' ? 422 : 502 }}" } } }
+  ],
+  "connections": { "Synthetische Anfrage": { "main": [[{ "node": "Validieren und idempotent routen", "type": "main", "index": 0 }]] }, "Validieren und idempotent routen": { "main": [[{ "node": "Ergebnis zurückgeben", "type": "main", "index": 0 }]] } },
+  "settings": { "executionOrder": "v1", "saveDataSuccessExecution": "none", "saveDataErrorExecution": "none" }
+}
